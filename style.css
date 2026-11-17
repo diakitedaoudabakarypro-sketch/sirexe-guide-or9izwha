@@ -242,3 +242,20 @@ main.entre{animation:entree 260ms var(--ease) both}
 @keyframes entree{from{opacity:0;transform:translateY(8px)}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 @media (min-width:700px){.bas{left:50%;right:auto;width:520px;transform:translateX(-50%)}}
+
+/* Carrousel des badges (balayage horizontal, aimanté) */
+.carrousel{display:flex;align-items:center;overflow-x:auto;scroll-snap-type:x mandatory;margin:14px 0 4px;border-radius:22px;background:linear-gradient(135deg,#f08a2c,#0b4a33);box-shadow:var(--ombre-3);scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.carrousel::-webkit-scrollbar{display:none}
+.diapo{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;margin:0;padding:10px}
+.diapo img{width:100%;height:auto;display:block;border-radius:15px;background:#fff;cursor:zoom-in}
+.diapo figcaption{display:flex;align-items:center;justify-content:space-between;gap:8px;color:#fff;font-weight:650;font-size:14px;padding:10px 6px 2px}
+.diapo figcaption .ic{width:18px;height:18px}
+.carrousel.plein,.carrousel:fullscreen{position:fixed;inset:0;z-index:50;margin:0;border-radius:0;background:#fff;align-items:stretch}
+.carrousel.plein .diapo,.carrousel:fullscreen .diapo{height:100dvh;padding:0;display:flex;align-items:center;justify-content:center}
+.carrousel.plein img,.carrousel:fullscreen img{width:100%;height:100%;object-fit:contain;border-radius:0;cursor:zoom-out}
+.carrousel.plein figcaption,.carrousel:fullscreen figcaption{display:none}
+.points{display:flex;justify-content:center;gap:4px}
+.point{min-height:44px;width:44px;padding:0;background:none;border:0;box-shadow:none}
+.point::before{content:"";display:block;margin:auto;width:9px;height:9px;border-radius:99px;background:var(--ligne);transition:width var(--t) var(--ease),background var(--t)}
+.point[aria-current=true]::before{width:26px;background:var(--orange)}
+.point:active{transform:none}

@@ -5,7 +5,7 @@
    - Tout texte affiché passe par textContent (aucun innerHTML avec des données). */
 (function () {
   "use strict";
-  var APP_VERSION = "1.6";   // à changer avec VERSION dans sw.js à chaque publication
+  var APP_VERSION = "1.7";   // à changer avec VERSION dans sw.js à chaque publication
 
   /* ---------- utilitaires ---------- */
   var $ = function (s, r) { return (r || document).querySelector(s); };
@@ -225,49 +225,33 @@
 
   /* Mes invitations : images stockées dans le dépôt PRIVÉ (dossier invitations/), téléchargées avec le jeton puis gardées
      dans le téléphone (localStorage) pour s'afficher sans internet. Elles ne sont jamais publiées sur le site public. */
-  var INVITATIONS = [["invitation_sirexe.png", "Invitation SIREXE 2026 · QR code d'accès"], ["invitation_conference.png", "Invitation · conférence inaugurale de haut niveau"]];
-  function invLocale(nom) { try { return localStorage.getItem("inv:" + nom); } catch (e) { return null; } }
-  function invTelecharger() {
-    var cfg = S.cfg;
-    if (!cfg || !cfg.token || !cfg.owner || !cfg.repo) { toast("Renseigner d'abord le jeton et le dépôt dans Réglages.", true); return Promise.resolve(); }
-    return Promise.all(INVITATIONS.map(function (iv) {
-      return gh(cfg, "GET", "/contents/invitations/" + encodeURIComponent(iv[0])).then(function (r) {
-        if (r.status === 404) throw new Error("le jeton n'a pas accès au dépôt privé « " + cfg.repo + " ». Sur GitHub : Settings, Developer settings, Fine-grained tokens, sirexe-telephone, Repository access : cocher « " + cfg.repo + " », puis Save. Inutile de recoller le jeton.");
-        if (r.status === 401) throw new Error("jeton refusé (expiré ou mal copié) : en créer un nouveau et le coller dans Réglages.");
-        if (!r.ok) throw new Error("GitHub " + r.status);
-        return r.json();
-      }).then(function (j) {
-        var url = "data:image/png;base64," + String(j.content || "").replace(/\s/g, "");
-        try { localStorage.setItem("inv:" + iv[0], url); } catch (e) { throw new Error("mémoire du téléphone pleine"); }
-      });
-    })).then(function () { toast("Invitations enregistrées dans le téléphone."); vueInvitations(); },
-              function (e) { toast("Téléchargement impossible : " + (e && e.message || e), true); });
-  }
+  /* Badges d'accès : intégrés à l'application (choix de Daouda du 2026-11-17), disponibles hors connexion dès la première ouverture. */
+  var BADGES = [["badges/badge_sirexe.png", "Invitation SIREXE 2026 · QR code d'accès"], ["badges/badge_conference.png", "Conférence inaugurale de haut niveau"]];
   var verrouEcran = null;
-  function badgePleinEcran(img) {               // plein écran + écran maintenu allumé (si le téléphone le permet)
-    var ouvrir = !img.classList.contains("plein");
-    img.classList.toggle("plein", ouvrir);
+  function badgePleinEcran(el) {               // plein écran + écran maintenu allumé (si le téléphone le permet)
+    var ouvrir = !el.classList.contains("plein");
+    el.classList.toggle("plein", ouvrir);
     try {
-      if (ouvrir && img.requestFullscreen) img.requestFullscreen().catch(function () {});
+      if (ouvrir && el.requestFullscreen) el.requestFullscreen().catch(function () {});
       if (!ouvrir && document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(function () {});
       if (ouvrir && navigator.wakeLock) navigator.wakeLock.request("screen").then(function (v) { verrouEcran = v; }).catch(function () {});
       if (!ouvrir && verrouEcran) { verrouEcran.release().catch(function () {}); verrouEcran = null; }
     } catch (e) {}
   }
   function vueInvitations() {
-    var manquantes = INVITATIONS.filter(function (iv) { return !invLocale(iv[0]); }).length;
-    if (manquantes && S.cfg && S.cfg.token && navigator.onLine && !S.invAuto) { S.invAuto = true; invTelecharger(); }   // téléchargement automatique, une tentative par ouverture
+    var piste, points;
+    function rang() { return Math.round(piste.scrollLeft / Math.max(1, piste.clientWidth)); }
+    function aller(i) { piste.scrollTo({ left: i * piste.clientWidth, behavior: "smooth" }); }
+    function basculer() { var i = rang(); vib(); badgePleinEcran(piste); requestAnimationFrame(function () { piste.scrollLeft = i * piste.clientWidth; }); }   // garde le badge affiché
+    piste = h("div", { class: "carrousel", role: "region", "aria-label": "Mes badges : balayer pour passer de l'un à l'autre" }, BADGES.map(function (b) {
+      return h("figure", { class: "diapo" }, h("img", { src: b[0], alt: b[1], onclick: basculer }), h("figcaption", null, h("span", null, b[1]), ic("plein")));
+    }));
+    points = h("div", { class: "points" }, BADGES.map(function (b, i) { return h("button", { type: "button", class: "point", "aria-label": "Afficher : " + b[1], "aria-current": i === 0 ? "true" : "false", onclick: function () { aller(i); } }); }));
+    piste.addEventListener("scroll", function () { var i = rang(); points.querySelectorAll(".point").forEach(function (p, k) { p.setAttribute("aria-current", k === i ? "true" : "false"); }); }, { passive: true });
+    document.addEventListener("fullscreenchange", function () { if (!document.fullscreenElement && piste.classList.contains("plein")) { var i = rang(); piste.classList.remove("plein"); requestAnimationFrame(function () { piste.scrollLeft = i * piste.clientWidth; }); } });
     rendre(h("p", { class: "surtitre" }, "Accès au salon"), h("h2", null, "Mes badges d'accès"),
-      manquantes ? h("div", { class: "note" }, "Les invitations ne sont pas encore dans le téléphone. Avec internet et le jeton (Réglages), un seul toucher suffit : elles restent ensuite disponibles hors connexion.")
-        : h("div", { class: "conseil" }, ic("soleil"), h("span", null, "Au portail : monter la luminosité, puis toucher le badge. Il s'affiche en plein écran et l'écran reste allumé. Toucher de nouveau pour revenir.")),
-      manquantes ? h("button", { class: "gros orange", onclick: function () { invTelecharger(); } }, ic("telecharger"), "Télécharger mes invitations") : null,
-      INVITATIONS.map(function (iv) {
-        var src = invLocale(iv[0]); if (!src) return null;
-        return h("figure", { class: "badge-acces invitation" },
-          h("img", { src: src, alt: iv[1], onclick: function (ev) { vib(); badgePleinEcran(ev.target); } }),
-          h("figcaption", null, h("span", null, iv[1]), ic("plein")));
-      }),
-      manquantes ? null : h("button", { class: "second gros", onclick: function () { invTelecharger(); } }, ic("telecharger"), "Mettre à jour les invitations"));
+      h("div", { class: "conseil" }, ic("soleil"), h("span", null, "Balayer pour passer d'un badge à l'autre. Toucher un badge : plein écran, écran maintenu allumé (balayage possible). Toucher de nouveau pour revenir.")),
+      piste, points);
   }
 
   /* ---------- vues ---------- */
@@ -541,7 +525,7 @@
     form.addEventListener("submit", function (ev) {
       ev.preventDefault(); var n = lire();
       if (!/^[\w.-]+$/.test(n.owner) || !/^[\w.-]+$/.test(n.repo)) return msg("Compte et dépôt : lettres, chiffres, tiret, point ou tiret bas seulement.");
-      ecrireMeta("github", n).then(function () { S.cfg = n; S.invAuto = false; msg("Réglages enregistrés.", true); majPastille(); synchroniser(false); if (INVITATIONS.some(function (iv) { return !invLocale(iv[0]); })) invTelecharger(); }, function () { msg("Enregistrement impossible sur ce téléphone."); });
+      ecrireMeta("github", n).then(function () { S.cfg = n; msg("Réglages enregistrés.", true); majPastille(); synchroniser(false); }, function () { msg("Enregistrement impossible sur ce téléphone."); });
     });
     form.querySelector("#bt-test").addEventListener("click", function () {
       var n = lire(); if (!n.token || !n.owner || !n.repo) return msg("Renseigner compte, dépôt et jeton.");

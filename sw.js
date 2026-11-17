@@ -2,11 +2,12 @@
    Rôle : garder l'application dans le téléphone pour qu'elle s'ouvre SANS internet.
    Il ne touche jamais aux contacts (stockés dans IndexedDB) et n'intercepte jamais api.github.com.
    Mise à jour : changer VERSION ; la nouvelle version s'installe seule (skipWaiting) et l'application se recharge, sauf pendant une saisie. */
-var VERSION = "sirexe-v1-6";
+var VERSION = "sirexe-v1-7";
 var FICHIERS = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "data/exposants.json", "data/selection.json",
   "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png",
-  "plans/hall1.png", "plans/hall2.png", "plans/esplanade.png"];
+  "plans/hall1.png", "plans/hall2.png", "plans/esplanade.png",
+  "badges/badge_sirexe.png", "badges/badge_conference.png"];
 
 self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(VERSION).then(function (c) {
