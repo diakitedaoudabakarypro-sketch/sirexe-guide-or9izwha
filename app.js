@@ -5,7 +5,10 @@
    - Tout texte affiché passe par textContent (aucun innerHTML avec des données). */
 (function () {
   "use strict";
-  var APP_VERSION = "1.7";   // à changer avec VERSION dans sw.js à chaque publication
+  var APP_VERSION = "1.8";
+  /* Deux modes, une seule source : « perso » (synchronisation vers un dépôt privé, badges) et « terrain » (version publique :
+     contacts gardés sur le téléphone, aucun envoi, aucune donnée personnelle). Le mode est fixé par <html data-mode>. */
+  var TERRAIN = document.documentElement.getAttribute("data-mode") === "terrain";   // à changer avec VERSION dans sw.js à chaque publication
 
   /* ---------- utilitaires ---------- */
   var $ = function (s, r) { return (r || document).querySelector(s); };
@@ -71,7 +74,7 @@
   function db() {
     if (!dbp) dbp = new Promise(function (res, rej) {
       if (!window.indexedDB) return rej(new Error("IndexedDB absent"));
-      var r = indexedDB.open("sirexe", 1);
+      var r = indexedDB.open(TERRAIN ? "sirexe-terrain" : "sirexe", 1);
       r.onupgradeneeded = function () { r.result.createObjectStore("contacts", { keyPath: "id" }); r.result.createObjectStore("meta", { keyPath: "key" }); };
       r.onsuccess = function () { res(r.result); };
       r.onerror = function () { rej(r.error); };
@@ -108,7 +111,7 @@
 
   /* ---------- état ---------- */
   var S = { exposants: [], selection: {}, selectionNote: "", contacts: [], cfg: null, journal: [], filtre: { q: "", secteur: "tous", hall: "", page: 1 }, filtreC: { q: "", mode: "tous" }, enSync: false };
-  var SECTEURS = [["prio", "Ma sélection"], ["tous", "Tous"],["mines", "Mines"], ["petrole", "Pétrole"], ["energies", "Énergie"], ["partenaires", "Partenaires"], ["autres", "Autres"]];
+  var SECTEURS = [["prio", TERRAIN ? "Sélection" : "Ma sélection"], ["tous", "Tous"],["mines", "Mines"], ["petrole", "Pétrole"], ["energies", "Énergie"], ["partenaires", "Partenaires"], ["autres", "Autres"]];
   var STATUTS = ["Nouveau", "À relancer", "En attente de réponse", "Rendez-vous prévu", "Candidature envoyée", "Clos"];
   var INTERETS = ["Non précisé", "Faible", "Moyen", "Fort"];
   var PAGE = 60;
@@ -132,6 +135,7 @@
   function majPastille() {
     var p = $("#etat-sync"), att = S.contacts.filter(function (c) { return !c.sync || c.sync.statut !== "synced"; }).length, txt, etat = "ok";
     var err = S.contacts.some(function (c) { return c.sync && c.sync.statut === "error"; });
+    if (TERRAIN) { p.textContent = S.contacts.length ? S.contacts.length + " sur ce téléphone" : "Prêt"; p.dataset.etat = "ok"; return; }
     if (S.enSync) { txt = "Envoi en cours…"; etat = "run"; }
     else if (!navigator.onLine) { txt = "Hors connexion" + (att ? " · " + att + " en attente" : ""); etat = "off"; }
     else if (!S.cfg || !S.cfg.token) { txt = att ? att + " en attente · jeton manquant" : "Connecter GitHub"; etat = "att"; }
@@ -186,6 +190,7 @@
     S.journal.unshift(entree); S.journal = S.journal.slice(0, 40); return ecrireMeta("journal", S.journal);
   }
   function synchroniser(manuel) {
+    if (TERRAIN) { majPastille(); return Promise.resolve(); }   // version terrain : rien ne quitte le téléphone
     if (S.enSync) return Promise.resolve();
     var cfg = S.cfg;
     if (!cfg || !cfg.token || !cfg.owner || !cfg.repo) { if (manuel) toast("Renseigner d'abord le jeton et le dépôt dans Réglages.", true); majPastille(); return Promise.resolve(); }
@@ -225,7 +230,7 @@
 
   /* Mes invitations : images stockées dans le dépôt PRIVÉ (dossier invitations/), téléchargées avec le jeton puis gardées
      dans le téléphone (localStorage) pour s'afficher sans internet. Elles ne sont jamais publiées sur le site public. */
-  /* Badges d'accès : intégrés à l'application (choix de Daouda du 2026-11-17), disponibles hors connexion dès la première ouverture. */
+  /* Badges d'accès : intégrés à l'application (version perso seulement), disponibles hors connexion dès la première ouverture. */
   var BADGES = [["badges/badge_sirexe.png", "Invitation SIREXE 2026 · QR code d'accès"], ["badges/badge_conference.png", "Conférence inaugurale de haut niveau"]];
   var verrouEcran = null;
   function badgePleinEcran(el) {               // plein écran + écran maintenu allumé (si le téléphone le permet)
@@ -256,6 +261,7 @@
 
   /* ---------- vues ---------- */
   var routes = { entreprises: vueListe, e: vueFiche, ajout: vueFormulaire, contacts: vueContacts, contact: vueContact, bord: vueBord, plans: vuePlans, invitations: vueInvitations, reglages: vueReglages };
+  if (TERRAIN) delete routes.invitations;
   function rafraichir() { var m = (location.hash || "#/").slice(2).split("/"), nom = m[0] || "entreprises"; if (nom === "ajout" || nom === "contact") return; vueCourante(); }
   var dernierHash = location.hash || "#/", positions = {};
   function vueCourante() {
@@ -310,18 +316,18 @@
         h("span", { class: "corps" }, h("b", null, e.nom), h("span", { class: "meta" }, e.pavillon + " · " + e.hall + (e.stand ? " · stand " + e.stand : ""))),
         ic("fleche", "fleche"),
         (p || n) ? h("span", { class: "etiquettes" },
-          p ? h("span", { class: "badge b-prio" }, ic("etoile"), "Priorité " + r.prio) : null,
+          p && r.prio ? h("span", { class: "badge b-prio" }, ic("etoile"), "Priorité " + r.prio) : null,
           p && r.cv ? h("span", { class: "badge" }, ic("cv"), cvTexte(p)) : null,
           n ? h("span", { class: "badge b-ok" }, ic("ok"), "Rencontrée · " + n + " contact" + (n > 1 ? "s" : "")) : null) : null);
     });
     var hero = null;
     if (nbSel && f.secteur === "prio" && !f.q) {
       var vus = Object.keys(S.selection).filter(function (id) { return nbContacts(id) > 0; }).length, relances = S.contacts.filter(estRelance).length;
-      hero = h("section", { class: "hero" }, h("p", { class: "surtitre" }, "Ma sélection · salon SIREXE 2026"),
+      hero = h("section", { class: "hero" }, h("p", { class: "surtitre" }, (TERRAIN ? "Sélection" : "Ma sélection") + " · salon SIREXE 2026"),
         h("b", { class: "grand" }, vus + " / " + nbSel + " entreprises rencontrées"),
-        h("p", null, "Classées par priorité. Toucher une entreprise : débrief, pitch, questions et ajout d'un contact."),
+        h("p", null, TERRAIN ? "Toucher une entreprise : activités, procédés, questions à poser, vocabulaire et ajout de tes contacts." : "Classées par priorité. Toucher une entreprise : débrief, pitch, questions et ajout d'un contact."),
         h("div", { class: "jauge", role: "progressbar", "aria-label": "Entreprises rencontrées", "aria-valuemin": "0", "aria-valuemax": String(nbSel), "aria-valuenow": String(vus) }, h("span", { style: "width:" + Math.round(100 * vus / nbSel) + "%" })),
-        h("div", { class: "stats" }, h("a", { href: "#/contacts" }, ic("contacts"), S.contacts.length + " contact" + (S.contacts.length > 1 ? "s" : "")), h("a", { href: "#/bord" }, ic("relance"), relances + " à relancer"), h("a", { href: "#/invitations" }, ic("qr"), "Mon badge")));
+        h("div", { class: "stats" }, h("a", { href: "#/contacts" }, ic("contacts"), S.contacts.length + " contact" + (S.contacts.length > 1 ? "s" : "")), h("a", { href: "#/bord" }, ic("relance"), relances + " à relancer"), TERRAIN ? null : h("a", { href: "#/invitations" }, ic("qr"), "Mon badge")));
     }
     rendre(hero, hero ? null : h("h2", null, "Exposants (" + liste.length + ")"),
       h("div", { class: "outils" }, q, hall), puces,
@@ -360,12 +366,13 @@
       ["entreprise", "L'entreprise", "livre", [bloc("Activités", p.activites), bloc("Procédés et opérations", p.procedes), bloc("Installations en Côte d'Ivoire", p.installations_ci), bloc("Vocabulaire technique", p.vocabulaire, { type: "vocab" })]],
       ["stage", "Stage", "stage", [bloc("Stage de 2e année (2 à 3 mois, dès juin 2027)", p.stage2), bloc("Stage de 3e année (6 mois)", p.stage3), sources.length ? h("details", null, h("summary", null, "Sources (" + sources.length + ")"), h("div", null, h("ul", { class: "liste" }, sources))) : null]]
     ] : [];
+    sections = sections.filter(function (s) { return s[3].some(Boolean); });   // pas de rubrique vide dans le sommaire
     rendre(
       h("a", { class: "retour", href: "#/" }, "← Entreprises"),
       h("section", { class: "fiche-hero " + classeSecteur(e) },
         h("div", { class: "tete" }, h("span", { class: "avatar" }, initiales(e.nom)),
           h("div", null, h("h2", null, e.nom), h("span", { class: "meta" }, secteurFiche(e) + " · " + e.hall + (e.stand ? " · stand " + e.stand : " · stand non publié")))),
-        p ? h("div", { class: "etiquettes" }, h("span", { class: "badge" }, ic("etoile"), "Priorité " + r.prio), p.score ? h("span", { class: "badge" }, "Adéquation " + p.score + "/100") : null,
+        p ? h("div", { class: "etiquettes" }, r.prio ? h("span", { class: "badge" }, ic("etoile"), "Priorité " + r.prio) : null, p.score ? h("span", { class: "badge" }, "Adéquation " + p.score + "/100") : null,
           p.presence_ci ? h("span", { class: "badge" }, ic("ok"), "Présence en Côte d'Ivoire vérifiée") : null, mes.length ? h("span", { class: "badge" }, ic("contacts"), mes.length + " contact" + (mes.length > 1 ? "s" : "")) : null) : null),
       h("div", { class: "actions" }, h("a", { class: "btn orange", href: ajout }, ic("plus"), "Ajouter un contact"),
         p && p.cv ? h("div", { class: "cv-num", title: p.cv }, h("small", null, "CV papier à remettre"), h("b", null, cvTexte(p).replace("CV ", ""))) : h("a", { class: "btn second", href: "#/plans" }, ic("plan"), "Plans")),
@@ -511,6 +518,14 @@
     exporter("sirexe-contacts-" + aujourdhui() + ".csv", "﻿" + cols.join(";") + "\r\n" + S.contacts.map(function (c) { return cols.map(function (k) { return cel(c[k]); }).join(";"); }).join("\r\n"), "text/csv;charset=utf-8");
   }
   function vueReglages() {
+    if (TERRAIN) {
+      rendre(h("p", { class: "surtitre" }, "Application"), h("h2", null, "Réglages"),
+        h("div", { class: "groupe" }, h("h3", null, ic("telecharger"), "Mes données"),
+          h("p", { class: "aide" }, "Tes contacts et tes notes restent uniquement sur ce téléphone : rien n'est envoyé ailleurs. Exporte-les régulièrement pour les garder (tableau CSV ou sauvegarde JSON)."),
+          h("div", { class: "ligne", style: "margin-top:10px" }, h("button", { class: "second", onclick: function () { exporter("sirexe-sauvegarde-" + aujourdhui() + ".json", JSON.stringify(S.contacts, null, 2), "application/json"); } }, "Exporter tout (JSON)"), h("button", { class: "second", onclick: exporterCsv }, "Exporter (CSV)"))),
+        h("p", { class: "aide" }, "Version terrain " + APP_VERSION + " · mise à jour automatique · " + S.exposants.length + " exposants · annuaire du " + fmtJour((S.extrait || "").slice(0, 10))));
+      return;
+    }
     var c = S.cfg || { owner: "diakitedaoudabakarypro-sketch", repo: "sirexe-2026-donnees", branch: "main", dossier: "contacts", token: "" };
     var form = h("form", { novalidate: true, autocomplete: "off" },
       h("h3", null, "Synchronisation GitHub"),
@@ -544,7 +559,7 @@
       h("details", { open: !c.token }, h("summary", null, "Créer le jeton GitHub (une seule fois, 3 minutes)"), h("div", null, h("ol", { class: "liste" },
         h("li", null, "Ouvrir ", h("a", { href: "https://github.com/settings/personal-access-tokens/new", target: "_blank", rel: "noopener noreferrer" }, "github.com/settings/personal-access-tokens/new"), " (connecté à son compte GitHub)."),
         h("li", null, "Token name : sirexe-telephone. Expiration : 30 days."),
-        h("li", null, "Repository access : « Only select repositories », puis cocher uniquement « sirexe-2026-donnees »."),
+        h("li", null, "Repository access : « Only select repositories », puis cocher uniquement « " + (c.repo || "le dépôt privé des contacts") + " »."),
         h("li", null, "Permissions, Repository permissions, Contents : « Read and write ». Rien d'autre."),
         h("li", null, "Generate token, copier le jeton (github_pat_…, affiché une seule fois), le coller ci-dessous, Enregistrer, puis Tester la connexion.")))),
       h("div", { class: "groupe" }, form),
@@ -580,7 +595,7 @@
     });
   }
   if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost" || location.hostname === "127.0.0.1")) {
-    /* Mise à jour automatique (souhait de Daouda) : chaque publication s'installe seule à l'ouverture avec internet.
+    /* Mise à jour automatique : chaque publication s'installe seule à l'ouverture avec internet.
        Garde-fou : jamais de rechargement pendant une saisie de contact ; la mise à jour attend la fin du formulaire. */
     var avaitVersion = !!navigator.serviceWorker.controller, enAttente = false;   // première visite : ni bandeau ni rechargement
     function saisieEnCours() { return /^#\/(ajout|contact)\//.test(location.hash || ""); }

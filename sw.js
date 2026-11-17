@@ -2,7 +2,8 @@
    Rôle : garder l'application dans le téléphone pour qu'elle s'ouvre SANS internet.
    Il ne touche jamais aux contacts (stockés dans IndexedDB) et n'intercepte jamais api.github.com.
    Mise à jour : changer VERSION ; la nouvelle version s'installe seule (skipWaiting) et l'application se recharge, sauf pendant une saisie. */
-var VERSION = "sirexe-v1-7";
+var VERSION = "sirexe-v1-8";
+var PREFIXE = VERSION.replace(/[0-9][0-9-]*$/, "");
 var FICHIERS = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "data/exposants.json", "data/selection.json",
   "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png",
@@ -15,14 +16,15 @@ self.addEventListener("install", function (e) {
     return Promise.all(FICHIERS.map(function (u) {
       return c.add(new Request(u, { cache: "reload" })).catch(function () {});
     }));
-  }).then(function () { return self.skipWaiting(); }));   // installation immédiate : Daouda voit chaque publication sans rien faire
+  }).then(function () { return self.skipWaiting(); }));   // installation immédiate : chaque publication est visible sans rien faire
 });
 
 self.addEventListener("message", function (e) { if (e.data === "activer") self.skipWaiting(); });
 
 self.addEventListener("activate", function (e) {
   e.waitUntil(caches.keys().then(function (noms) {
-    return Promise.all(noms.filter(function (n) { return n !== VERSION; }).map(function (n) { return caches.delete(n); }));
+    return Promise.all(noms.filter(function (n) { return n !== VERSION && n.indexOf(PREFIXE) === 0; })   // ne touche jamais au cache d'une autre version (même domaine)
+      .map(function (n) { return caches.delete(n); }));
   }).then(function () { return self.clients.claim(); }));
 });
 
