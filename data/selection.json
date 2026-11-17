@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-17T12:26:19",
+ "genere_le": "2026-11-17T12:49:51",
  "note": "Débrief des entreprises de la sélection principale (22 CV, 21 exposants). Champs tirés des fiches de recherche, des préparations et des CV ; classes C à confirmer au stand.",
  "entreprises": [
   {
@@ -1057,7 +1057,7 @@
    "score": 52,
    "presence_ci": "vérifiée (fiche de recherche)",
    "resume": "Centre emplisseur de GPL de Yopougon (stockage de butane de 2 600 t, B/C) ; sphère de 5 000 t en projet",
-   "pourquoi": "CV « SIMAM CÔTE D'IVOIRE » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon stage de fin d'études s'est déroulé au cœur d'un conditionnement industriel : suivi d'un produit du stockage jusqu'aux cuves de pré-conditionnement, avec plan d'échantillonnage et vérification statistique de sa conformité. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre centre emplisseur.",
+   "pourquoi": "CV « SIMAM CÔTE D'IVOIRE » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon stage de fin d'études portait sur un produit suivi du stockage jusqu'aux cuves de pré-conditionnement, avec un plan d'échantillonnage et la vérification statistique de sa conformité. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre centre emplisseur.",
    "activites": [
     "Principal : distribution de GPL et de produits pétroliers",
     "Secondaires : carburants et lubrifiants B2B, stations-service"
@@ -1082,7 +1082,7 @@
     "Établissement et exploitation de bilans matière"
    ],
    "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon objectif : contribuer au contrôle qualité et au suivi de production de votre centre emplisseur. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
-   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon stage de fin d'études s'est déroulé au cœur d'un conditionnement industriel : suivi d'un produit du stockage jusqu'aux cuves de pré-conditionnement, avec plan d'échantillonnage et vérification statistique de sa conformité. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre centre emplisseur. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon stage de fin d'études portait sur un produit suivi du stockage jusqu'aux cuves de pré-conditionnement, avec un plan d'échantillonnage et la vérification statistique de sa conformité. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre centre emplisseur. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
    "questions": [
     "Le service « Centre emplisseur (remplissage, sécurité) ; ISO 9001 déclarée » accueille-t-il des stagiaires de 2e année ?",
     "À quelle personne ou adresse envoyer ma candidature ?",
@@ -1191,7 +1191,7 @@
    "score": 69,
    "presence_ci": "vérifiée (fiche de recherche)",
    "resume": "Centrale biomasse d'Ayébo (Aboisso) : 46 MW nets, 348 GWh/an, résidus de palmier ; inaugurée le 2026-11-05",
-   "pourquoi": "CV « BIOVEA ÉNERGIE · EDF » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). J'ai effectué mon stage de fin d'études dans la filière palme du groupe SIFCA, actionnaire de BIOVEA par Biokala, et produit au laboratoire de l'éthanol à partir de plusieurs matières végétales. Mon objectif : contribuer au suivi d'exploitation de la centrale d'Ayébo, de l'approvisionnement en biomasse aux bilans énergétiques.",
+   "pourquoi": "CV « BIOVEA ÉNERGIE · EDF » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). J'ai effectué mon stage de fin d'études dans la filière palme du groupe SIFCA, actionnaire de BIOVEA par Biokala, et produit au laboratoire de l'éthanol à partir de plusieurs matières premières. Mon objectif : contribuer au suivi d'exploitation de la centrale d'Ayébo, de l'approvisionnement en biomasse aux bilans énergétiques.",
    "activites": [
     "Principal : production et fourniture d'électricité (groupe EDF). En Côte d'Ivoire : participation dans la centrale biomasse BIOVEA, représentation à Koumassi et projets solaires hors réseau. Secondaires : ingénierie (page EDF Côte d'Ivoire non lue, erreur 403)."
    ],
@@ -1205,7 +1205,7 @@
    "stage2": "N3 · https://biovea-energie.com/la-centrale-biomasse/",
    "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
    "competences": [
-    "Valorisation de matières végétales : rendements de conversion",
+    "Valorisation de matières premières en éthanol : rendements de conversion",
     "Analyse du cycle de vie d'un vecteur énergétique",
     "Valorisation de résidus agro-industriels (projet)",
     "Suivi d'un paramètre sur une ligne continue",
@@ -1214,7 +1214,7 @@
     "Établissement et exploitation de bilans matière"
    ],
    "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon objectif : contribuer au suivi d'exploitation de la centrale d'Ayébo, de l'approvisionnement en biomasse aux bilans énergétiques. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
-   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). J'ai effectué mon stage de fin d'études dans la filière palme du groupe SIFCA, actionnaire de BIOVEA par Biokala, et produit au laboratoire de l'éthanol à partir de plusieurs matières végétales. Mon objectif : contribuer au suivi d'exploitation de la centrale d'Ayébo, de l'approvisionnement en biomasse aux bilans énergétiques. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). J'ai effectué mon stage de fin d'études dans la filière palme du groupe SIFCA, actionnaire de BIOVEA par Biokala, et produit au laboratoire de l'éthanol à partir de plusieurs matières premières. Mon objectif : contribuer au suivi d'exploitation de la centrale d'Ayébo, de l'approvisionnement en biomasse aux bilans énergétiques. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
    "questions": [
     "Le service « Exploitation de la centrale (chaudière, turbine, aérocondenseur, approvisionnement en biomasse) » accueille-t-il des stagiaires de 2e année ?",
     "À quelle personne ou adresse envoyer ma candidature ?",
@@ -1399,7 +1399,7 @@
    "score": 54,
    "presence_ci": "vérifiée (fiche de recherche)",
    "resume": "Site industriel de Vridi ; production et conditionnement non documentés (D) ; ERIUM CI produit O2, N2, acétylène (C)",
-   "pourquoi": "CV « ERIUM CÔTE D'IVOIRE » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la thermodynamique des équilibres liquide-vapeur et au froid industriel. Au laboratoire, j'ai séparé des mélanges par distillation fractionnée ; à Vridi, en raffinerie d'huiles, j'ai vérifié par l'analyse statistique la conformité d'un produit avant livraison. Mon objectif : contribuer au contrôle qualité et au suivi de production des gaz industriels de votre site.",
+   "pourquoi": "CV « ERIUM CÔTE D'IVOIRE » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la thermodynamique des équilibres liquide-vapeur et au froid industriel. Au laboratoire, j'ai séparé des mélanges par distillation fractionnée ; à Vridi, en raffinerie d'huiles, j'ai vérifié par l'analyse statistique la conformité d'un produit avant conditionnement. Mon objectif : contribuer au contrôle qualité et au suivi de production des gaz industriels de votre site.",
    "activites": [
     "Principal : gaz industriels et médicaux. Secondaires : gaz de laboratoire et mélanges d'étalonnage."
    ],
@@ -1421,7 +1421,7 @@
     "Propagation d'incertitudes par simulation de Monte Carlo"
    ],
    "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la thermodynamique des équilibres liquide-vapeur et au froid industriel. Mon objectif : contribuer au contrôle qualité et au suivi de production des gaz industriels de votre site. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
-   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la thermodynamique des équilibres liquide-vapeur et au froid industriel. Au laboratoire, j'ai séparé des mélanges par distillation fractionnée ; à Vridi, en raffinerie d'huiles, j'ai vérifié par l'analyse statistique la conformité d'un produit avant livraison. Mon objectif : contribuer au contrôle qualité et au suivi de production des gaz industriels de votre site. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la thermodynamique des équilibres liquide-vapeur et au froid industriel. Au laboratoire, j'ai séparé des mélanges par distillation fractionnée ; à Vridi, en raffinerie d'huiles, j'ai vérifié par l'analyse statistique la conformité d'un produit avant conditionnement. Mon objectif : contribuer au contrôle qualité et au suivi de production des gaz industriels de votre site. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
    "questions": [
     "Le site de Vridi sépare-t-il l'air ou conditionne-t-il des gaz produits ailleurs ?",
     "Existe-t-il un service qualité ou laboratoire qui accueille des stagiaires de génie des procédés ?",
@@ -1537,7 +1537,7 @@
    "score": 45,
    "presence_ci": "vérifiée (fiche de recherche)",
    "resume": "Contrat de 5 ans à Koné (2025-09-11) : usine d'explosifs sur site et 2 à 3 unités mobiles (MEMU)",
-   "pourquoi": "CV « EPC CÔTE D'IVOIRE » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé au génie de la réaction et à la chimie des solutions. J'ai appliqué en usine des protocoles de prélèvement et de mesure rigoureux, et conduit au laboratoire une transformation chimique complète, de la préparation des matières à la distillation. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre unité de Koné, dans le strict respect de vos règles de sécurité.",
+   "pourquoi": "CV « EPC CÔTE D'IVOIRE » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé au génie de la réaction et à la chimie des solutions. J'ai appliqué en usine des protocoles de prélèvement et de mesure rigoureux, et conduit au laboratoire une production complète, de la préparation des matières à la distillation. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre unité de Koné, dans le strict respect de vos règles de sécurité.",
    "activites": [
     "Principal : explosifs et services de minage (groupe EPC). Prestataire de services."
    ],
@@ -1553,13 +1553,13 @@
     "Application rigoureuse de protocoles de prélèvement",
     "Contrôle de conformité à une spécification",
     "Standardisation de procédures (proposée)",
-    "Transformation chimique par étapes au laboratoire",
+    "Production par étapes au laboratoire : fermentation, distillation",
     "Bilans matière d'un procédé",
     "Analyse statistique de séries de mesures",
     "Propagation d'incertitudes par simulation de Monte Carlo"
    ],
    "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé au génie de la réaction et à la chimie des solutions. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre unité de Koné, dans le strict respect de vos règles de sécurité. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
-   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé au génie de la réaction et à la chimie des solutions. J'ai appliqué en usine des protocoles de prélèvement et de mesure rigoureux, et conduit au laboratoire une transformation chimique complète, de la préparation des matières à la distillation. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre unité de Koné, dans le strict respect de vos règles de sécurité. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé au génie de la réaction et à la chimie des solutions. J'ai appliqué en usine des protocoles de prélèvement et de mesure rigoureux, et conduit au laboratoire une production complète, de la préparation des matières à la distillation. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre unité de Koné, dans le strict respect de vos règles de sécurité. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
    "questions": [
     "Le service « Usine d'émulsion de Koné (prévue) » accueille-t-il des stagiaires de 2e année ?",
     "À quelle personne ou adresse envoyer ma candidature ?",
