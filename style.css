@@ -52,4 +52,4 @@ ul.liste{margin:4px 0 4px 18px;padding:0}
 .note{border-left:4px solid var(--orange);padding:6px 10px;background:var(--carte);margin:10px 0;font-size:14px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
-.invitation{margin:12px 0}.invitation img.plein{position:fixed;inset:0;width:100vw!important;height:100vh!important;object-fit:contain;background:#fff;z-index:50;border-radius:0!important}
+.invitation{margin:12px 0}.invitation img.plein{position:fixed;inset:0;width:100vw!important;height:100vh!important;object-fit:contain;background:#fff;z-index:50;cursor:zoom-out;border-radius:0!important}

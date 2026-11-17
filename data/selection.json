@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-17T12:49:51",
+ "genere_le": "2026-11-17T12:56:58",
  "note": "Débrief des entreprises de la sélection principale (22 CV, 21 exposants). Champs tirés des fiches de recherche, des préparations et des CV ; classes C à confirmer au stand.",
  "entreprises": [
   {
@@ -1537,7 +1537,7 @@
    "score": 45,
    "presence_ci": "vérifiée (fiche de recherche)",
    "resume": "Contrat de 5 ans à Koné (2025-09-11) : usine d'explosifs sur site et 2 à 3 unités mobiles (MEMU)",
-   "pourquoi": "CV « EPC CÔTE D'IVOIRE » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé au génie de la réaction et à la chimie des solutions. J'ai appliqué en usine des protocoles de prélèvement et de mesure rigoureux, et conduit au laboratoire une production complète, de la préparation des matières à la distillation. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre unité de Koné, dans le strict respect de vos règles de sécurité.",
+   "pourquoi": "CV « EPC CÔTE D'IVOIRE » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé au génie de la réaction et à la chimie des solutions. J'ai appliqué en usine des protocoles de prélèvement et de mesure rigoureux, et conduit au laboratoire une production complète, de la préparation des matières à la distillation. Mon objectif : contribuer, dans le respect strict des consignes de sécurité, au contrôle qualité et au suivi de production de votre unité de Koné.",
    "activites": [
     "Principal : explosifs et services de minage (groupe EPC). Prestataire de services."
    ],
@@ -1553,13 +1553,13 @@
     "Application rigoureuse de protocoles de prélèvement",
     "Contrôle de conformité à une spécification",
     "Standardisation de procédures (proposée)",
-    "Production par étapes au laboratoire : fermentation, distillation",
+    "Fermentation puis distillation au laboratoire",
     "Bilans matière d'un procédé",
     "Analyse statistique de séries de mesures",
     "Propagation d'incertitudes par simulation de Monte Carlo"
    ],
-   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé au génie de la réaction et à la chimie des solutions. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre unité de Koné, dans le strict respect de vos règles de sécurité. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
-   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé au génie de la réaction et à la chimie des solutions. J'ai appliqué en usine des protocoles de prélèvement et de mesure rigoureux, et conduit au laboratoire une production complète, de la préparation des matières à la distillation. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre unité de Koné, dans le strict respect de vos règles de sécurité. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé au génie de la réaction et à la chimie des solutions. Mon objectif : contribuer, dans le respect strict des consignes de sécurité, au contrôle qualité et au suivi de production de votre unité de Koné. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé au génie de la réaction et à la chimie des solutions. J'ai appliqué en usine des protocoles de prélèvement et de mesure rigoureux, et conduit au laboratoire une production complète, de la préparation des matières à la distillation. Mon objectif : contribuer, dans le respect strict des consignes de sécurité, au contrôle qualité et au suivi de production de votre unité de Koné. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
    "questions": [
     "Le service « Usine d'émulsion de Koné (prévue) » accueille-t-il des stagiaires de 2e année ?",
     "À quelle personne ou adresse envoyer ma candidature ?",

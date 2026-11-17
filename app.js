@@ -228,15 +228,26 @@
     })).then(function () { toast("Invitations enregistrées dans le téléphone."); vueInvitations(); },
               function (e) { toast("Téléchargement impossible : " + (e && e.message || e), true); });
   }
+  var verrouEcran = null;
+  function badgePleinEcran(img) {               // plein écran + écran maintenu allumé (si le téléphone le permet)
+    var ouvrir = !img.classList.contains("plein");
+    img.classList.toggle("plein", ouvrir);
+    try {
+      if (ouvrir && img.requestFullscreen) img.requestFullscreen().catch(function () {});
+      if (!ouvrir && document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(function () {});
+      if (ouvrir && navigator.wakeLock) navigator.wakeLock.request("screen").then(function (v) { verrouEcran = v; }).catch(function () {});
+      if (!ouvrir && verrouEcran) { verrouEcran.release().catch(function () {}); verrouEcran = null; }
+    } catch (e) {}
+  }
   function vueInvitations() {
     var manquantes = INVITATIONS.filter(function (iv) { return !invLocale(iv[0]); }).length;
-    rendre(h("h2", null, "Mes invitations"),
-      manquantes ? h("p", { class: "note" }, "Les invitations ne sont pas encore dans le téléphone. Une connexion et le jeton (Réglages) suffisent : elles restent ensuite disponibles sans internet.") : h("p", { class: "aide" }, "À présenter à l'entrée. Toucher une image pour l'agrandir ; monter la luminosité pour le QR code."),
+    rendre(h("h2", null, "Mes badges d'accès"),
+      manquantes ? h("p", { class: "note" }, "Les invitations ne sont pas encore dans le téléphone. Une connexion et le jeton (Réglages) suffisent : elles restent ensuite disponibles sans internet.") : h("p", { class: "aide" }, "Au portail : toucher le badge, il s'affiche en plein écran et l'écran reste allumé. Toucher de nouveau pour revenir."),
       h("button", { class: manquantes ? "gros" : "second", onclick: function () { invTelecharger(); } }, manquantes ? "Télécharger mes invitations" : "Mettre à jour les invitations"),
       INVITATIONS.map(function (iv) {
         var src = invLocale(iv[0]); if (!src) return null;
         return h("figure", { class: "invitation" },
-          h("img", { src: src, alt: iv[1], onclick: function (ev) { ev.target.classList.toggle("plein"); }, style: "width:100%;height:auto;display:block;border-radius:8px;background:#fff;border:1px solid #d5dbe1;cursor:zoom-in" }),
+          h("img", { src: src, alt: iv[1], onclick: function (ev) { badgePleinEcran(ev.target); }, style: "width:100%;height:auto;display:block;border-radius:8px;background:#fff;border:1px solid #d5dbe1;cursor:zoom-in" }),
           h("figcaption", { class: "aide" }, iv[1]));
       }));
   }

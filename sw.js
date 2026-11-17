@@ -2,7 +2,7 @@
    Rôle : garder l'application dans le téléphone pour qu'elle s'ouvre SANS internet.
    Il ne touche jamais aux contacts (stockés dans IndexedDB) et n'intercepte jamais api.github.com.
    Mise à jour : changer VERSION ; l'application propose alors « Actualiser ». */
-var VERSION = "sirexe-v1-3";
+var VERSION = "sirexe-v1-4";
 var FICHIERS = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "data/exposants.json", "data/selection.json",
   "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png",
