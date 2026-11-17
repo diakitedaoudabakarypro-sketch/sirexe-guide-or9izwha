@@ -5,7 +5,7 @@
    - Tout texte affiché passe par textContent (aucun innerHTML avec des données). */
 (function () {
   "use strict";
-  var APP_VERSION = "1.5";   // à changer avec VERSION dans sw.js à chaque publication
+  var APP_VERSION = "1.6";   // à changer avec VERSION dans sw.js à chaque publication
 
   /* ---------- utilitaires ---------- */
   var $ = function (s, r) { return (r || document).querySelector(s); };
@@ -232,6 +232,8 @@
     if (!cfg || !cfg.token || !cfg.owner || !cfg.repo) { toast("Renseigner d'abord le jeton et le dépôt dans Réglages.", true); return Promise.resolve(); }
     return Promise.all(INVITATIONS.map(function (iv) {
       return gh(cfg, "GET", "/contents/invitations/" + encodeURIComponent(iv[0])).then(function (r) {
+        if (r.status === 404) throw new Error("le jeton n'a pas accès au dépôt privé « " + cfg.repo + " ». Sur GitHub : Settings, Developer settings, Fine-grained tokens, sirexe-telephone, Repository access : cocher « " + cfg.repo + " », puis Save. Inutile de recoller le jeton.");
+        if (r.status === 401) throw new Error("jeton refusé (expiré ou mal copié) : en créer un nouveau et le coller dans Réglages.");
         if (!r.ok) throw new Error("GitHub " + r.status);
         return r.json();
       }).then(function (j) {
@@ -254,6 +256,7 @@
   }
   function vueInvitations() {
     var manquantes = INVITATIONS.filter(function (iv) { return !invLocale(iv[0]); }).length;
+    if (manquantes && S.cfg && S.cfg.token && navigator.onLine && !S.invAuto) { S.invAuto = true; invTelecharger(); }   // téléchargement automatique, une tentative par ouverture
     rendre(h("p", { class: "surtitre" }, "Accès au salon"), h("h2", null, "Mes badges d'accès"),
       manquantes ? h("div", { class: "note" }, "Les invitations ne sont pas encore dans le téléphone. Avec internet et le jeton (Réglages), un seul toucher suffit : elles restent ensuite disponibles hors connexion.")
         : h("div", { class: "conseil" }, ic("soleil"), h("span", null, "Au portail : monter la luminosité, puis toucher le badge. Il s'affiche en plein écran et l'écran reste allumé. Toucher de nouveau pour revenir.")),
@@ -538,7 +541,7 @@
     form.addEventListener("submit", function (ev) {
       ev.preventDefault(); var n = lire();
       if (!/^[\w.-]+$/.test(n.owner) || !/^[\w.-]+$/.test(n.repo)) return msg("Compte et dépôt : lettres, chiffres, tiret, point ou tiret bas seulement.");
-      ecrireMeta("github", n).then(function () { S.cfg = n; msg("Réglages enregistrés.", true); majPastille(); synchroniser(false); }, function () { msg("Enregistrement impossible sur ce téléphone."); });
+      ecrireMeta("github", n).then(function () { S.cfg = n; S.invAuto = false; msg("Réglages enregistrés.", true); majPastille(); synchroniser(false); if (INVITATIONS.some(function (iv) { return !invLocale(iv[0]); })) invTelecharger(); }, function () { msg("Enregistrement impossible sur ce téléphone."); });
     });
     form.querySelector("#bt-test").addEventListener("click", function () {
       var n = lire(); if (!n.token || !n.owner || !n.repo) return msg("Renseigner compte, dépôt et jeton.");
