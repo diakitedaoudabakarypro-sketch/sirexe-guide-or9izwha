@@ -1,0 +1,1584 @@
+{
+ "genere_le": "2026-11-17T12:26:19",
+ "note": "Débrief des entreprises de la sélection principale (22 CV, 21 exposants). Champs tirés des fiches de recherche, des préparations et des CV ; classes C à confirmer au stand.",
+ "entreprises": [
+  {
+   "id": "SX26-078",
+   "rang": "1 · ordre d'impression 1",
+   "score": 90,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "CIPREL 543 MW (turbines à gaz et cycle combiné, Vridi) ; Atinkou 390 MW (Jacqueville) ; CIE 704 MW exploités ; SODECI 360 Mm3 d'eau produits en 2024",
+   "pourquoi": "CV « CIPREL ET ATINKOU » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la thermodynamique appliquée et aux transferts thermiques. En raffinerie d'huiles, j'ai suivi un paramètre de production sur une ligne continue et établi sa stabilité par l'analyse statistique des mesures. Mon objectif : contribuer au suivi d'exploitation de vos centrales à cycle combiné. | CV « SODECI » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). En raffinerie d'huiles, j'ai mis en œuvre un plan d'échantillonnage sur dix jours, des dosages en série et l'analyse statistique de leur répétabilité : la démarche même du contrôle de la qualité de l'eau. Mon objectif : contribuer au suivi analytique et à l'exploitation d'une usine de production d'eau potable.",
+   "activites": [
+    "Principal : services publics de l'eau et de l'électricité en concession (distribution, production d'eau potable) et production indépendante d'électricité (IPP). Secondaires : fibre optique sur réseau électrique (Awalé), efficacité énergétique et audits (Smart Energy)."
+   ],
+   "procedes": [
+    "CIPREL : combustion de gaz naturel (DDO/HVO en secours) dans des turbines à gaz, cycle combiné ; équipements Dry Low NOx installés en 2017 ; suivi des NOx et SOx ; exploitation par rondes, maintenance préventive et curative. Traitement d'eau de chaudière et circuits d'eau : D. SODECI : analyses microbiologiques et physico-chimiques (pH, chlore, turbidité) de l'eau distribuée, 138 573 analyses en 2024, conformité physico-chimique 92,55 % et microbiologique 98,01 % ; en 2017 le recul du pH est attribué à « l'inadaptation des capacités et des filières de traitement » de certaines unités. Filières de traitement détaillées : D. L'usine de Songon (50 000 m3/j, forages, tours de strippage, neutralisation, désinfection) citée dans le rapport 2017 a été construite par Sogea-Satom. Atinkou : cycle combiné gaz-vapeur à turbine « classe F » ; détails d'équipement D."
+   ],
+   "installations_ci": [
+    "CIPREL, Vridi (Port-Bouët) : centrale thermique, turbines à gaz et cycle combiné",
+    "Atinkou, Jacqueville (à 30 km d'Abidjan) : centrale à cycle combiné gaz-vapeur, gaz naturel",
+    "CIE (réseau national) : exploitation de 100 MW thermiques et 604 MW hydroélectriques, transport et distribution",
+    "SODECI (réseau national) : production et distribution d'eau potable, assainissement",
+    "Eranove Academy, Abidjan-Plateau : centre de formation (1 000 m2, trois sites)"
+   ],
+   "stage2": "N2, N3, N4 · Rapport Eranove 2024 (1 456 contrats de stage en 2024 ; Eranove Academy avec l'INP-HB) ; https://ciprel.ci/carrieres/",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Plans d'échantillonnage représentatifs : élaboration et mise en œuvre",
+    "Suivi d'un paramètre de production sur une ligne continue",
+    "Contrôle de conformité d'un produit à sa spécification",
+    "Analyse statistique de séries de production : répétabilité, variabilité",
+    "Propagation d'incertitudes par simulation de Monte Carlo",
+    "Évaluation critique d'une méthode de mesure rapide",
+    "Établissement et exploitation des bilans matière d'un procédé",
+    "Distillation et fractionnement",
+    "Analyse du cycle de vie selon les normes ISO 14040 et 14044",
+    "Dosages en série et suivi d'un paramètre de qualité",
+    "Contrôle de conformité d'un produit avant son conditionnement",
+    "Analyse statistique de séries de mesures : répétabilité, variabilité",
+    "Séparation solide-liquide par décantation (projet d'équipe)"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la thermodynamique appliquée et aux transferts thermiques. Mon objectif : contribuer au suivi d'exploitation de vos centrales à cycle combiné. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la thermodynamique appliquée et aux transferts thermiques. En raffinerie d'huiles, j'ai suivi un paramètre de production sur une ligne continue et établi sa stabilité par l'analyse statistique des mesures. Mon objectif : contribuer au suivi d'exploitation de vos centrales à cycle combiné. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Quelle entité du groupe, SODECI, CIPREL ou une autre, reçoit des stagiaires de génie des procédés en 2027 ?",
+    "Existe-t-il un service qui suit la qualité de l'eau ou des utilités, et à qui adresser une candidature ?",
+    "Quelle période et quelle durée de stage sont les plus courantes (2 à 3 mois possibles à partir de juin) ?",
+    "Quelles attentes de base avez-vous pour un stagiaire de 2e année (sécurité, mesures, rapport) ?",
+    "Les candidatures passent-elles par le portail de CV ou par un contact direct ?"
+   ],
+   "questions_techniques": [
+    "Quels paramètres mesure-t-on pour juger l'eau potable ? Savoir : la SODECI publie pH, chlore et turbidité (physico-chimie) et la conformité bactériologique (ENE-S38). Citer ces quatre.",
+    "Comment se construit un plan d'échantillonnage ? Savoir expliquer SANIA : dix jours de production, trois niveaux dans les réservoirs (F11), pourquoi (représentativité).",
+    "Que signifie un coefficient de variation de 3,4 % ? Savoir : écart-type rapporté à la moyenne ; mesure de la dispersion (F13).",
+    "Comment fonctionne une centrale à cycle combiné ? Savoir (niveau général) : turbine à gaz, récupération de chaleur sur les fumées, turbine à vapeur ; CIPREL a 111 MW en cycle combiné (ENE-S01). Ne pas parler des équipements non publiés.",
+    "Que pensez-vous d'un taux de conformité qui baisse ? Savoir : le rapport 2017 attribue le recul du pH à des filières de traitement inadaptées dans certaines unités (ENE-S38) : parler de piste, pas de diagnostic."
+   ],
+   "vocabulaire": [
+    "Turbidité : trouble de l'eau dû aux particules en suspension.",
+    "pH : mesure de l'acidité de l'eau.",
+    "Chlore résiduel : chlore qui reste dans l'eau pour la protéger pendant la distribution.",
+    "Conformité bactériologique : part des analyses sans bactérie indésirable, par rapport à la norme.",
+    "Concession / affermage : modes de gestion d'un service public confiés à une entreprise (SODECI : eau en concession, assainissement en affermage, ENE-S12).",
+    "Producteur indépendant (IPP) : société qui produit l'électricité et la vend à l'État (CIPREL, ENE-S01).",
+    "Turbine à gaz : machine qui transforme la combustion du gaz en mouvement pour produire de l'électricité.",
+    "Cycle combiné : turbine à gaz plus récupération de la chaleur des fumées pour faire de la vapeur et une seconde turbine.",
+    "Bilan matière : comptabilité de ce qui entre et sort d'un procédé.",
+    "Forage : puits qui capte l'eau souterraine (793 forages en 2017, ENE-S38, lecture de tableau).",
+    "(Définitions générales, non issues des sources, sauf mention.)"
+   ],
+   "strategie_contact": "Service à approcher : le service qui suit la qualité de l'eau (SODECI), puis l'exploitation de CIPREL. Nom exact des services :. Demande précise : savoir à qui adresser une candidature de stage de 2 à 3 mois dès juin 2027, et par quel canal ; demander une carte ou une adresse de contact RH publique, rien d'autre. Après l'échange : candidature via le formulaire de CIPREL (ENE-S02) ou le portail CV de SODECI et de CIE (ENE-S12, ENE-S11), en citant la personne rencontrée si elle l'accepte. Stage de 3e année : à évoquer seulement en fin d'échange, si la discussion s'y prête. À éviter : prétendre connaître le traitement de l'eau ou la conduite d'une centrale ; parler du concours CNID comme d'un titre.",
+   "sources": [
+    {
+     "titre": "Accueil Eranove",
+     "url": "https://www.eranove.com/en/"
+    },
+    {
+     "titre": "Rapport de développement durable et déclaration de performance extra-financière 2024",
+     "url": "https://www.eranove.com/wp-content/uploads/2025/10/Eranove-RDD-2024-VFR-Simple.pdf"
+    },
+    {
+     "titre": "Serving and connecting customers",
+     "url": "https://www.eranove.com/en/?p=3408"
+    },
+    {
+     "titre": "Accueil CIE",
+     "url": "https://www.cie.ci"
+    },
+    {
+     "titre": "Accueil SODECI",
+     "url": "https://www.sodeci.ci"
+    },
+    {
+     "titre": "Accueil CIPREL",
+     "url": "https://ciprel.ci/"
+    },
+    {
+     "titre": "Mise en service de la centrale thermique d'Atinkou (390 MW)",
+     "url": "https://www.aip.ci/cote-divoire-aip-le-pm-beugre-mambe-met-en-service-la-centrale-thermique-datinkou-dune-capacite-de-390-mw/"
+    },
+    {
+     "titre": "Rapport d'activité 2017 SODECI",
+     "url": "https://www.eranove.com/wp-content/uploads/2019/02/Rapport-Activite-2017_SODECI.pdf"
+    }
+   ],
+   "cv": "CV_DAOUDA_CIPREL_ATINKOU.pdf (dossier 09_LIVRAISON_IMPRESSION) ; CV_DAOUDA_SODECI.pdf"
+  },
+  {
+   "id": "SX26-026",
+   "rang": "1 · ordre d'impression 3",
+   "score": 83,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Usine CIL d'Ity (récupération 90 %, 318 659 oz) ; usine CIL de Lafigué (4 216 kt traitées, récupération 93 %)",
+   "pourquoi": "CV « ENDEAVOUR MINING » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). En raffinerie d'huiles, j'ai mis en œuvre un plan d'échantillonnage sur dix jours et établi par l'analyse statistique la répétabilité des mesures : les bases du contrôle métallurgique. Mon objectif : contribuer aux bilans et au suivi de performance des usines CIL d'Ity ou de Lafigué.",
+   "activites": [
+    "Principal : extraction et traitement de minerai d'or (Ity, Lafigué en Côte d'Ivoire ; autres mines en Afrique de l'Ouest). Secondaires : exploration (projet Assafou), bureau technique régional à Abidjan."
+   ],
+   "procedes": [
+    "Ity : usine CIL ; concasseur primaire « mineral sizer » en construction (légende de photo). Autres étapes (broyage, élution, fusion) : D.",
+    "Lafigué : usine CIL ; teneur 1,00 g/t (1,83 g/t en FY24) ; capacité nominale de l'usine : D.",
+    "Équipements précis, réactifs, énergie : D."
+   ],
+   "installations_ci": [
+    "Ity (Zouan-Hounien, 480 km ONO d'Abidjan) : Mine d'or, usine CIL",
+    "Lafigué (Dabakala, 330 km NNO d'Abidjan) : Mine d'or, usine CIL",
+    "Assafou : Projet : étude de faisabilité définitive positive",
+    "Agbaou : Cédé à Allied Gold"
+   ],
+   "stage2": "N2 (B), N3 · Interview AIP du DG de la SMI (2026-02-28) : 100 à 150 étudiants de l'INP-HB et de l'Université de Man en stage ; usines A",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Élaboration et mise en œuvre de plans d'échantillonnage représentatifs",
+    "Contrôle de la répétabilité des analyses (coefficient de variation)",
+    "Évaluation critique d'une méthode d'analyse rapide",
+    "Établissement et exploitation des bilans matière d'un procédé",
+    "Comparaison de rendements entre matières premières traitées",
+    "Propagation d'incertitudes par simulation de Monte Carlo",
+    "Séparation solide-liquide par décantation (projet d'équipe)",
+    "Distillation et fractionnement",
+    "Analyse du cycle de vie selon les normes ISO 14040 et 14044"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon objectif : contribuer aux bilans et au suivi de performance des usines CIL d'Ity ou de Lafigué. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). En raffinerie d'huiles, j'ai mis en œuvre un plan d'échantillonnage sur dix jours et établi par l'analyse statistique la répétabilité des mesures : les bases du contrôle métallurgique. Mon objectif : contribuer aux bilans et au suivi de performance des usines CIL d'Ity ou de Lafigué. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Quel service accueille les stagiaires de l'INP-HB à la SMI, l'usine de traitement, le laboratoire ou un autre ?",
+    "Quels travaux concrets confie-t-on à un stagiaire de 2e année dans l'usine d'Ity ?",
+    "Comment se fait le suivi des teneurs et de la récupération entre l'alimentation et les solutions ?",
+    "Y a-t-il un calendrier ou une procédure de candidature pour juin 2027 ?",
+    "Lafigué et Ity accueillent-ils les stagiaires de la même manière ?"
+   ],
+   "questions_techniques": [
+    "Qu'est-ce que le CIL ? À savoir (source) : Ity a une usine CIL en production commerciale depuis 2019 [MIN-S04]. Notion générale (hors sources) : le minerai broyé est mis en pulpe avec du cyanure ; l'or dissous est capté sur du charbon actif dans les mêmes cuves.",
+    "Que veut dire une récupération de 90 % ? À savoir : 90 % à Ity et 93 % à Lafigué en FY25 [MIN-S04, MIN-S05]. Notion générale : part de l'or de l'alimentation qui se retrouve dans le produit.",
+    "Pourquoi Lafigué est-il passé de 1 779 kt à 4 216 kt traitées ? À savoir : chiffres FY24 et FY25 [MIN-S05]. Explication : non publiée ; ne pas inventer (montée en cadence possible, à demander).",
+    "Pourquoi la teneur tombe-t-elle de 1,83 g/t à 1,00 g/t à Lafigué ? À savoir : chiffres publiés [MIN-S05]. Cause non publiée.",
+    "À quoi sert un concasseur primaire ? À savoir : un « mineral sizer » primaire était en construction à Ity (légende de photo) [MIN-S04]. Notion générale : première réduction de taille avant le broyage."
+   ],
+   "vocabulaire": [
+    "CIL (carbon in leach) : lixiviation avec charbon actif dans les mêmes cuves.",
+    "Lixiviation : dissolution de l'or par une solution (ici cyanurée).",
+    "Charbon actif : support qui capte l'or dissous.",
+    "Élution : décrochage de l'or du charbon vers une solution (non publié pour Ity).",
+    "Récupération (recovery) : fraction de l'or récupérée.",
+    "Teneur (g/t) : grammes d'or par tonne de minerai.",
+    "Pulpe : mélange de minerai broyé et d'eau.",
+    "Concassage / broyage : réduction de taille du minerai.",
+    "Doré : lingot brut d'or et d'argent produit sur site (non publié pour Ity).",
+    "oz (once) : unité d'or, environ 31,1 g."
+   ],
+   "strategie_contact": "Service à approcher : l'usine de traitement d'Ity, via la SMI ; sinon le service des ressources humaines du stand. Demande précise : « Un stage de 2 à 3 mois en usine à partir de juin 2027 est-il possible, et comment candidater ? » Appuyer sur le lien INP-HB déclaré par le DG de la SMI (MIN-S31), sans le présenter comme une offre. Le stage de 6 mois de 3e année : à évoquer en fin d'échange seulement si l'échange s'y prête. Aucun nom ni coordonnée de responsable à citer : aucun n'a été relevé comme contact public.",
+   "sources": [
+    {
+     "titre": "Ity mine",
+     "url": "https://www.endeavourmining.com/our-portfolio/ity-mine/"
+    },
+    {
+     "titre": "Lafigué mine",
+     "url": "https://www.endeavourmining.com/our-portfolio/lafigue-mine/"
+    },
+    {
+     "titre": "Interview du DG de la SMI (Société des mines d'Ity)",
+     "url": "https://www.aip.ci/cote-divoire-aip-tionaga-drissa-soro-dg-smi-tous-nos-projets-sociaux-repondent-aux-besoins-des-communautes-locales/"
+    },
+    {
+     "titre": "Job opportunities (Côte d'Ivoire)",
+     "url": "https://www.endeavourmining.com/careers/job-opportunities/"
+    },
+    {
+     "titre": "Careers",
+     "url": "https://www.endeavourmining.com/careers/"
+    },
+    {
+     "titre": "Endeavour announces positive DFS results for the Assafou project",
+     "url": "https://www.endeavourmining.com/news-and-media/news/endeavour-announces-positive-dfs-results-assafou-project-underpins-next-phase-organic-growth/"
+    },
+    {
+     "titre": "Offre d'emploi : Mine Planning Engineer (Société des Mines de Lafigué)",
+     "url": "https://emploi.educarriere.ci/offre-150494-mine-planning-engineer.html"
+    },
+    {
+     "titre": "Allied Gold reports record Q4 production (Agbaou)",
+     "url": "https://s203.q4cdn.com/846800919/files/doc_news/2026/03/Allied-Gold-Results-News-Release-2025-Q4_FINAL.pdf"
+    }
+   ],
+   "cv": "CV_DAOUDA_ENDEAVOUR.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-050",
+   "rang": "1 · ordre d'impression 4",
+   "score": 80,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Raffinerie de Vridi (taux d'utilisation de 73 % en 2024) ; unité d'hydrodésulfuration en construction (C) ; cogénération au gaz en projet",
+   "pourquoi": "CV « SOCIÉTÉ IVOIRIENNE DE RAFFINAGE (SIR) » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Dans une raffinerie d'huiles de Vridi, j'ai suivi un produit des bacs de stockage au conditionnement par l'échantillonnage et l'analyse statistique ; au laboratoire, j'ai mené distillations et fractionnements. Mon objectif : contribuer au suivi de production et de qualité de vos unités de raffinage.",
+   "activites": [
+    "Principal : raffinage de pétrole brut et commercialisation de produits pétroliers",
+    "Secondaires : bitume via la SMB installée sur le site (voir fiche SMB)"
+   ],
+   "procedes": [
+    "Distillation : le VGO est présenté comme produit de la colonne de distillation sous vide destiné aux unités de craquage (FCC, hydrocraqueur). Liste exhaustive des unités : D.",
+    "Produits : super sans plomb, kérosène, gasoil, DDO, VGO, butane, fuel oils 180, 380 et 450 cst ; répartition du brut affichée : gasoil 29 %, kérosène 23 %, essence 20 %, autres 12 %, fuel 10 %, distillat 5 %, butane 1 %.",
+    "Qualité : ISO 9001, ISO 9002, ISO 14001 affichées. Laboratoire : D."
+   ],
+   "installations_ci": [
+    "Raffinerie de Vridi : Raffinage de brut",
+    "Complexe d'hydrodésulfuration du gasoil (10 ppm de soufre) : Nouvelle unité de désulfuration",
+    "Unité de cogénération au gaz naturel : Production d'électricité et de vapeur"
+   ],
+   "stage2": "N3, N4 · https://www.sir.ci/ressources-humaines/ (page de candidature) ; sir.ci/commercialisation (procédés)",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Distillation et distillation fractionnée au laboratoire",
+    "Connaissance d'une chaîne de raffinage physique, étudiée en usine",
+    "Établissement et exploitation des bilans matière d'un procédé",
+    "Plans d'échantillonnage multi-niveaux en bacs de stockage",
+    "Contrôle de conformité d'un produit avant son conditionnement",
+    "Évaluation critique d'une méthode d'analyse rapide",
+    "Analyse statistique de séries de mesures : répétabilité, variabilité",
+    "Propagation d'incertitudes par simulation de Monte Carlo"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon objectif : contribuer au suivi de production et de qualité de vos unités de raffinage. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Dans une raffinerie d'huiles de Vridi, j'ai suivi un produit des bacs de stockage au conditionnement par l'échantillonnage et l'analyse statistique ; au laboratoire, j'ai mené distillations et fractionnements. Mon objectif : contribuer au suivi de production et de qualité de vos unités de raffinage. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Quel service suit la qualité des produits avant expédition (laboratoire, production, direction technique) ?",
+    "Comment s'organise l'échantillonnage dans les réservoirs de produits finis ?",
+    "Où en sont l'unité d'hydrodésulfuration du gasoil et la cogénération annoncées (PET-S35) ?",
+    "Quelle est la procédure pour déposer une candidature de stage (page candidature du site) ?",
+    "Quelles périodes d'accueil de stagiaires sont possibles autour de juin 2027 ?"
+   ],
+   "questions_techniques": [
+    "Que devient le brut après distillation ? Le site affiche une répartition : gasoil 29 %, kérosène 23 %, essence 20 %, autres 12 %, fuel 10 %, distillat 5 %, butane 1 % (PET-S34). Savoir que ce sont des fractions de coupes obtenues par distillation.",
+    "Qu'est-ce que le VGO ? Produit de la colonne de distillation sous vide, destiné aux unités de craquage dont l'hydrocraqueur (PET-S34). Ne pas détailler le fonctionnement de l'hydrocraqueur sans l'avoir étudié.",
+    "Pourquoi désulfurer le gasoil à 10 ppm ? Le plan prévoit une unité d'hydrodésulfuration vers 10 ppm de soufre (PET-S35). Réponse prudente : réduire le soufre du carburant ; je ne connais pas les détails de l'unité.",
+    "Que signifie un taux d'utilisation de 73 % ? Part de la capacité de traitement réellement utilisée en 2024 (PET-S35). La capacité elle-même n'est pas publiée.",
+    "Comment prélever dans un réservoir ? Ce que Daouda a fait : prélèvements à trois niveaux dans réservoirs et cuves de pré-conditionnement, sur dix jours de production (F11). Pour le pétrole il existe des normes d'échantillonnage manuel (de mémoire, ASTM D4057 et API MPMS chapitre 8, à vérifier avant de les citer) : si l'interlocuteur les évoque, dire que le principe du prélèvement étagé est connu mais que les procédures pétrolières restent à apprendre."
+   ],
+   "vocabulaire": [
+    "Raffinage : séparer et transformer le pétrole brut en produits utilisables.",
+    "Distillation atmosphérique : chauffer le brut et récupérer ses fractions selon leur température d'ébullition.",
+    "Distillation sous vide : même idée sous pression réduite pour traiter les fractions lourdes sans les dégrader.",
+    "VGO (Vacuum Gasoil) : fraction lourde sortant de la colonne sous vide, destinée au craquage.",
+    "Hydrocraquage : casser de grosses molécules avec de l'hydrogène et un catalyseur pour obtenir des produits plus légers.",
+    "Hydrodésulfuration : enlever le soufre d'une coupe avec de l'hydrogène.",
+    "DDO (Distillate Diesel Oil) : gazole de type fioul domestique.",
+    "Fuel oil 180 ou 380 cst : fuel lourd dont le nombre indique la viscosité en centistokes.",
+    "Cogénération : produire ensemble électricité et vapeur.",
+    "Taux d'utilisation : production traitée divisée par la capacité installée.",
+    "Ces définitions sont générales, hors sources d'entreprise."
+   ],
+   "strategie_contact": "Service à approcher : laboratoire ou service qualité (existence non publiée), à défaut direction technique ou ressources humaines. Demande précise : savoir à qui adresser un CV pour un stage de 2 à 3 mois dès juin 2027 et remettre le CV. Contacts publics : courriel, téléphones et formulaire sur https://www.sir.ci/contact/ (PET-S02), page candidature du site (PET-S03). Aucun nom de responsable n'est connu : ne pas en supposer. Le stage de 3e année : à évoquer seulement en fin d'échange si l'échange s'y prête. Piège : le site met en garde contre de fausses offres d'emploi (PET-S01) ; ne remettre de données qu'à un interlocuteur identifié.",
+   "sources": [
+    {
+     "titre": "Société Ivoirienne de Raffinage - accueil et présentation",
+     "url": "https://www.sir.ci/"
+    },
+    {
+     "titre": "Société - SIR (projets, taux d'utilisation, actionnaires)",
+     "url": "https://www.sir.ci/societe/"
+    },
+    {
+     "titre": "Contact - SIR",
+     "url": "https://www.sir.ci/contact/"
+    },
+    {
+     "titre": "La SIR sécurise un prêt de 254 milliards FCFA structuré par la BOAD pour son diesel à faible teneur en soufre",
+     "url": "https://www.capmad.com/article/la-sir-securise-un-pret-de-254-milliards-fcfa-structure-par-la-boad-pour-son-diesel-a-faible-teneur-en-soufre"
+    },
+    {
+     "titre": "Commercialisation - SIR",
+     "url": "https://sir.ci/commercialisation/"
+    },
+    {
+     "titre": "Ressources humaines - SIR",
+     "url": "https://www.sir.ci/ressources-humaines/"
+    }
+   ],
+   "cv": "CV_DAOUDA_SIR.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-034",
+   "rang": "2 · ordre d'impression 5",
+   "score": 78,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Pas d'exploitation propre ; laboratoires LAM (accrédité ISO 17025 en 2023) et LTM à Abidjan ; participations minoritaires",
+   "pourquoi": "CV « SODEMI » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). En raffinerie d'huiles, j'ai mis en œuvre un plan d'échantillonnage, des dosages en série et l'analyse statistique de leur répétabilité ; au laboratoire, j'ai comparé les rendements de plusieurs matières premières. Mon objectif : contribuer aux essais de votre laboratoire de traitement de minerais ou aux analyses du LAM.",
+   "activites": [
+    "Principal : recherche géologique et minière d'État, laboratoires d'analyse et de traitement de minerais. Secondaires : participations dans les mines (Ity, Lafigué, Agbaou, nickel du Bafing), géophysique, orpaillage encadré, raffinerie d'or (SIMEP)."
+   ],
+   "procedes": [
+    "LTM : cyanuration (bouteille, colonne, cuve, CIP), indice de Bond, gravimétrie (table, jig), amalgamation, séparation magnétique, flottation, décantation, étude physico-chimique ; minerais : or, nickel, cuivre-nickel, manganèse, fer ; anciens dossiers : Ity (SMI), Afema, Issia (coltan), Lauzoua (manganèse, décantation de boues).",
+    "LAM : oxydes majeurs, éléments traces et terres rares, métaux précieux, granulométrie, minéralogie, eau et aliments ; préparation mécanique, géochimie, minérographie, spectroscopie. Techniques précises (ICP, absorption atomique, essai au feu) : D."
+   ],
+   "installations_ci": [
+    "Siège et laboratoires, Cocody (Abidjan) : Laboratoire d'analyses minérales (LAM), laboratoire de traitement de minerais (LTM), géophysique, données géoscientifiques",
+    "Afema (Sud-Comoé) : Séjour du DG sur le site « AFEMA GOLD » en août 2026",
+    "Mine de Koné (Fadiadougou) : Inauguration publiée par SODEMI ; exploitation par Montage, pas par SODEMI",
+    "Manganèse, nickel, carrières : Aucune exploitation directe publiée (dossiers d'étude : manganèse de Lauzoua, Odienné ; nickel latéritique)"
+   ],
+   "stage2": "N3 · https://sodemi.ci/services/laboratoire-de-traitement-de-minerais/",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Plans d'échantillonnage : élaboration et mise en œuvre",
+    "Dosages en série, contrôle de la répétabilité des mesures",
+    "Évaluation critique d'une méthode d'analyse rapide",
+    "Essais comparatifs de rendement entre matières premières",
+    "Séparation solide-liquide par décantation (projet d'équipe)",
+    "Distillation et fractionnement",
+    "Établissement et exploitation des bilans matière d'un procédé",
+    "Propagation d'incertitudes par simulation de Monte Carlo"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon objectif : contribuer aux essais de votre laboratoire de traitement de minerais ou aux analyses du LAM. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). En raffinerie d'huiles, j'ai mis en œuvre un plan d'échantillonnage, des dosages en série et l'analyse statistique de leur répétabilité ; au laboratoire, j'ai comparé les rendements de plusieurs matières premières. Mon objectif : contribuer aux essais de votre laboratoire de traitement de minerais ou aux analyses du LAM. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Le laboratoire de traitement de minerais accueille-t-il des stagiaires, et à quelle période ?",
+    "Quels essais sont en service aujourd'hui, la salle étant en réhabilitation ?",
+    "Quels minerais sont étudiés en ce moment (or, manganèse, nickel, coltan) ?",
+    "Comment travaillent ensemble le laboratoire d'analyses minérales et celui de traitement ?",
+    "Quel dossier à déposer et auprès de quel service ?"
+   ],
+   "questions_techniques": [
+    "Qu'est-ce que l'indice de broyabilité de Bond ? À savoir : la SODEMI le détermine [MIN-S03]. Notion générale : mesure de l'énergie nécessaire pour broyer un minerai, utile pour dimensionner un broyeur.",
+    "Quelle différence entre CIP et CIL ? À savoir : la SODEMI fait des essais de cyanuration en CIP ; Ity a une usine CIL [MIN-S03, MIN-S04]. Notion générale : en CIP, le charbon est dans des cuves séparées après lixiviation ; en CIL, il est dans les mêmes cuves.",
+    "Pourquoi fait-on un essai de cyanuration en bouteille ? À savoir : « bouteille, colonne, cuve, CIP » sont les formats publiés [MIN-S03]. Notion générale : test simple de laboratoire pour mesurer la dissolution de l'or.",
+    "Que fait-on avec une table à secousses ou un jig ? À savoir : concentration gravimétrique publiée [MIN-S03]. Notion générale : séparation selon la densité.",
+    "Pourquoi décanter des boues de manganèse (Lauzoua) ? À savoir : dossier cité par la SODEMI [MIN-S03]. Détail du procédé : non publié."
+   ],
+   "vocabulaire": [
+    "Minéralurgie : traitement physique d'un minerai pour obtenir un concentré.",
+    "Concentré : produit enrichi en élément utile.",
+    "Cyanuration : dissolution de l'or par une solution de cyanure.",
+    "CIP (carbon in pulp) : captage de l'or sur charbon après lixiviation.",
+    "Broyabilité (Bond) : aptitude d'un minerai à être broyé.",
+    "Gravimétrie : séparation selon la densité (table, jig).",
+    "Flottation : séparation par bulles d'air selon l'affinité des surfaces.",
+    "Décantation : séparation par sédimentation.",
+    "Amalgamation : capture de l'or par le mercure.",
+    "Gangue : partie sans valeur du minerai."
+   ],
+   "strategie_contact": "Service à approcher : le laboratoire de traitement de minerais, ou à défaut le service des ressources humaines de la SODEMI au stand. Demande précise : « Un stage de 2 à 3 mois au laboratoire de traitement de minerais à partir de juin 2027 est-il possible ? » Comme la salle est en réhabilitation, formuler la demande en termes d'aide (préparation d'échantillons, saisie et statistiques) plutôt qu'en essais précis. Stage de 6 mois de 3e année : à évoquer en fin d'échange seulement si l'échange s'y prête. Contacts publics seuls : infosodemi@sodemi.ci et les deux numéros de la page Contacts (MIN-S02) ; aucun nom de responsable cité.",
+   "sources": [
+    {
+     "titre": "SODEMI - accueil et actualités",
+     "url": "https://sodemi.ci/actualites/"
+    },
+    {
+     "titre": "SODEMI - Contacts",
+     "url": "https://sodemi.ci/contact/"
+    },
+    {
+     "titre": "SODEMI - Laboratoire d'analyses minérales",
+     "url": "https://sodemi.ci/services/laboratoire-danalyses-minerales/"
+    },
+    {
+     "titre": "SODEMI - Laboratoire de traitement de minerais",
+     "url": "https://sodemi.ci/services/laboratoire-de-traitement-de-minerais/"
+    },
+    {
+     "titre": "Compagnie Minière du Bafing (BERD)",
+     "url": "https://ewsdata.rightsindevelopment.org/projects/EBRD-57074/"
+    },
+    {
+     "titre": "Ity mine",
+     "url": "https://www.endeavourmining.com/our-portfolio/ity-mine/"
+    },
+    {
+     "titre": "Lafigué mine",
+     "url": "https://www.endeavourmining.com/our-portfolio/lafigue-mine/"
+    },
+    {
+     "titre": "Allied Gold reports record Q4 production",
+     "url": "https://s203.q4cdn.com/846800919/files/doc_news/2026/03/Allied-Gold-Results-News-Release-2025-Q4_FINAL.pdf"
+    }
+   ],
+   "cv": "CV_DAOUDA_SODEMI.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-024",
+   "rang": "3 · ordre d'impression 6",
+   "score": 77,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Mine et usine de Yaouré (4 148 kt broyées, récupération 93,4 %, exercice 2025) ; Sissingué et satellite Fimbiasso ; Bagoé en projet",
+   "pourquoi": "CV « PERSEUS MINING » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon terrain jusqu'ici : la fiabilité des mesures, avec un plan d'échantillonnage sur dix jours et l'analyse statistique des résultats en raffinerie d'huiles, puis la comparaison de rendements entre matières premières au laboratoire. Mon objectif : appuyer le suivi de la récupération et les bilans métallurgiques de vos usines.",
+   "activites": [
+    "Principal : extraction et traitement de minerai d'or. Secondaires : exploration, projets souterrains (CMA Underground)."
+   ],
+   "procedes": [
+    "Yaouré, conception publiée en 2020 : concassage en une étape, broyage SAG puis à boulets, gravimétrie et récupération CIL ; énergie par ligne de 6,5 km depuis la centrale de Kossou ; eau du Bandama. Le rapport annuel 2025 ne décrit pas le circuit, il publie tonnage, teneur et récupération. L'état actuel du circuit CIL est donc à confirmer.",
+    "Sissingué : une installation de traitement existe (le satellite de Bagoé est à 138 km de « l'installation de traitement de Sissingué ») ; son circuit n'est pas décrit."
+   ],
+   "installations_ci": [
+    "Yaouré (permis PE50) : Mine d'or à ciel ouvert, usine de traitement, projet souterrain CMA",
+    "Sissingué (permis PE39, 446 km2) : Mine d'or et installation de traitement",
+    "Fimbiasso (permis PE55) : Satellite de Sissingué",
+    "Bagoé (permis PE60) : Satellite à 138 km de l'usine de Sissingué"
+   ],
+   "stage2": "N3 · https://perseusmining.com/yaoure-mine/ (usine en exploitation) ; aucun canal de stage publié",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Plan d'échantillonnage et prélèvements multi-niveaux",
+    "Répétabilité des analyses : coefficient de variation",
+    "Proposition d'un protocole de validation croisée des mesures",
+    "Comparaison de rendements entre matières traitées",
+    "Établissement et exploitation des bilans matière d'un procédé",
+    "Propagation d'incertitudes par simulation de Monte Carlo",
+    "Séparation solide-liquide par décantation (projet d'équipe)",
+    "Distillation et fractionnement"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon objectif : appuyer le suivi de la récupération et les bilans métallurgiques de vos usines. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon terrain jusqu'ici : la fiabilité des mesures, avec un plan d'échantillonnage sur dix jours et l'analyse statistique des résultats en raffinerie d'huiles, puis la comparaison de rendements entre matières premières au laboratoire. Mon objectif : appuyer le suivi de la récupération et les bilans métallurgiques de vos usines. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "L'usine de Yaouré accueille-t-elle des stagiaires de 2e année, et dans quel service ?",
+    "Le circuit publié en 2020 est-il toujours celui d'aujourd'hui, et qu'est-ce qui a changé ?",
+    "Qui suit les bilans matière et les échantillons le long du circuit ?",
+    "Peut-on faire un stage de 2 à 3 mois à partir de juin 2027, et comment candidater ?",
+    "L'usine traite-t-elle encore les anciens stocks de lixiviation en tas ?"
+   ],
+   "questions_techniques": [
+    "Pourquoi un broyage SAG puis un broyage à boulets ? À savoir : circuit publié [MIN-S07]. Notion générale : le SAG réduit les gros blocs, le broyeur à boulets affine.",
+    "À quoi sert la gravimétrie avant le CIL ? À savoir : la gravimétrie fait partie du circuit publié [MIN-S07]. Notion générale : récupérer l'or libre dense avant lixiviation.",
+    "Pourquoi traiter d'anciens stocks de lixiviation en tas ? À savoir : « historical heap leach stockpiles » figurent parmi les sources de minerai [MIN-S07]. Détail de leur traitement : non publié.",
+    "Quel est le tonnage visé ? À savoir : environ 3,3 Mtpa en conception 2020 [MIN-S07] ; tonnage actuel : non publié.",
+    "D'où vient l'énergie ? À savoir : réseau, ligne de 6,5 km depuis la centrale hydroélectrique de Kossou [MIN-S07]."
+   ],
+   "vocabulaire": [
+    "SAG (semi-autogène) : broyeur qui broie le minerai avec le minerai lui-même et quelques boules.",
+    "Broyeur à boulets : broyeur à boules d'acier, étape de finition.",
+    "Gravimétrie : séparation par différence de densité.",
+    "CIL : lixiviation avec charbon actif dans les mêmes cuves.",
+    "Lixiviation en tas (heap leach) : arrosage d'un tas de minerai concassé par une solution.",
+    "Stériles : roche sans valeur extraite pour accéder au minerai.",
+    "Fosse (open pit) : mine à ciel ouvert.",
+    "Mtpa : million de tonnes par an.",
+    "AISC : coût de production tout compris par once.",
+    "Réserves : partie des ressources exploitable économiquement."
+   ],
+   "strategie_contact": "Service à approcher : l'usine de traitement de Yaouré, via Perseus Yaouré SARL ; sinon le service des ressources humaines du stand. Demande précise : « Un stage de 2 à 3 mois à l'usine à partir de juin 2027 est-il possible, et par quel canal candidater ? » Vérifier d'abord, par une question, que le circuit a toujours la forme de 2020. Stage de 6 mois de 3e année : à évoquer en fin d'échange seulement si l'échange s'y prête. Aucun nom ni coordonnée de responsable : aucun contact public n'a été trouvé.",
+   "sources": [
+    {
+     "titre": "Perseus Mining 2025 Annual Report",
+     "url": "https://perseusmining.com/wp-content/uploads/2025/08/Perseus-2025-Annual-Report-Final.pdf"
+    },
+    {
+     "titre": "Fact sheet Yaouré Gold Mine (Vol. 1, Issue 1)",
+     "url": "https://perseusmining.com/wp-content/uploads/2020/08/Fact-Sheet-Yaoure-Rev7.pdf"
+    },
+    {
+     "titre": "Yaouré Mine",
+     "url": "https://perseusmining.com/yaoure-mine/"
+    },
+    {
+     "titre": "Perseus Mining youth training Begbessou (AIP)",
+     "url": "https://www.aip.ci/cote-divoire-aip-20-jeunes-de-la-sous-prefecture-de-begbessou-formes-a-la-conduite-dengins-btp-recoivent-leurs-certificats/"
+    }
+   ],
+   "cv": "CV_DAOUDA_PERSEUS.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-053",
+   "rang": "2 · ordre d'impression 7",
+   "score": 75,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Usine de distillation d'un brut bitumineux sur le site de la SIR (Vridi), bacs de stockage",
+   "pourquoi": "CV « SOCIÉTÉ MULTINATIONALE DE BITUMES (SMB) » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). J'ai réalisé au laboratoire une chaîne de production complète jusqu'à la distillation fractionnée, et suivi à Vridi, dans une raffinerie d'huiles, un produit des bacs de stockage au conditionnement. Mon objectif : apprendre la conduite d'une distillation de brut bitumineux et le contrôle des bitumes produits.",
+   "activites": [
+    "Principal : production et vente de bitumes routiers",
+    "Secondaires : stockage de bitume"
+   ],
+   "procedes": [
+    "Distillation directe d'un brut de type bitumineux d'origine latino-américaine.",
+    "Stockage en bacs, produits aux normes EN et ASTM contrôlés en laboratoires accrédités COFRAC ISO 17025 (internes ou externes : D).",
+    "ISO 9001 depuis 2006, ISO 14001 depuis 2012."
+   ],
+   "installations_ci": [
+    "Usine de bitume sur le site de la SIR, Vridi : Distillation directe d'un brut bitumineux, stockage en bacs"
+   ],
+   "stage2": "N3 · https://www.smb.ci",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Distillation fractionnée au laboratoire",
+    "Ligne de raffinage étudiée en usine : traitement sous vide, fractionnement",
+    "Séparation solide-liquide par décantation (projet)",
+    "Échantillonnage multi-niveaux en bacs de stockage",
+    "Contrôle de conformité d'un produit avant son conditionnement",
+    "Analyse statistique de séries de mesures : répétabilité, variabilité",
+    "Établissement et exploitation des bilans matière d'un procédé"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon objectif : apprendre la conduite d'une distillation de brut bitumineux et le contrôle des bitumes produits. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). J'ai réalisé au laboratoire une chaîne de production complète jusqu'à la distillation fractionnée, et suivi à Vridi, dans une raffinerie d'huiles, un produit des bacs de stockage au conditionnement. Mon objectif : apprendre la conduite d'une distillation de brut bitumineux et le contrôle des bitumes produits. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Les laboratoires accrédités COFRAC cités sur votre site sont-ils internes à SMB ?",
+    "Comment contrôlez-vous un lot de bitume stocké en bac avant livraison ?",
+    "Quels essais sont suivis en routine et par qui ?",
+    "Comment l'usine s'organise-t-elle avec la raffinerie voisine (SIR) pour le brut ?",
+    "Existe-t-il des stagiaires accueillis et comment candidater pour juin 2027 ?"
+   ],
+   "questions_techniques": [
+    "Comment obtient-on le bitume ? Par distillation directe d'un brut de type bitumineux (PET-S08). Le bitume est le résidu lourd de la distillation (définition générale).",
+    "Que signifient EN et ASTM ? Normes européennes et américaines de spécification des produits (PET-S08 les cite pour SMB). Ne pas citer de valeur d'essai précise.",
+    "Pourquoi des certifications ISO 9001 et 14001 ? Management de la qualité et de l'environnement, affichées depuis 2006 et 2012 (PET-S08).",
+    "Comment un bilan matière se fait-il ? Entrées moins sorties égale accumulation ; Daouda l'a fait pour un pilote d'extraction avec son équipe (F21), pas pour une unité de distillation.",
+    "Où se vend le bitume de SMB ? Dans plus de 15 pays de la sous-région (PET-S08)."
+   ],
+   "vocabulaire": [
+    "Bitume : résidu lourd et visqueux du pétrole, utilisé pour les routes.",
+    "Distillation directe : séparation par chauffage sans transformation chimique préalable.",
+    "Brut bitumineux : pétrole brut lourd riche en fractions pour bitume.",
+    "Bac de stockage : grand réservoir cylindrique de produit liquide.",
+    "Viscosité : résistance d'un liquide à l'écoulement.",
+    "Pénétrabilité : essai qui mesure la dureté d'un bitume (à vérifier avant usage, non cité par les sources).",
+    "Point de ramollissement : température à laquelle un bitume s'amollit (à vérifier, même remarque).",
+    "EN / ASTM : normes européennes et américaines.",
+    "COFRAC ISO 17025 : accréditation de laboratoires d'essais.",
+    "Eurobitume : association européenne du bitume (SMB en est membre depuis 2020, PET-S08).",
+    "Définitions générales, hors sources d'entreprise."
+   ],
+   "strategie_contact": "Service à approcher : laboratoire ou qualité (organisation non publiée). Demande précise : à qui adresser un CV pour un stage de 2 à 3 mois dès juin 2027. Contacts publics : courriel général et téléphones sur https://www.smb.ci (PET-S08). Aucun nom de responsable connu. Évoquer le stage de 3e année seulement en fin d'échange si l'échange s'y prête.",
+   "sources": [
+    {
+     "titre": "SMB - Société Multinationale de Bitumes (accueil)",
+     "url": "https://www.smb.ci"
+    },
+    {
+     "titre": "Projet de résolutions AGO SMB CI (exercice 2024)",
+     "url": "https://www.brvm.org/sites/default/files/20250603_-_projet_de_resolutions_-_assemblee_generale_ordinaire_-_smb_ci_0.pdf"
+    },
+    {
+     "titre": "SMB CI - fiche société",
+     "url": "https://www.richbourse.com/common/apprendre/details-societe/SMBC"
+    },
+    {
+     "titre": "Offre technicien en bâtiment SMB (expirée)",
+     "url": "https://www.goafricaonline.com/ci/emploi/job-16446-technicien-en-batiment"
+    }
+   ],
+   "cv": "CV_DAOUDA_SMB.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-005",
+   "rang": "4 · ordre d'impression 8",
+   "score": 74,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Usine de Koné de 11 Mtpa nominaux : circuit oxydes en service depuis le 2026-09-08, première coulée le 2026-09-26 ; circuit roche dure (concassage, criblage, HPGR) achevé au T2-T3 2026",
+   "pourquoi": "CV « MONTAGE GOLD » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). L'usine de Koné vient de couler son premier or : c'est la période où chaque mesure compte. J'ai conduit en raffinerie d'huiles un plan d'échantillonnage et l'analyse statistique de séries de production ; en projet, j'ai établi le bilan matière d'un pilote. Mon objectif : contribuer au suivi de production et aux bilans matière pendant la montée en cadence.",
+   "activites": [
+    "Principal : extraction et traitement de minerai d'or (mine de Koné). Secondaires : exploration (Didievi, Wendé, Mauritanie)."
+   ],
+   "procedes": [
+    "Circuit oxydes en service depuis le 2026-09-08 (minerai introduit), usine de 11 Mtpa nominaux. Circuit roche dure : concassage primaire et secondaire, criblage, broyage à rouleaux haute pression (HPGR), achevé T2 2027. Lixiviation (CIL) et élution : D (non nommés dans les documents lus).",
+    "Mine à ciel ouvert, exploitation en propre (owner-mining), 130 000 m de forage en 2026."
+   ],
+   "installations_ci": [
+    "Koné (département de Kani, Fadiadougou) : Mine d'or : circuit oxydes en exploitation, circuit de concassage roche dure (primaire, secondaire, HPGR) en construction",
+    "Réseau électrique : Raccordement au réseau (connexion stable) ; groupes de secours 42 MW dont 10 MW installés",
+    "Permis : Permis d'exploitation de la mine de Koné (obtenu en juillet 2024) ; construction lancée en décembre 2024"
+   ],
+   "stage2": "N3 · Rapport T3 2026 du 2026-11-11 (montagegold.com) ; aucun canal de stage",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Analyse statistique de séries de production",
+    "Détection d'un écart entre deux séries de mesures",
+    "Propagation d'incertitudes par simulation de Monte Carlo",
+    "Plan d'échantillonnage et prélèvements multi-niveaux",
+    "Protocoles de prélèvement standardisés (proposés)",
+    "Bilan matière et budget d'un pilote",
+    "Séparations : décantation, distillation, fractionnement"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon objectif : contribuer au suivi de production et aux bilans matière pendant la montée en cadence. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). L'usine de Koné vient de couler son premier or : c'est la période où chaque mesure compte. J'ai conduit en raffinerie d'huiles un plan d'échantillonnage et l'analyse statistique de séries de production ; en projet, j'ai établi le bilan matière d'un pilote. Mon objectif : contribuer au suivi de production et aux bilans matière pendant la montée en cadence. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Le service « Usine de traitement de Koné ; programmes de formation internes » accueille-t-il des stagiaires de 2e année ?",
+    "À quelle personne ou adresse envoyer ma candidature ?",
+    "Quelles périodes de stage privilégiez-vous ?"
+   ],
+   "questions_techniques": [],
+   "vocabulaire": [],
+   "strategie_contact": "Viser : Usine de traitement de Koné ; programmes de formation internes. Écart à assumer : Site éloigné : logement et transport à demander.",
+   "sources": [
+    {
+     "titre": "Montage Gold Reports on its Q3-2026 Activities",
+     "url": "https://www.montagegold.com/_resources/news/2026/20261111_Montage-Gold-Reports-On-Its-Q3-2026-Activities.pdf"
+    },
+    {
+     "titre": "Montage Gold Achieves First Gold Pour at its Koné Mine",
+     "url": "https://www.montagegold.com/_resources/news/2026/20260927_Montage-Gold-Announces-First-Gold-Pour-at-the-Kon%C3%A9-Mine.pdf"
+    },
+    {
+     "titre": "Koné project",
+     "url": "https://www.montagegold.com/portfolio/development/kone-project/"
+    },
+    {
+     "titre": "Montage Gold awarded mining permit for Côte d'Ivoire project",
+     "url": "https://www.globalminingreview.com/exploration-development/12072024/montage-gold-awarded-mining-permit-for-cte-divoire-project/"
+    },
+    {
+     "titre": "Résumé de recherche : permis, ligne 225 kV (Q2 2026)",
+     "url": "https://www.morningstar.com/news/globe-newswire/9807592/montage-gold-reports-on-its-q2-2026-activities"
+    },
+    {
+     "titre": "Résumé de recherche : programmes de formation AGEFOP à Koné",
+     "url": "https://www.miningweekly.com/article/kon-gold-project-cte-divoire-update-2026-10-02"
+    }
+   ],
+   "cv": "CV_DAOUDA_MONTAGE.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-048",
+   "rang": "3 · ordre d'impression 9",
+   "score": 72,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Centre d'Analyses et de Recherche (CAR) à Yopougon, 58 agents ; quai pétrolier de Vridi (2025) ; reprise du bloc CI-26 (C)",
+   "pourquoi": "CV « PETROCI HOLDING » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). À Vridi, dans une raffinerie d'huiles, j'ai mis en œuvre l'échantillonnage en bacs de stockage, des dosages en série et l'analyse statistique de leur répétabilité ; au laboratoire, j'ai mené distillations et fractionnements. Mon objectif : contribuer aux analyses de produits pétroliers de votre Centre d'Analyses et de Recherche.",
+   "activites": [
+    "Principal : société pétrolière nationale (amont, midstream, aval)",
+    "Secondaires : laboratoire d'analyses géologiques et de produits pétroliers (CAR), distribution de gaz"
+   ],
+   "procedes": [
+    "Géochimie organique : COT, soufre, carbone, GC, GC-MS, XRF, ICP ; biostratigraphie et sédimentologie.",
+    "Analyse de produits pétroliers : citée sans essai ni norme ; accréditation : D.",
+    "Procédés du pipeline, de l'URFB et de la distribution de gaz : D."
+   ],
+   "installations_ci": [
+    "Centre d'Analyses et de Recherche (CAR), Yopougon : Laboratoire d'analyses géologiques et de produits pétroliers",
+    "Appontement, lignes et pipeline : Midstream",
+    "Quai pétrolier de Vridi : Réception de navires MR1 jusqu'à 40 000 tpl",
+    "Distribution de gaz et URFB : Aval gaz",
+    "Bloc CI-26 (Espoir) : Reprise de l'exploitation à CNR"
+   ],
+   "stage2": "N3, N4 · https://www.petroci.ci/car/ ; rubrique Carrière (candidature spontanée)",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Plans d'échantillonnage : élaboration et mise en œuvre",
+    "Dosages en série, contrôle de la répétabilité des mesures",
+    "Évaluation critique d'une méthode d'analyse rapide",
+    "Distillation et distillation fractionnée",
+    "Échantillonnage de produits liquides en bacs de stockage",
+    "Contrôle de conformité d'un produit avant son conditionnement",
+    "Analyse statistique de séries de mesures : répétabilité, variabilité",
+    "Propagation d'incertitudes par simulation de Monte Carlo"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon objectif : contribuer aux analyses de produits pétroliers de votre Centre d'Analyses et de Recherche. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). À Vridi, dans une raffinerie d'huiles, j'ai mis en œuvre l'échantillonnage en bacs de stockage, des dosages en série et l'analyse statistique de leur répétabilité ; au laboratoire, j'ai mené distillations et fractionnements. Mon objectif : contribuer aux analyses de produits pétroliers de votre Centre d'Analyses et de Recherche. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Le CAR a-t-il un laboratoire des produits pétroliers distinct des analyses géologiques ?",
+    "Quels essais sont réalisés sur les produits pétroliers (carburants, GPL) et pour quels clients ?",
+    "Comment le CAR assure-t-il la validité de ses méthodes (comparaisons entre laboratoires, accréditation) ?",
+    "Comment PETROCI travaille-t-elle avec ses filiales SIR et GESTOCI sur la qualité des produits ?",
+    "Comment déposer une candidature de stage et pour quelle période (juin 2027) ?"
+   ],
+   "questions_techniques": [
+    "Que fait le CAR ? Laboratoire d'analyses géologiques et de produits pétroliers, créé en 1986, 58 agents, à Yopougon (PET-S36).",
+    "Quelles analyses de géochimie ? COT, soufre, carbone, GC, GC-MS, XRF, ICP (PET-S36). Savoir seulement les définir en une phrase (vocabulaire ci-dessous), sans prétendre les pratiquer.",
+    "Qu'est-ce que la comparaison croisée de méthodes ? Ma recommandation SANIA (F14) : comparer les résultats de deux méthodes ou laboratoires pour valider une méthode d'analyse.",
+    "Que signifie un coefficient de variation de 3,4 % ? Écart-type divisé par la moyenne : dispersion relative des mesures (F13).",
+    "Que sait-on de la chaîne gaz de PETROCI ? Distribution de gaz et URFB cités sans détail (PET-S04). Honnête : pas d'information technique publiée, à demander."
+   ],
+   "vocabulaire": [
+    "Amont / midstream / aval : exploration-production / transport-stockage / transformation et distribution.",
+    "CAR : Centre d'Analyses et de Recherche de PETROCI.",
+    "URFB : sigle utilisé par PETROCI pour une unité de gaz, développement non publié sur le site (écrit aussi UFRB, définition à demander).",
+    "Chromatographie en phase gazeuse (GC) : séparer les composants d'un mélange gazeux ou vaporisé.",
+    "GC-MS : chromatographie associée à un spectromètre de masse pour identifier les composants.",
+    "XRF : fluorescence X, analyse de la composition en éléments d'un solide.",
+    "ICP : analyse d'éléments en traces par plasma.",
+    "COT : carbone organique total d'une roche.",
+    "Pipeline multiproduit : conduite transportant plusieurs produits à la suite.",
+    "GPL / butane : gaz de pétrole liquéfié.",
+    "Définitions générales, hors sources d'entreprise."
+   ],
+   "strategie_contact": "Service à approcher : CAR, laboratoire des produits pétroliers. Demande précise : à qui envoyer un CV pour un stage laboratoire de 2 à 3 mois dès juin 2027. Contacts publics : courriel général et téléphone standard sur https://www.petroci.ci/ (PET-S04) ; rubrique Carrière avec candidature spontanée. Aucun nom de responsable connu. Évoquer le stage de 3e année seulement en fin d'échange si l'échange s'y prête.",
+   "sources": [
+    {
+     "titre": "PETROCI Holding Côte d'Ivoire (accueil)",
+     "url": "https://www.petroci.ci/"
+    },
+    {
+     "titre": "PETROCI - Activités - CAR",
+     "url": "https://www.petroci.ci/car/"
+    },
+    {
+     "titre": "Petroci takes over oil block from CNR in Côte d'Ivoire",
+     "url": "https://www.enerdata.net/publications/daily-energy-news/petroci-takes-over-oil-block-cnr-cote-divoire.html"
+    },
+    {
+     "titre": "Beugré Mambé inaugure le nouveau quai pétrolier de PETROCI Holding à Vridi",
+     "url": "https://www.koaci.com/article/2025/06/19/cote-divoire/economie/cote-divoire-beugre-mambe-inaugure-le-nouveau-quai-petrolier-de-petroci-holding-a-vridi-dun-cout-de-36-milliards-fcfa_187849.html"
+    },
+    {
+     "titre": "PETROCI - offre technicien supérieur chimiste (analyse de produits pétroliers)",
+     "url": "https://www.petroci.ci/offre-emploi-detail/8/technicien-superieur-chimiste-specialise-en-analyse-des-produits-petroliers"
+    },
+    {
+     "titre": "PETROCI has vacancy for 10 technical personnel to work on newly acquired asset",
+     "url": "https://africaoilgasreport.com/2026/06/vacancies/petroci-has-vacancy-for-10-technical-personnel-to-work-on-newly-acquired-asset/"
+    }
+   ],
+   "cv": "CV_DAOUDA_PETROCI.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-031",
+   "rang": "5 · ordre d'impression 10",
+   "score": 71,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Bonikro : mine et usine (0,62 Mt au T2 2026, récupération 93,8 %), avec la licence Hiré intégrée ; Agbaou : mine et usine propre (0,55 Mt, 94,5 %) ; Oumé en projet",
+   "pourquoi": "CV « ALLIED GOLD » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), avec deux points d'appui : la mesure en usine (plan d'échantillonnage et analyse statistique en raffinerie d'huiles) et l'évaluation environnementale (analyse du cycle de vie sous openLCA, selon les normes ISO 14040 et 14044). Mon objectif : contribuer au suivi de traitement ou au suivi environnemental de vos sites de Bonikro et d'Agbaou.",
+   "activites": [
+    "Principal : extraction et traitement de minerai d'or (complexe ivoirien CDI). Secondaires : exploration (Hiré, Oumé), projets hors Côte d'Ivoire (Kurmuk, Sadiola)."
+   ],
+   "procedes": [
+    "Deux usines de traitement distinctes, à 20 km l'une de l'autre (Bonikro et Agbaou), « capacité de broyage combinée » citée sans chiffre. Type de circuit (CIL ou autre), étapes de concassage et de broyage : D.",
+    "Récupération et tonnage publiés par trimestre."
+   ],
+   "installations_ci": [
+    "Bonikro (permis de Bonikro et de Hiré, intégrés) : Mine à ciel ouvert, usine de traitement",
+    "Hiré (permis de Hiré, partie de la licence de Bonikro) : Fosses à ciel ouvert sur la licence de Hiré ; forages d'exploration en cours (29 trous au T2 2026)",
+    "Agbaou : Mine à ciel ouvert, usine de traitement propre",
+    "Oumé : Gisement : réserves probables initiales d'environ 585 000 oz ; forages (118 trous au T1 2026)"
+   ],
+   "stage2": "N3, N4 · https://alliedgold.com/locations/cote-divoire-complex/ (usines + courriel RH de groupe)",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Analyse du cycle de vie selon les normes ISO 14040 et 14044",
+    "Inventaire des flux de matière et d'énergie",
+    "Valorisation de résidus de procédé (projet)",
+    "Plans d'échantillonnage : élaboration et mise en œuvre",
+    "Séparation solide-liquide par décantation",
+    "Bilans matière d'un procédé",
+    "Analyse statistique de séries de mesures : répétabilité, variabilité",
+    "Propagation d'incertitudes par simulation de Monte Carlo"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), avec deux points d'appui : la mesure en usine (plan d'échantillonnage et analyse statistique en raffinerie d'huiles) et l'évaluation environnementale (analyse du cycle de vie sous openLCA, selon les normes ISO 14040 et 14044). Mon objectif : contribuer au suivi de traitement ou au suivi environnemental de vos sites de Bonikro et d'Agbaou. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), avec deux points d'appui : la mesure en usine (plan d'échantillonnage et analyse statistique en raffinerie d'huiles) et l'évaluation environnementale (analyse du cycle de vie sous openLCA, selon les normes ISO 14040 et 14044). Mon objectif : contribuer au suivi de traitement ou au suivi environnemental de vos sites de Bonikro et d'Agbaou. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Quel service accueille les stagiaires de génie des procédés : usine de traitement, laboratoire ou environnement ?",
+    "Quelles données de production un stagiaire pourrait-il aider à suivre ?",
+    "Le projet de régénération de sols avec l'UFHB prévoit-il des stagiaires d'autres écoles ?",
+    "L'étude d'augmentation de capacité de Bonikro (3,0 à 3,2 Mt/an) change-t-elle l'organisation de l'usine ?",
+    "Quelle est la procédure de candidature pour juin 2027, et le rachat par Zijin Gold la modifie-t-il ?"
+   ],
+   "questions_techniques": [
+    "Que veut dire une récupération de 93,8 % ? À savoir : Bonikro 93,8 % et Agbaou 94,5 % au T2 2026 [MIN-S09]. Notion générale : part de l'or de l'alimentation présente dans le produit.",
+    "Pourquoi traite-t-on des stocks à faible teneur ? À savoir : un relèvement d'environ 0,5 Mt/an est prévu pour traiter les stocks à faible teneur, fin 2026 ou début 2027 [MIN-S09]. Détail technique : non publié.",
+    "Que signifie « teneur d'alimentation » ? À savoir : 1,75 g/t à Bonikro et 1,10 g/t à Agbaou au T2 2026 [MIN-S09]. Notion générale : grammes d'or par tonne de minerai.",
+    "Pourquoi régénérer un sol à partir de stériles ? À savoir : projet pour produire localement un substrat fertile à partir de stériles rocheux avec des plantes, afin de réduire l'importation de terre végétale.",
+    "Quels sont les deux sites et leur rapport ? À savoir : Bonikro et Agbaou sont contigus et forment le complexe CDI, avec deux usines à 20 km."
+   ],
+   "vocabulaire": [
+    "Complexe CDI : ensemble Bonikro-Agbaou.",
+    "Once (oz) : unité d'or, environ 31,1 g.",
+    "Récupération : part d'or récupérée.",
+    "Teneur (g/t) : grammes d'or par tonne.",
+    "Stériles : roche sans valeur à déplacer pour accéder au minerai.",
+    "Verse à stériles : tas de stériles.",
+    "Mill (usine de broyage) : usine qui réduit la taille du minerai avant l'extraction de l'or.",
+    "AISC : coût de production tout compris par once.",
+    "Réhabilitation progressive : remise en état du site pendant l'exploitation.",
+    "Stocks à faible teneur : minerai stocké dont la teneur est basse."
+   ],
+   "strategie_contact": "Service à approcher : les usines de traitement ; à défaut l'équipe environnement ou le service RH au stand. Demande précise : « Un stage de 2 à 3 mois à partir de juin 2027 est-il possible dans le traitement ou l'environnement ? » Courriel RH de groupe publié (MIN-S08) : à ne pas utiliser avant d'avoir parlé au stand. Stage de 6 mois de 3e année : à évoquer en fin d'échange seulement si l'échange s'y prête. Ne pas commenter le rachat par Zijin Gold au-delà d'une question ; aucun nom de responsable.",
+   "sources": [
+    {
+     "titre": "Allied Gold reports record Q4 production (résultats T4 2025)",
+     "url": "https://s203.q4cdn.com/846800919/files/doc_news/2026/03/Allied-Gold-Results-News-Release-2025-Q4_FINAL.pdf"
+    },
+    {
+     "titre": "Cote d'Ivoire Complex",
+     "url": "https://alliedgold.com/locations/cote-divoire-complex/"
+    },
+    {
+     "titre": "Allied Gold Reports Q2 2026 Results",
+     "url": "https://alliedgold.com/investor-relations/investor-news/news-details/2026/Allied-Gold-Reports-Q2-2026-Results-Nears-Kurmuk-Start-Up-and-Strengthens-Financial-Position/default.aspx"
+    },
+    {
+     "titre": "Allied Gold Côte d'Ivoire et le CNF : régénération des sols de verses à stériles",
+     "url": "https://www.fratmat.info/article/2643735/economie/projet-de-regeneration-des-sols-issus-des-verses-a-steriles-rocheux-allied-gold-cote-divoire-et-le-centre-national-de-floristique-sengagent-dans-un-partenariat"
+    },
+    {
+     "titre": "Allied Gold - Bonikro Gold Mine (BE Africa, résumé de recherche)",
+     "url": "https://bus-ex.com/sites/default/files/2023-10/Allied%20Gold%20-%20BONIKRO%20Gold%20Mine%20-BE%20Africa%20PDF.pdf"
+    }
+   ],
+   "cv": "CV_DAOUDA_ALLIED.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-126",
+   "rang": "6 · ordre d'impression 11",
+   "score": 66,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Mine d'Abujar (Daloa) : usine CIL de 4,5 Mtpa nominaux, en exploitation depuis 2023",
+   "pourquoi": "CV « SOCIÉTÉ MINIÈRE DE LA LOBO » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé aux réacteurs polyphasiques et à la chimie des solutions, bases des cuves de lixiviation. En raffinerie d'huiles, j'ai mis en œuvre un plan d'échantillonnage et contrôlé la répétabilité des analyses. Mon objectif : contribuer au contrôle de procédé de l'usine CIL d'Abujar.",
+   "activites": [
+    "Principal : extraction et traitement de minerai d'or (mine d'Abujar / La Lobo). Secondaire : sociale et communautaire."
+   ],
+   "procedes": [
+    "Circuit de lixiviation au charbon (CIL) avec broyage, d'une capacité de 4,5 Mtpa selon les rapports de presse de 2023 ; concassage et élution : D. Pas de document technique officiel ouvert."
+   ],
+   "installations_ci": [
+    "Mine d'or d'Abujar / La Lobo (Grégbeu, Daloa) : Mine à ciel ouvert, usine CIL",
+    "Convention minière : Convention entre l'entité locale de Tietto (SML) et l'État"
+   ],
+   "stage2": "N3 · mining-technology.com (C) ; aucun canal",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Plan d'échantillonnage et prélèvements multi-niveaux",
+    "Répétabilité des analyses : coefficient de variation",
+    "Critique d'une méthode rapide face à une référence",
+    "Transformation par étapes et rendements comparés",
+    "Séparation solide-liquide par décantation",
+    "Bilans matière d'un procédé",
+    "Analyse statistique de séries de mesures",
+    "Propagation d'incertitudes par simulation de Monte Carlo"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé aux réacteurs polyphasiques et à la chimie des solutions, bases des cuves de lixiviation. Mon objectif : contribuer au contrôle de procédé de l'usine CIL d'Abujar. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé aux réacteurs polyphasiques et à la chimie des solutions, bases des cuves de lixiviation. En raffinerie d'huiles, j'ai mis en œuvre un plan d'échantillonnage et contrôlé la répétabilité des analyses. Mon objectif : contribuer au contrôle de procédé de l'usine CIL d'Abujar. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Le service « Usine CIL d'Abujar » accueille-t-il des stagiaires de 2e année ?",
+    "À quelle personne ou adresse envoyer ma candidature ?",
+    "Quelles périodes de stage privilégiez-vous ?"
+   ],
+   "questions_techniques": [],
+   "vocabulaire": [],
+   "strategie_contact": "Viser : Usine CIL d'Abujar. Écart à assumer : Aucune source officielle technique.",
+   "sources": [
+    {
+     "titre": "La mine La Lobo affiche ses progrès sociaux et vise 120 000 onces en 2026",
+     "url": "https://www.koaci.com/index.php/article/2026/05/04/cote-divoire/societe/cote-divoire-la-mine-la-lobo-affiche-ses-progres-sociaux-et-vise-120-000-onces-en-2026_196356.html"
+    },
+    {
+     "titre": "Côte d'Ivoire launches Lobo gold mine expected to generate $259m in proceeds",
+     "url": "https://northafricapost.com/73023-cote-divoire-launches-lobo-gold-mine-expected-to-generate-259m-in-proceeds.html"
+    },
+    {
+     "titre": "Abujar gold project, Côte d'Ivoire (résumés de presse 2023 : CIL 4,5 Mtpa, 88 % / 10 % / 2 %)",
+     "url": "https://www.mining-technology.com/projects/abujar-gold-project-cote-divoire/"
+    },
+    {
+     "titre": "Zhaojin offer for Tietto (rachat)",
+     "url": "https://www.engineeringnews.co.za/article/tietto-minerals-at-1-year-high-on-zhaojins-sweetened-733m-bid-2024-04-15"
+    },
+    {
+     "titre": "Offre d'emploi : chargé des actions sociales SML",
+     "url": "https://simoon-cv.com/emplois/offre/recrutement-charge-des-actions-sociales-h-f-7e70bf05-b8fb-41aa-9278-598754a412f7"
+    }
+   ],
+   "cv": "CV_DAOUDA_SML.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-046",
+   "rang": "4 · ordre d'impression 12",
+   "score": 68,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Dépôts d'Abidjan (plus d'1 million de m3 reçus par an), Bouaké et Yamoussoukro (bac R14 inauguré) ; extension d'ici 2030",
+   "pourquoi": "CV « GESTOCI » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels à l'ESCPE de Yamoussoukro. Dans les bacs de stockage d'une raffinerie d'huiles à Vridi, j'ai conduit un plan d'échantillonnage à trois niveaux et vérifié par l'analyse statistique l'homogénéité et la conformité du produit stocké. Mon objectif : contribuer au contrôle qualité et au suivi des stocks de vos dépôts d'Abidjan ou de Yamoussoukro.",
+   "activites": [
+    "Principal : stockage de produits pétroliers et de stocks de sécurité",
+    "Secondaires : stockage de butane, chargement de camions"
+   ],
+   "procedes": [
+    "Réception de produits pétroliers, stockage en bacs, chargement de camions (plus de 90 % des volumes liquides chargés à la source visés). Sphères GPL : D (non mentionnées).",
+    "Certifications ISO 9001:2015, ISO 14001:2015, ISO 45001:2018 (Bureau Veritas) et notation JIG « Good » en 2022 et 2023. Contrôle qualité et laboratoire : D."
+   ],
+   "installations_ci": [
+    "Dépôt d'Abidjan (T.P.A.V., boulevard de Vridi) : Réception, stockage, expédition",
+    "Dépôts de Bouaké et Yamoussoukro : Stockage",
+    "Extension d'Abidjan et nouveaux sites (Odienné, San Pedro, Ferkessédougou) : Stockage"
+   ],
+   "stage2": "N3, N4 · https://www.gestoci.ci/ (Recrutement et candidature spontanée)",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Prélèvements multi-niveaux en réservoirs de stockage",
+    "Suivi d'un produit du stockage au conditionnement",
+    "Standardisation de protocoles de prélèvement",
+    "Contrôle de conformité d'un produit stocké",
+    "Évaluation critique d'une méthode d'analyse rapide",
+    "Analyse statistique de séries de mesures : répétabilité, variabilité",
+    "Analyse du cycle de vie selon les normes ISO 14040 et 14044"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels à l'ESCPE de Yamoussoukro. Mon objectif : contribuer au contrôle qualité et au suivi des stocks de vos dépôts d'Abidjan ou de Yamoussoukro. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels à l'ESCPE de Yamoussoukro. Dans les bacs de stockage d'une raffinerie d'huiles à Vridi, j'ai conduit un plan d'échantillonnage à trois niveaux et vérifié par l'analyse statistique l'homogénéité et la conformité du produit stocké. Mon objectif : contribuer au contrôle qualité et au suivi des stocks de vos dépôts d'Abidjan ou de Yamoussoukro. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Quel service suit la qualité des produits à la réception et au stockage à Abidjan ?",
+    "Comment se font les prélèvements dans les bacs (niveaux, fréquence, responsable) ?",
+    "Quel est le lien entre l'inspection JIG notée Good et le travail quotidien du dépôt ?",
+    "Les projets d'extension (bac R14 à Yamoussoukro, 40 000 m3 de super à Abidjan, nouveaux dépôts) créent-ils des besoins d'appui ?",
+    "Comment candidater pour un stage de juin 2027 (candidature spontanée) ?"
+   ],
+   "questions_techniques": [
+    "Que fait GESTOCI ? Stocker des hydrocarbures pour les stocks de sécurité et pour le compte d'opérateurs ; dépôts d'Abidjan, Bouaké, Yamoussoukro (PET-S07).",
+    "Quel volume à Abidjan ? Plus d'un million de m3 reçus par an (PET-S07).",
+    "Que sont ISO 9001, 14001 et 45001 ? Management de la qualité, de l'environnement et de la santé-sécurité au travail, certifiées par Bureau Veritas (PET-S07). Ne pas les présenter comme compétences personnelles.",
+    "Que sait-on des projets ? Selon l'AIP du 24 juillet 2026 : capacité nationale visée de 583 000 m3, 40 000 m3 de super sans plomb à Abidjan, bac R14 à Yamoussoukro, nouveaux sites à Odienné, San Pedro et Ferkessédougou, pipeline Abidjan-Ferkessédougou à l'étude (PET-S37, source secondaire).",
+    "Où est le parallèle avec SANIA, et où s'arrête-t-il ? Parallèle : réservoirs, prélèvements à trois niveaux, statistiques de dispersion (F11, F13). Limites : produit différent (huile raffinée contre produits pétroliers), procédures d'échantillonnage pétrolier non apprises (normes ASTM D4057 et API MPMS chapitre 8 de mémoire, à vérifier), sécurité des atmosphères explosives non apprise."
+   ],
+   "vocabulaire": [
+    "Dépôt pétrolier : site de stockage et de chargement de produits pétroliers.",
+    "Bac de stockage : grand réservoir cylindrique pour liquides.",
+    "Sphère : réservoir sphérique pour gaz liquéfiés sous pression (GPL, butane).",
+    "Stock de sécurité : réserve obligatoire pour parer aux ruptures.",
+    "Chargement à la source : remplissage des camions directement au dépôt.",
+    "Appontement : quai de déchargement des navires.",
+    "JIG : groupe de normes d'inspection de qualité du carburant aviation (notation citée par GESTOCI, signification exacte à confirmer).",
+    "ATEX : atmosphères explosives, réglementation de sécurité.",
+    "Jaugeage : mesure du niveau et du volume dans un réservoir.",
+    "Échantillonnage à niveaux : prélèvement en haut, au milieu et en bas d'un réservoir.",
+    "Définitions générales, hors sources d'entreprise (JIG et normes à vérifier)."
+   ],
+   "strategie_contact": "Service à approcher : qualité ou exploitation du dépôt d'Abidjan (existence non publiée). Demande précise : à qui envoyer un CV pour un stage de 2 à 3 mois dès juin 2027, et possibilité de visiter le dépôt. Contacts publics : courriel et téléphone (+225) sur https://www.gestoci.ci/ ; ignorer les coordonnées du pied de page avec indicatif +971 (PET-S07). Rubriques Recrutement et Candidature spontanée. Aucun nom de responsable connu. Évoquer le stage de 3e année seulement en fin d'échange si l'échange s'y prête.",
+   "sources": [
+    {
+     "titre": "GESTOCI - Stockage Produits Pétroliers en Côte d'Ivoire (accueil)",
+     "url": "https://www.gestoci.ci/"
+    },
+    {
+     "titre": "La GESTOCI affiche de nouvelles ambitions pour faire de la Côte d'Ivoire un hub pétrolier régional",
+     "url": "https://www.aip.ci/aip-la-gestoci-affiche-de-nouvelles-ambitions-pour-faire-de-la-cote-divoire-un-hub-petrolier-regional/"
+    }
+   ],
+   "cv": "CV_DAOUDA_GESTOCI.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-047",
+   "rang": "5 · ordre d'impression 13",
+   "score": 66,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Champ Baleine (FPSO, séparation huile/gaz), pipeline de gaz de plus de 90 km",
+   "pourquoi": "CV « ENI CÔTE D'IVOIRE » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la thermodynamique des équilibres liquide-vapeur et à la mécanique des fluides. J'ai pratiqué la séparation par distillation au laboratoire, l'analyse statistique de mesures en usine et l'analyse du cycle de vie d'un vecteur énergétique. Mon objectif : comprendre, auprès de vos équipes, la séparation huile-gaz et le traitement du gaz du champ Baleine.",
+   "activites": [
+    "Principal : exploration et production d'hydrocarbures offshore",
+    "Secondaires : gaz vers l'électricité, huile végétale pour bioraffinage, cuiseurs améliorés"
+   ],
+   "procedes": [
+    "Production offshore sur FPSO, séparation huile et gaz, pipeline de gaz à terre. Détails de traitement : D.",
+    "Le FPSO Petrojarl Kong et le FSO Yamoussoukro sont fournis par Altera."
+   ],
+   "installations_ci": [
+    "Champ Baleine, blocs CI-101 et CI-802 : Production d'huile et de gaz en mer avec FPSO",
+    "Pipeline de gaz associé : Transport de gaz vers la production d'électricité"
+   ],
+   "stage2": "N2 (C) · Mastères Eni avec l'INP-HB (plaquette 2026, non lue en entier)",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Distillation et distillation fractionnée",
+    "Séparation solide-liquide par décantation (projet)",
+    "Chaîne de raffinage étudiée en usine",
+    "Analyse du cycle de vie d'un vecteur énergétique",
+    "Établissement et exploitation de bilans matière",
+    "Analyse statistique de séries de mesures : répétabilité, variabilité",
+    "Propagation d'incertitudes par simulation de Monte Carlo"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la thermodynamique des équilibres liquide-vapeur et à la mécanique des fluides. Mon objectif : comprendre, auprès de vos équipes, la séparation huile-gaz et le traitement du gaz du champ Baleine. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la thermodynamique des équilibres liquide-vapeur et à la mécanique des fluides. J'ai pratiqué la séparation par distillation au laboratoire, l'analyse statistique de mesures en usine et l'analyse du cycle de vie d'un vecteur énergétique. Mon objectif : comprendre, auprès de vos équipes, la séparation huile-gaz et le traitement du gaz du champ Baleine. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Le service « Aucun service local nommé » accueille-t-il des stagiaires de 2e année ?",
+    "À quelle personne ou adresse envoyer ma candidature ?",
+    "Quelles périodes de stage privilégiez-vous ?"
+   ],
+   "questions_techniques": [],
+   "vocabulaire": [],
+   "strategie_contact": "Viser : Aucun service local nommé. Écart à assumer : Offshore.",
+   "sources": [
+    {
+     "titre": "Eni in Côte d'Ivoire",
+     "url": "https://www.eni.com/en-IT/actions/global-activities/cote-d-ivoire.html"
+    },
+    {
+     "titre": "FPSO Petrojarl Kong and FSO Yamoussoukro for Baleine Phase 2",
+     "url": "https://alterainfra.com/articles/fpso-petrojarl-kong-and-fso-yamoussoukro-for-baleine-phase-2/"
+    },
+    {
+     "titre": "Eni Côte d'Ivoire - education project",
+     "url": "https://eni.it/en-IT/actions/global-activities/cote-d-ivoire/education-project.html"
+    },
+    {
+     "titre": "MASTERES ENI Plaquette 2026",
+     "url": "https://inphb.edu.ci/wp-content/uploads/2026/05/MASTERES-ENI-Plaquette-2026-1.pdf"
+    }
+   ],
+   "cv": "CV_DAOUDA_ENI.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-052",
+   "rang": "6 · ordre d'impression 14",
+   "score": 65,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Plateformes Foxtrot et Marlin ; unités de traitement du gaz aux centrales d'Azito et CIPREL ; pipelines (sources de 2012)",
+   "pourquoi": "CV « FOXTROT INTERNATIONAL » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Sur une ligne continue de raffinerie d'huiles, j'ai suivi un paramètre de qualité pendant dix jours et établi sa stabilité par l'analyse statistique ; au laboratoire, j'ai séparé des mélanges par distillation. Mon objectif : contribuer au suivi de vos unités de traitement du gaz livré aux centrales d'Azito et de CIPREL.",
+   "activites": [
+    "Principal : exploitation de gaz offshore (bloc CI-27)",
+    "Secondaires : condensat, traitement du gaz aux centrales"
+   ],
+   "procedes": [
+    "Séparation du gaz, du condensat et de l'eau aux unités de traitement des centrales Azito et CIPREL, exploitées par Foxtrot.",
+    "Deux pipelines en mer de 18 km (gaz 12 pouces, condensat 4 pouces) et deux pipelines à terre de plus de 70 km, atterrage à Addah."
+   ],
+   "installations_ci": [
+    "Plateformes Foxtrot et Marlin, bloc CI-27 : Production de gaz et condensat en mer",
+    "Pipelines vers Azito et CIPREL et unités de traitement du gaz : Transport de gaz sur plus de 70 km et traitement aux deux centrales (2,9 millions m3 par jour par terminal)"
+   ],
+   "stage2": "N3 · https://www.miga.org/project/block-ci-27-expansion-program (2012)",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Suivi d'un paramètre sur une ligne continue",
+    "Contrôle de conformité d'un produit à sa spécification",
+    "Critique d'une méthode de mesure rapide",
+    "Distillation et fractionnement",
+    "Établissement et exploitation de bilans matière",
+    "Analyse statistique de séries de mesures : répétabilité, variabilité",
+    "Propagation d'incertitudes par simulation de Monte Carlo"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon objectif : contribuer au suivi de vos unités de traitement du gaz livré aux centrales d'Azito et de CIPREL. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Sur une ligne continue de raffinerie d'huiles, j'ai suivi un paramètre de qualité pendant dix jours et établi sa stabilité par l'analyse statistique ; au laboratoire, j'ai séparé des mélanges par distillation. Mon objectif : contribuer au suivi de vos unités de traitement du gaz livré aux centrales d'Azito et de CIPREL. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Le service « Unités de traitement du gaz » accueille-t-il des stagiaires de 2e année ?",
+    "À quelle personne ou adresse envoyer ma candidature ?",
+    "Quelles périodes de stage privilégiez-vous ?"
+   ],
+   "questions_techniques": [],
+   "vocabulaire": [],
+   "strategie_contact": "Viser : Unités de traitement du gaz. Écart à assumer : Gaz.",
+   "sources": [
+    {
+     "titre": "Block CI 27 Expansion Program",
+     "url": "https://www.miga.org/project/block-ci-27-expansion-program"
+    },
+    {
+     "titre": "Annonce légale Succursale FOXTROT INTERNATIONAL",
+     "url": "https://business.abidjan.net/annonces-legales/30-renouvellement-du-mandat/104386-foxtrot-international-succursale"
+    },
+    {
+     "titre": "Prix ivoirien de la qualité : Foxtrot International lauréate pour la seconde fois",
+     "url": "https://www.koaci.com/article/2022/07/01/cote-divoire/economie/cote-divoire-prix-ivoirien-de-la-qualite-la-societe-foxtrot-international-laureate-pour-la-seconde-fois_161251.html"
+    }
+   ],
+   "cv": "CV_DAOUDA_FOXTROT.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-041",
+   "rang": "7 · ordre d'impression 15",
+   "score": 52,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Centre emplisseur de GPL de Yopougon (stockage de butane de 2 600 t, B/C) ; sphère de 5 000 t en projet",
+   "pourquoi": "CV « SIMAM CÔTE D'IVOIRE » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon stage de fin d'études s'est déroulé au cœur d'un conditionnement industriel : suivi d'un produit du stockage jusqu'aux cuves de pré-conditionnement, avec plan d'échantillonnage et vérification statistique de sa conformité. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre centre emplisseur.",
+   "activites": [
+    "Principal : distribution de GPL et de produits pétroliers",
+    "Secondaires : carburants et lubrifiants B2B, stations-service"
+   ],
+   "procedes": [
+    "Remplissage de bouteilles de GPL (lignes automatique et semi-automatique) et stockage de butane.",
+    "Plan d'opération interne avec exercice annuel de lutte contre l'incendie sur bouteilles de gaz."
+   ],
+   "installations_ci": [
+    "Siège et centre emplisseur de Yopougon : Remplissage de bouteilles de gaz, stockage de butane",
+    "Projet de sphère de stockage de 5 000 t : Stockage de GPL"
+   ],
+   "stage2": "N3 (B) · news.abidjan.net, 2023-03-22",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Contrôle de conformité d'un produit avant son conditionnement",
+    "Suivi d'un produit du stockage au conditionnement",
+    "Prélèvements multi-niveaux en réservoirs de stockage",
+    "Dosages en série, contrôle de la répétabilité",
+    "Standardisation de protocoles de prélèvement",
+    "Analyse statistique de séries de mesures : répétabilité, variabilité",
+    "Établissement et exploitation de bilans matière"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon objectif : contribuer au contrôle qualité et au suivi de production de votre centre emplisseur. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon stage de fin d'études s'est déroulé au cœur d'un conditionnement industriel : suivi d'un produit du stockage jusqu'aux cuves de pré-conditionnement, avec plan d'échantillonnage et vérification statistique de sa conformité. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre centre emplisseur. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Le service « Centre emplisseur (remplissage, sécurité) ; ISO 9001 déclarée » accueille-t-il des stagiaires de 2e année ?",
+    "À quelle personne ou adresse envoyer ma candidature ?",
+    "Quelles périodes de stage privilégiez-vous ?"
+   ],
+   "questions_techniques": [],
+   "vocabulaire": [],
+   "strategie_contact": "Viser : Centre emplisseur (remplissage, sécurité) ; ISO 9001 déclarée. Écart à assumer : —.",
+   "sources": [
+    {
+     "titre": "Côte d'Ivoire : SIMAM teste son dispositif de sécurité contre l'incendie",
+     "url": "https://news.abidjan.net/articles/719035/cote-divoire-simam-teste-son-dispositif-de-securite-contre-lincendie"
+    },
+    {
+     "titre": "Simam Côte d'Ivoire : Distribution with a Difference",
+     "url": "https://www.africaoutlookmag.com/oil-gas/simam-cote-divoire-distribution-with-a-difference"
+    },
+    {
+     "titre": "Simam Côte d'Ivoire : Energy for All",
+     "url": "https://www.africaoutlookmag.com/oil-gas/simam-cote-divoire-energy-for-all"
+    }
+   ],
+   "cv": "CV_DAOUDA_SIMAM.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-158",
+   "rang": "8 · ordre d'impression 16",
+   "score": 47,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Centres emplisseurs GPL de Vridi, Bouaké, Abengourou, Daloa (C) ; jetée de soutes du port (C)",
+   "pourquoi": "CV « ORYX ENERGIES » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). À Vridi, j'ai appris en raffinerie d'huiles qu'un produit conforme se garantit par des prélèvements représentatifs et des mesures répétables ; au laboratoire, j'ai mené une chaîne complète jusqu'à la distillation. Mon objectif : contribuer à la qualité et à la sécurité des opérations d'un de vos centres emplisseurs ou dépôts.",
+   "activites": [
+    "Principal : distribution de produits pétroliers et de GPL (Oryx Energies, groupe actif en Afrique)",
+    "Secondaires : lubrifiants, avitaillement et soutes maritimes, stations-service"
+   ],
+   "procedes": [
+    "Remplissage de bouteilles de GPL et stockage de GPL dans les centres emplisseurs. Équipements (sphères, carrousels) : D.",
+    "Avitaillement maritime : transfert de produits pétroliers vers les navires depuis la jetée. Procédés de qualité : D.",
+    "Une page d'actualité indique l'inauguration d'une nouvelle sphère de GPL en Côte d'Ivoire (titre vu, contenu non lu)."
+   ],
+   "installations_ci": [
+    "Centre emplisseur GPL de Vridi (Abidjan) : Remplissage de bouteilles et stockage de GPL",
+    "Centre emplisseur GPL de Bouaké : Remplissage et stockage de GPL",
+    "Centre emplisseur GPL d'Abengourou : Remplissage de GPL",
+    "Centre emplisseur GPL de Daloa : Remplissage de GPL, 28 employés",
+    "Jetée de soutes du port d'Abidjan (Petroci Soutes) : Avitaillement de navires en carburant",
+    "Quai pétrolier PETROCI de Vridi : Réception de navires MR1 jusqu'à 40 000 tpl, interconnecté à l'appontement Petroci Soutes",
+    "Stations-service Oryx : Distribution de carburants"
+   ],
+   "stage2": "N3 (C), N4 (C) · oryxenergies.com/ci (rubrique carrières non extraite)",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Contrôle de conformité d'un produit stocké",
+    "Évaluation critique d'une méthode d'analyse rapide",
+    "Élaboration et mise en œuvre de plans d'échantillonnage",
+    "Proposition de protocoles standardisés et d'une formation des opérateurs",
+    "Distillation et fractionnement au laboratoire",
+    "Analyse statistique de séries de mesures : répétabilité, variabilité",
+    "Propagation d'incertitudes par simulation de Monte Carlo"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon objectif : contribuer à la qualité et à la sécurité des opérations d'un de vos centres emplisseurs ou dépôts. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). À Vridi, j'ai appris en raffinerie d'huiles qu'un produit conforme se garantit par des prélèvements représentatifs et des mesures répétables ; au laboratoire, j'ai mené une chaîne complète jusqu'à la distillation. Mon objectif : contribuer à la qualité et à la sécurité des opérations d'un de vos centres emplisseurs ou dépôts. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Le service « Centres emplisseurs ; « Sécurité et qualité » (non extrait) » accueille-t-il des stagiaires de 2e année ?",
+    "À quelle personne ou adresse envoyer ma candidature ?",
+    "Quelles périodes de stage privilégiez-vous ?"
+   ],
+   "questions_techniques": [],
+   "vocabulaire": [],
+   "strategie_contact": "Viser : Centres emplisseurs ; « Sécurité et qualité » (non extrait). Écart à assumer : —.",
+   "sources": [
+    {
+     "titre": "Oryx Energies Côte d'Ivoire (site pays)",
+     "url": "https://www.oryxenergies.com/ci/"
+    },
+    {
+     "titre": "Addax Energy - Nos activités de soutage (Petroci Soutes)",
+     "url": "https://oryxenergies.com/uploads/images/Addax%20Energy_Nos%20Activités%20de%20Soutage_FR_08_2021.pdf"
+    },
+    {
+     "titre": "Avis ORYX GAZ COTE D'IVOIRE (transfert de siège)",
+     "url": "https://business.abidjan.net/annonces-legales/4-autres-categories/138172-oryx-gaz-cote-divoire"
+    },
+    {
+     "titre": "Augmentation de capital ORYX OIL COTE D'IVOIRE (OOCI)",
+     "url": "https://business.abidjan.net/annonces-legales/3-augmentation-de-capital/66296-oryx-oil-cote-divoire-ooci"
+    },
+    {
+     "titre": "Nouveau centre emplisseur GPL en Côte d'Ivoire",
+     "url": "https://oryxenergies.com/data/news/CP-Nouveau-centre-emplisseur-GPL-en-Cote-d-Ivoire-20240704.pdf"
+    },
+    {
+     "titre": "Beugré Mambé inaugure le nouveau quai pétrolier de PETROCI Holding à Vridi",
+     "url": "https://www.koaci.com/article/2025/06/19/cote-divoire/economie/cote-divoire-beugre-mambe-inaugure-le-nouveau-quai-petrolier-de-petroci-holding-a-vridi-dun-cout-de-36-milliards-fcfa_187849.html"
+    },
+    {
+     "titre": "Oryx Energies - actualités (cession Bénin et Rwanda)",
+     "url": "https://www.oryxenergies.com/en/news?idnews=165"
+    }
+   ],
+   "cv": "CV_DAOUDA_ORYX.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-076",
+   "rang": "2 · ordre d'impression 17",
+   "score": 69,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Centrale biomasse d'Ayébo (Aboisso) : 46 MW nets, 348 GWh/an, résidus de palmier ; inaugurée le 2026-11-05",
+   "pourquoi": "CV « BIOVEA ÉNERGIE · EDF » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). J'ai effectué mon stage de fin d'études dans la filière palme du groupe SIFCA, actionnaire de BIOVEA par Biokala, et produit au laboratoire de l'éthanol à partir de plusieurs matières végétales. Mon objectif : contribuer au suivi d'exploitation de la centrale d'Ayébo, de l'approvisionnement en biomasse aux bilans énergétiques.",
+   "activites": [
+    "Principal : production et fourniture d'électricité (groupe EDF). En Côte d'Ivoire : participation dans la centrale biomasse BIOVEA, représentation à Koumassi et projets solaires hors réseau. Secondaires : ingénierie (page EDF Côte d'Ivoire non lue, erreur 403)."
+   ],
+   "procedes": [
+    "Chaîne à vapeur : biomasse, chaudière, turbine avec aérocondenseur, export au réseau 90 kV. Nombre de chaudières et de turbines : D. Collecte de la biomasse dans un rayon de 60 km ; selon l'AIP, environ 12 000 planteurs concernés par la collecte et la commercialisation des résidus. Traitement d'eau, gestion des cendres : D."
+   ],
+   "installations_ci": [
+    "Ayébo (à 5 km d'Aboisso, 110 km à l'est d'Abidjan) : centrale à biomasse (résidus de palmier à huile, selon AIP aussi troncs d'hévéa)",
+    "Koumassi (représentation EDF) : bureau"
+   ],
+   "stage2": "N3 · https://biovea-energie.com/la-centrale-biomasse/",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Valorisation de matières végétales : rendements de conversion",
+    "Analyse du cycle de vie d'un vecteur énergétique",
+    "Valorisation de résidus agro-industriels (projet)",
+    "Suivi d'un paramètre sur une ligne continue",
+    "Plans d'échantillonnage : élaboration et mise en œuvre",
+    "Analyse statistique de séries de mesures",
+    "Établissement et exploitation de bilans matière"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon objectif : contribuer au suivi d'exploitation de la centrale d'Ayébo, de l'approvisionnement en biomasse aux bilans énergétiques. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). J'ai effectué mon stage de fin d'études dans la filière palme du groupe SIFCA, actionnaire de BIOVEA par Biokala, et produit au laboratoire de l'éthanol à partir de plusieurs matières végétales. Mon objectif : contribuer au suivi d'exploitation de la centrale d'Ayébo, de l'approvisionnement en biomasse aux bilans énergétiques. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Le service « Exploitation de la centrale (chaudière, turbine, aérocondenseur, approvisionnement en biomasse) » accueille-t-il des stagiaires de 2e année ?",
+    "À quelle personne ou adresse envoyer ma candidature ?",
+    "Quelles périodes de stage privilégiez-vous ?"
+   ],
+   "questions_techniques": [],
+   "vocabulaire": [],
+   "strategie_contact": "Viser : Exploitation de la centrale (chaudière, turbine, aérocondenseur, approvisionnement en biomasse). Écart à assumer : Combustion non pratiquée.",
+   "sources": [
+    {
+     "titre": "Fourniture d'énergie : une entreprise étend sa représentation à Abidjan",
+     "url": "https://www.fratmat.info/article/200198/economie/fourniture-denergie-une-entreprise-etend-sa-representation-a-abidjan"
+    },
+    {
+     "titre": "La centrale biomasse BIOVEA",
+     "url": "https://biovea-energie.com/la-centrale-biomasse/"
+    },
+    {
+     "titre": "Signature du contrat de concession pour la centrale à biomasse Biovéa",
+     "url": "https://www.tresor.economie.gouv.fr/Articles/2019/12/10/signature-du-contrat-de-concession-pour-la-centrale-a-biomasse-biovea-dans-le-sud-est-de-la-cote-d-ivoire"
+    },
+    {
+     "titre": "La centrale à biomasse Biovéa de 46 MW inaugurée dans la région du Sud-Comoé",
+     "url": "https://www.aip.ci/cote-divoire-aip-la-centrale-a-biomasse-biovea-de-46-mw-inauguree-dans-la-region-du-sud-comoe/"
+    },
+    {
+     "titre": "La société Biovéa renforce l'offre électrique nationale avec 348 GWh par an",
+     "url": "https://www.aip.ci/cote-divoire-aip-la-societe-biovea-renforce-loffre-electrique-nationale-avec-348-gwh-par-an/"
+    },
+    {
+     "titre": "Biovéa : la Côte d'Ivoire inaugure la plus grande centrale à biomasse d'Afrique de l'Ouest",
+     "url": "https://www.financialafrik.com/2026/11/06/biovea-la-cote-divoire-inaugure-la-plus-grande-centrale-a-biomasse-dafrique-de-louest/"
+    }
+   ],
+   "cv": "CV_DAOUDA_BIOVEA.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-184",
+   "rang": "3 · ordre d'impression 18",
+   "score": 64,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Centrale d'Azito (Yopougon), environ 715 MW",
+   "pourquoi": "CV « AZITO ÉNERGIE » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Ce que je sais faire : transformer des mesures en décision, comme en raffinerie d'huiles où j'ai établi par l'analyse statistique la stabilité d'un procédé continu sur dix jours. Mon objectif : contribuer à l'analyse des données d'exploitation et au suivi des performances de la centrale d'Azito.",
+   "activites": [
+    "Principal : production d'électricité (producteur indépendant). Secondaires : actions sociales et environnementales (reboisement, équipements publics)."
+   ],
+   "procedes": [
+    "Production d'électricité en cycle combiné. Nombre et type de turbines, combustible, traitement d'eau, rendement : D (le site ne les donne pas)."
+   ],
+   "installations_ci": [
+    "Village d'Azito, commune de Yopougon, Abidjan : centrale thermique, présentée comme « première centrale à cycle combiné »"
+   ],
+   "stage2": "N3 · https://www.azitoenergie.com/",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Traitement statistique de séries de mesures",
+    "Détection d'un écart entre deux séries",
+    "Propagation d'incertitudes par simulation de Monte Carlo",
+    "Suivi d'un paramètre sur une ligne continue",
+    "Fiabilité des mesures : critique d'une méthode rapide",
+    "Inventaire des flux de matière et d'énergie",
+    "Établissement et exploitation de bilans matière"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Mon objectif : contribuer à l'analyse des données d'exploitation et au suivi des performances de la centrale d'Azito. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB). Ce que je sais faire : transformer des mesures en décision, comme en raffinerie d'huiles où j'ai établi par l'analyse statistique la stabilité d'un procédé continu sur dix jours. Mon objectif : contribuer à l'analyse des données d'exploitation et au suivi des performances de la centrale d'Azito. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Quel service de la centrale (exploitation, laboratoire, environnement) peut accueillir un stagiaire de génie des procédés ?",
+    "Un stage de 2 à 3 mois à partir de juin 2027 est-il compatible avec vos arrêts et votre planning ?",
+    "Quelles mesures ou quels bilans suivez-vous au quotidien (eau, vapeur, émissions) ?",
+    "Quelles consignes de sécurité un stagiaire doit-il connaître avant d'entrer sur le site ?",
+    "Les candidatures passent-elles par le contact général publié ou par un autre canal ?"
+   ],
+   "questions_techniques": [
+    "Comment fonctionne un cycle combiné ? Savoir (général) : turbine à gaz, récupération de chaleur sur les fumées en chaudière, turbine à vapeur ; Azito se présente comme une centrale à cycle combiné (ENE-S03). Ne pas parler des équipements d'Azito.",
+    "Pourquoi un cycle combiné a-t-il un meilleur rendement qu'un cycle simple ? Savoir : il récupère la chaleur perdue dans les fumées pour produire de l'électricité en plus.",
+    "Qu'est-ce qu'un bilan matière ? Savoir : entrées moins sorties égale accumulation ; savoir illustrer avec le projet CNID (F21) sans citer de rendement mesuré.",
+    "Que signifie 715 MW ? Savoir : puissance installée d'environ 715 MW, soit environ le quart du parc national selon le site (ENE-S03) ; une puissance n'est pas une énergie produite.",
+    "Pourquoi la qualité de l'eau est-elle importante dans une centrale à vapeur ? Savoir (général) : l'eau de chaudière doit être très pure pour éviter dépôts et corrosion ; ne pas dire comment Azito la traite."
+   ],
+   "vocabulaire": [
+    "Producteur indépendant (IPP) : société privée qui produit de l'électricité et la vend à un acheteur public.",
+    "BOOT : contrat où l'on construit, possède, exploite puis transfère une installation (Azito, ENE-S03).",
+    "Turbine à gaz : machine qui transforme la combustion du gaz en mouvement.",
+    "Chaudière de récupération : échangeur qui capte la chaleur des fumées pour faire de la vapeur.",
+    "Turbine à vapeur : machine qui transforme l'énergie de la vapeur en mouvement.",
+    "Cycle combiné : turbine à gaz et turbine à vapeur combinées sur la même chaleur.",
+    "MW (mégawatt) : unité de puissance électrique.",
+    "GWh : énergie produite en un an ou une période (un gigawattheure).",
+    "Bilan matière : comptabilité de ce qui entre et sort d'un procédé.",
+    "Rendement : part de l'énergie d'entrée transformée en énergie utile.",
+    "(Définitions générales, non issues des sources, sauf mention.)"
+   ],
+   "strategie_contact": "Service à approcher : exploitation ou laboratoire de la centrale ; noms. Demande précise : le bon service et le bon canal pour un stage de 2 à 3 mois dès juin 2027 ; ne demander aucune coordonnée privée. Après l'échange : écrire au contact général publié (info@azitoenergie.com ou formulaire du site, ENE-S03) en rappelant la personne rencontrée si elle l'accepte. Stage de 3e année : à évoquer seulement en fin d'échange, si la discussion s'y prête. À éviter : prétendre connaître la conduite d'une centrale ou citer l'hydrogène (aucun lien sourcé) ; parler du CNID comme d'un titre.",
+   "sources": [
+    {
+     "titre": "Accueil Azito Energie",
+     "url": "https://www.azitoenergie.com/"
+    }
+   ],
+   "cv": "CV_DAOUDA_AZITO.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-190",
+   "rang": "1 · ordre d'impression 19",
+   "score": 64,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Laboratoire de la mine d'Agbaou accrédité ISO 17025 jusqu'en 2027 (or par pyroanalyse et par eau régale avec absorption atomique) ; laboratoire de minerais de Yamoussoukro inauguré le 2022-05-18 ; laboratoires de Treichville (C)",
+   "pourquoi": "CV « SGS CÔTE D'IVOIRE » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels à l'ESCPE de Yamoussoukro. Mon domaine de prédilection : la qualité des mesures. En usine, j'ai mis en œuvre un plan d'échantillonnage, des dosages en série et l'analyse de leur répétabilité, puis recommandé la validation de la méthode rapide par une méthode de référence. Mon objectif : contribuer aux contrôles analytiques de votre laboratoire de minerais de Yamoussoukro ou de vos laboratoires d'Abidjan.",
+   "activites": [
+    "Transversal : inspection, essais, vérification et certification (laboratoires pétrole et gaz, agriculture et alimentation, physico-chimie, microbiologie, minéraux et géochimie). Secteur principal : services d'analyse et de contrôle, tous secteurs."
+   ],
+   "procedes": [
+    "Analyses physico-chimiques et microbiologiques, préparation d'échantillons géochimiques. Laboratoire d'Agbaou : pyroanalyse (fusion) avec finition par absorption atomique et digestion à l'eau régale avec absorption atomique pour l'or ; laboratoire de Yamoussoukro : fusion au plomb, densité, pH. Autres méthodes, équipements, volumes : D (pages sgs.com en erreur 403)."
+   ],
+   "installations_ci": [
+    "Treichville, Abidjan : laboratoires accrédités ISO 17025:2017 par le SOAC : pétrole et gaz, agriculture et alimentation, microbiologie, physico-chimie",
+    "Sites miniers (4 laboratoires de géochimie sur site) : laboratoires de géochimie ; 1 laboratoire commercial de préparation d'échantillons ; 1 laboratoire de négoce de minerais",
+    "SGS Minerals Agbaou Laboratory (à la mine d'Agbaou) : analyse minérale : dosage de l'or par pyroanalyse avec finition par absorption atomique, et par digestion à l'eau régale avec absorption atomique",
+    "Yamoussoukro, zone industrielle : laboratoire d'analyse de minerais : or par fusion au plomb, lingots d'or et d'argent, densité relative, pH ; 5 421 m2, investissement d'environ 1,3 milliard FCFA"
+   ],
+   "stage2": "N3 · Portée d'accréditation CCN (2024-10-16) ; abidjan.net (2022-05-20)",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Plans d'échantillonnage : élaboration et mise en œuvre",
+    "Dosages en série par photométrie",
+    "Essais comparatifs de rendement",
+    "Répétabilité et coefficient de variation",
+    "Validation croisée d'une méthode rapide (proposée)",
+    "Propagation d'incertitudes par simulation de Monte Carlo",
+    "Analyse statistique de séries de mesures",
+    "Rédaction de rapports techniques aux sources tracées"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels à l'ESCPE de Yamoussoukro. Mon objectif : contribuer aux contrôles analytiques de votre laboratoire de minerais de Yamoussoukro ou de vos laboratoires d'Abidjan. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels à l'ESCPE de Yamoussoukro. Mon domaine de prédilection : la qualité des mesures. En usine, j'ai mis en œuvre un plan d'échantillonnage, des dosages en série et l'analyse de leur répétabilité, puis recommandé la validation de la méthode rapide par une méthode de référence. Mon objectif : contribuer aux contrôles analytiques de votre laboratoire de minerais de Yamoussoukro ou de vos laboratoires d'Abidjan. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Quels laboratoires de Treichville (physico-chimie, agro-alimentaire, pétrole et gaz) accueillent des stagiaires ?",
+    "Quelles périodes et durées sont possibles, 2 à 3 mois à partir de juin 2027 ?",
+    "À quelles tâches un stagiaire de 2e année peut-il participer sans risque pour la qualité des résultats ?",
+    "Par quel canal faut-il candidater et à quel service adresser le dossier ?",
+    "Existe-t-il un laboratoire à Yamoussoukro, près de mon école ?"
+   ],
+   "questions_techniques": [
+    "Qu'est-ce que l'accréditation ISO 17025 ? Savoir : reconnaissance de la compétence d'un laboratoire ; SGS a reçu la sienne (version 2017) le 2024-09-25 (ENE-S21). Ne pas se dire compétent sur la norme.",
+    "Comment avez-vous choisi les points de prélèvement ? Savoir : SANIA, trois niveaux dans les réservoirs et cuves (F11), plan sur dix jours.",
+    "Comment la photométrie dose-t-elle une substance ? Savoir : mesure de l'absorption de lumière, proportionnelle à la concentration ; matériel portable utilisé chez SANIA (F12).",
+    "Que valent vos coefficients de variation ? Savoir : 3,4 % et 4,6 % en moyenne, sans dégradation détectée (F13) ; expliquer ce que signifie la dispersion.",
+    "Comment valider une méthode d'analyse ? Savoir : la recommandation de SANIA était la comparaison croisée (F14) ; expliquer qu'on compare deux méthodes ou deux laboratoires sur le même échantillon."
+   ],
+   "vocabulaire": [
+    "Accréditation : reconnaissance formelle de la compétence d'un laboratoire.",
+    "ISO 17025 : norme internationale des laboratoires d'essais et d'étalonnage.",
+    "SOAC : Système ouest-africain d'accréditation, qui a remis l'accréditation à SGS (ENE-S21).",
+    "Échantillon représentatif : prélèvement qui reflète l'ensemble du lot.",
+    "Photométrie : mesure d'une concentration par l'absorption de la lumière.",
+    "Physico-chimie : mesures de grandeurs physiques et chimiques (pH, densité, concentration).",
+    "Microbiologie : recherche et dénombrement de micro-organismes.",
+    "Géochimie : analyse chimique de roches et de minerais (SGS en a quatre laboratoires sur site, ENE-S21).",
+    "Traçabilité : possibilité de retrouver l'origine d'un échantillon et de son résultat.",
+    "Comparaison croisée : même échantillon analysé par deux méthodes ou deux laboratoires.",
+    "(Définitions générales, non issues des sources, sauf mention.)"
+   ],
+   "strategie_contact": "Service à approcher : un laboratoire de physico-chimie ou d'agro-alimentaire à Treichville ; noms. Demande précise : le bon canal et le bon service pour un stage de 2 à 3 mois dès juin 2027 ; demander si un laboratoire à Yamoussoukro existe. Aucune coordonnée privée. Après l'échange : candidature par le canal indiqué au stand. Aucune adresse ni aucun téléphone SGS n'est connu de mes sources : ne rien inventer, noter ce que le stand donne. Stage de 3e année : à évoquer seulement en fin d'échange, si la discussion s'y prête. À éviter : parler de l'énergie (aucun lien) ; se dire compétent en normes ; citer le CNID comme un titre.",
+   "sources": [
+    {
+     "titre": "Accréditation ISO 17025 des laboratoires de SGS Côte d'Ivoire",
+     "url": "https://www.aip.ci/?p=108668"
+    },
+    {
+     "titre": "Portée d'accréditation ISO/IEC 17025 : S.G.S Minerals Côte d'Ivoire, SGS Minerals Agbaou Laboratory (dossier CCN 151089)",
+     "url": "https://ccn-scc.ca/system/files/2024-10/asb_soa_151089_v6_2024-10-16_fr.pdf"
+    },
+    {
+     "titre": "Un laboratoire d'analyse de minerais ouvert à Yamoussoukro",
+     "url": "https://news.abidjan.net/articles/708154/un-laboratoire-danalyse-de-minerais-ouvert-a-yamoussoukro"
+    }
+   ],
+   "cv": "CV_DAOUDA_SGS.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-177",
+   "rang": "2 · ordre d'impression 20",
+   "score": 54,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Site industriel de Vridi ; production et conditionnement non documentés (D) ; ERIUM CI produit O2, N2, acétylène (C)",
+   "pourquoi": "CV « ERIUM CÔTE D'IVOIRE » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la thermodynamique des équilibres liquide-vapeur et au froid industriel. Au laboratoire, j'ai séparé des mélanges par distillation fractionnée ; à Vridi, en raffinerie d'huiles, j'ai vérifié par l'analyse statistique la conformité d'un produit avant livraison. Mon objectif : contribuer au contrôle qualité et au suivi de production des gaz industriels de votre site.",
+   "activites": [
+    "Principal : gaz industriels et médicaux. Secondaires : gaz de laboratoire et mélanges d'étalonnage."
+   ],
+   "procedes": [
+    "Gamme publiée du groupe : hydrogène, argon, hélium, azote et oxygène (gazeux et liquides), CO2, acétylène, propane ; mélanges d'étalonnage, air synthétique. ERIUM CI produit et distribue oxygène, azote, acétylène et gaz spéciaux. Un client minier cite les livraisons d'azote d'ERIUM. Unité de séparation de l'air, remplissage, CO2 sur le site de Vridi : D (aucune source lue ne les décrit ; le groupe annonce des projets d'unités de séparation de l'air et de liquéfaction de CO2 sans site précisé)."
+   ],
+   "installations_ci": [
+    "Zone Industrielle de Vridi, Rue Sylvestre L14, Abidjan : site industriel de gaz industriels et médicaux (production, conditionnement : D)"
+   ],
+   "stage2": "N4 · https://erium.com/contact/cote-divoire/",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Distillation fractionnée",
+    "Bilans matière d'un procédé",
+    "Contrôle de conformité avant conditionnement",
+    "Plans d'échantillonnage : élaboration et mise en œuvre",
+    "Évaluation critique d'une méthode rapide",
+    "Analyse statistique de séries de mesures",
+    "Propagation d'incertitudes par simulation de Monte Carlo"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la thermodynamique des équilibres liquide-vapeur et au froid industriel. Mon objectif : contribuer au contrôle qualité et au suivi de production des gaz industriels de votre site. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la thermodynamique des équilibres liquide-vapeur et au froid industriel. Au laboratoire, j'ai séparé des mélanges par distillation fractionnée ; à Vridi, en raffinerie d'huiles, j'ai vérifié par l'analyse statistique la conformité d'un produit avant livraison. Mon objectif : contribuer au contrôle qualité et au suivi de production des gaz industriels de votre site. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Le site de Vridi sépare-t-il l'air ou conditionne-t-il des gaz produits ailleurs ?",
+    "Existe-t-il un service qualité ou laboratoire qui accueille des stagiaires de génie des procédés ?",
+    "Comment contrôlez-vous la pureté et la composition des gaz livrés (point que votre page présente comme maîtrisé) ?",
+    "Quelle durée de stage et quelle période sont possibles à partir de juin 2027 ?",
+    "Quel canal est le bon pour candidater (formulaire du site, courriel de service client, autre) ?"
+   ],
+   "questions_techniques": [
+    "Comment obtient-on de l'azote à partir de l'air ? Savoir : ERIUM dit « transformer les molécules de l'air » (ENE-S05) ; savoir expliquer, au niveau général, la séparation de l'air par liquéfaction et distillation ; ne pas dire que Vridi le fait.",
+    "Comment produit-on de l'hydrogène par électrolyse alcaline ? Savoir : celui de l'ACV (F23) ; entrées électricité et eau, sortie hydrogène et oxygène ; savoir citer l'inventaire pour 1 kg, les contrôles de cohérence, l'incertitude par Monte Carlo.",
+    "À quoi sert un mélange d'étalonnage ? Savoir : gaz de composition connue pour régler un instrument d'analyse (ENE-S06 cite les mélanges d'étalonnage).",
+    "Pourquoi échantillonner à plusieurs niveaux d'un réservoir ? Savoir : SANIA, trois niveaux (F11), pour vérifier l'homogénéité.",
+    "Quels risques présentent les gaz sous pression ? Savoir : réponse prudente, niveau général (pression, asphyxie, inflammabilité de l'hydrogène et de l'acétylène) ; dire que la sécurité n'est pas une compétence acquise."
+   ],
+   "vocabulaire": [
+    "Gaz industriel : gaz vendu pour un usage de procédé (azote, oxygène, argon, CO2...).",
+    "Séparation de l'air : extraction de l'azote, de l'oxygène et de l'argon de l'air atmosphérique.",
+    "Liquéfaction : passage d'un gaz à l'état liquide par refroidissement et pression.",
+    "Gaz de laboratoire / haute pureté : gaz dont la composition est garantie très précisément.",
+    "Mélange d'étalonnage : mélange de composition connue pour régler un analyseur.",
+    "Inertage : remplacement de l'air par un gaz inerte (azote) pour éviter l'oxydation ou l'explosion.",
+    "Électrolyse alcaline : décomposition de l'eau en hydrogène et oxygène par électricité, dans une solution alcaline.",
+    "ACV : analyse du cycle de vie, évaluation de l'impact environnemental d'un produit pour une unité donnée.",
+    "Photométrie : mesure d'une concentration par l'absorption de la lumière.",
+    "Coefficient de variation : écart-type divisé par la moyenne, en pourcentage.",
+    "(Définitions générales, non issues des sources.)"
+   ],
+   "strategie_contact": "Service à approcher : contrôle qualité ou laboratoire du site de Vridi ; nom exact. Demande précise : savoir quel service reçoit les candidatures de stage 2 à 3 mois dès juin 2027 et par quel canal. Ne demander aucune coordonnée privée. Après l'échange : écrire par le formulaire de contact de la page ERIUM Côte d'Ivoire (ENE-S05), en rappelant la personne rencontrée si elle l'accepte. Vérifier l'adresse électronique avec le stand : celle de la page pays porte un identifiant Ghana (ENE-S05) alors que le communiqué BRVM en publie une autre (ENE-S37). Stage de 3e année : à évoquer seulement en fin d'échange, si la discussion s'y prête. À éviter : affirmer qu'ERIUM produit de l'hydrogène par électrolyse ; parler du CNID comme d'un titre.",
+   "sources": [
+    {
+     "titre": "Technologies et laboratoires ERIUM",
+     "url": "https://erium.com/marches/technologies-et-laboratoires/"
+    },
+    {
+     "titre": "Contact Côte d'Ivoire ERIUM",
+     "url": "https://erium.com/contact/cote-divoire/"
+    },
+    {
+     "titre": "Communiqué : changement de dénomination sociale d'Air Liquide CI",
+     "url": "https://www.brvm.org/sites/default/files/20251127_-_communique_-_changement_de_denomination_sociale_-_air_liquide_ci.pdf"
+    },
+    {
+     "titre": "Air Liquide Côte d'Ivoire (SIVC) devenue ERIUM CI",
+     "url": "https://www.richbourse.com/common/apprendre/details-societe/SIVC"
+    },
+    {
+     "titre": "Grand bond du bénéfice de la société ERIUM Côte d'Ivoire au premier trimestre 2025",
+     "url": "https://www.financialafrik.com/2025/12/22/industrie-grand-bond-du-benefice-de-la-societe-erium-cote-divoire-au-premier-trimestre-2025/"
+    },
+    {
+     "titre": "Gaz industriel : après le rachat d'Air Liquide, Erium veut quadrupler ses investissements en Afrique",
+     "url": "https://ecomatin.net/gaz-industriel-apres-le-rachat-dair-liquide-erium-veut-quadrupler-ses-investissements-en-afrique"
+    }
+   ],
+   "cv": "CV_DAOUDA_ERIUM.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-231",
+   "rang": "3 · ordre d'impression 21",
+   "score": 50,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Usine de Yopougon, plus de 150 000 t/an (déclaratif)",
+   "pourquoi": "CV « SOTACI » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la maîtrise statistique des procédés et à la gestion de production. En usine, j'ai conduit un suivi qualité de dix jours fondé sur un plan d'échantillonnage et sur l'analyse statistique de la variabilité. Mon objectif : contribuer au contrôle qualité de la production de votre usine de Yopougon.",
+   "activites": [
+    "Principal : transformation métallurgique de l'acier (produits sidérurgiques : tubes, fer à béton, tôles, profilés, fil, grillage). Secondaires : brouettes et articles d'outillage."
+   ],
+   "procedes": [
+    "Produits : fer à béton, tôles de toiture et planes, poutrelles, profilés, tubes, fil, grillage, brouettes. Opérations unitaires (laminage, formage et soudage des tubes, galvanisation, extrusion de l'aluminium) : D, non décrites sur les pages lues ; des mots-clés de publications (#RollingMill, #TubeMill) vus dans des résultats non lus suggèrent un laminoir et une ligne de tubes. Contrôle qualité intégré à la production depuis 1995, avec un laboratoire BTP externe ; certification ISO 9001:2015."
+   ],
+   "installations_ci": [
+    "Zone industrielle de Yopougon, Abidjan : usine de transformation de l'acier (tubes, produits longs et plats)"
+   ],
+   "stage2": "N3 · https://www.sotaci.com",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Plans d'échantillonnage : élaboration et mise en œuvre",
+    "Contrôle de conformité d'un produit à sa spécification",
+    "Évaluation critique d'une méthode de contrôle rapide",
+    "Suivi de la variabilité : répétabilité, écart entre séries",
+    "Propagation d'incertitudes par simulation de Monte Carlo",
+    "Proposition de procédures de travail standardisées",
+    "Bilans matière et budget d'un pilote"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la maîtrise statistique des procédés et à la gestion de production. Mon objectif : contribuer au contrôle qualité de la production de votre usine de Yopougon. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé à la maîtrise statistique des procédés et à la gestion de production. En usine, j'ai conduit un suivi qualité de dix jours fondé sur un plan d'échantillonnage et sur l'analyse statistique de la variabilité. Mon objectif : contribuer au contrôle qualité de la production de votre usine de Yopougon. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Le service « Contrôle qualité de production » accueille-t-il des stagiaires de 2e année ?",
+    "À quelle personne ou adresse envoyer ma candidature ?",
+    "Quelles périodes de stage privilégiez-vous ?"
+   ],
+   "questions_techniques": [],
+   "vocabulaire": [],
+   "strategie_contact": "Viser : Contrôle qualité de production. Écart à assumer : —.",
+   "sources": [
+    {
+     "titre": "Accueil SOTACI",
+     "url": "https://www.sotaci.com"
+    },
+    {
+     "titre": "SOTACI (annuaire GoAfrica)",
+     "url": "https://www.goafricaonline.com/ci/63694-sotaci-industrie-metallurgique-abidjan-cote-ivoire"
+    },
+    {
+     "titre": "Les employés de la SOTACI observent un arrêt de travail",
+     "url": "https://www.koaci.com/index.php/article/2023/07/14/cote-divoire/societe/cote-divoire-zone-industrielle-de-yopougon-les-employes-de-la-sotaci-observent-un-arret-de-travail-pour-reclamer-de-meilleures-conditions-de-travail_170844.html"
+    }
+   ],
+   "cv": "CV_DAOUDA_SOTACI.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  },
+  {
+   "id": "SX26-023",
+   "rang": "4 · ordre d'impression 22",
+   "score": 45,
+   "presence_ci": "vérifiée (fiche de recherche)",
+   "resume": "Contrat de 5 ans à Koné (2025-09-11) : usine d'explosifs sur site et 2 à 3 unités mobiles (MEMU)",
+   "pourquoi": "CV « EPC CÔTE D'IVOIRE » : Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé au génie de la réaction et à la chimie des solutions. J'ai appliqué en usine des protocoles de prélèvement et de mesure rigoureux, et conduit au laboratoire une transformation chimique complète, de la préparation des matières à la distillation. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre unité de Koné, dans le strict respect de vos règles de sécurité.",
+   "activites": [
+    "Principal : explosifs et services de minage (groupe EPC). Prestataire de services."
+   ],
+   "procedes": [
+    "Fabrication d'explosifs en usine sur site et en unités mobiles (émulsion) selon le communiqué : détails D."
+   ],
+   "installations_ci": [
+    "Koné (clients : Montage Gold) : Contrat de cinq ans (annoncé le 2025-09-11) : usine d'explosifs sur site, 2 à 3 unités mobiles de fabrication (MEMU) et équipe de minage"
+   ],
+   "stage2": "N3 (prévu) · https://www.epc-groupe.com/en/our-locations/epc-cote-divoire",
+   "stage3": "Stage de 6 mois en 3e année : dates à déterminer, à évoquer à l'oral.",
+   "competences": [
+    "Application rigoureuse de protocoles de prélèvement",
+    "Contrôle de conformité à une spécification",
+    "Standardisation de procédures (proposée)",
+    "Transformation chimique par étapes au laboratoire",
+    "Bilans matière d'un procédé",
+    "Analyse statistique de séries de mesures",
+    "Propagation d'incertitudes par simulation de Monte Carlo"
+   ],
+   "pitch30": "Bonjour, je suis Daouda Bakary Diakité, étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé au génie de la réaction et à la chimie des solutions. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre unité de Koné, dans le strict respect de vos règles de sécurité. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027 : à qui puis-je remettre mon CV ?",
+   "pitch60": "Bonjour, je suis Daouda Bakary Diakité. Étudiant ingénieur en 2e année de Génie des Procédés Industriels (ESCPE, INP-HB), formé au génie de la réaction et à la chimie des solutions. J'ai appliqué en usine des protocoles de prélèvement et de mesure rigoureux, et conduit au laboratoire une transformation chimique complète, de la préparation des matières à la distillation. Mon objectif : contribuer au contrôle qualité et au suivi de production de votre unité de Koné, dans le strict respect de vos règles de sécurité. J'ai aussi conduit en équipe un projet de valorisation de l'amidon de manioc, candidat au Concours National de l'Innovation Durable 2026. Je cherche un stage de production de 2 à 3 mois à partir de juin 2027, et je prépare un stage de 6 mois en 3e année.",
+   "questions": [
+    "Le service « Usine d'émulsion de Koné (prévue) » accueille-t-il des stagiaires de 2e année ?",
+    "À quelle personne ou adresse envoyer ma candidature ?",
+    "Quelles périodes de stage privilégiez-vous ?"
+   ],
+   "questions_techniques": [],
+   "vocabulaire": [],
+   "strategie_contact": "Viser : Usine d'émulsion de Koné (prévue). Écart à assumer : Explosifs : sécurité stricte.",
+   "sources": [
+    {
+     "titre": "EPC Côte d'Ivoire",
+     "url": "https://www.epc-groupe.com/en/our-locations/epc-cote-divoire"
+    },
+    {
+     "titre": "EPC Groupe remporte un contrat stratégique de 5 ans avec Montage Gold (Koné)",
+     "url": "https://www.easybourse.com/services/news/1514999/contrat-majeur-pour-epc-groupe-en-cote-ivoire.html"
+    }
+   ],
+   "cv": "CV_DAOUDA_EPC.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+  }
+ ]
+}
