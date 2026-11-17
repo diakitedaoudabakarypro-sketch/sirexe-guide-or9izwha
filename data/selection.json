@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-17T12:56:58",
+ "genere_le": "2026-11-17T13:29:27",
  "note": "Débrief des entreprises de la sélection principale (22 CV, 21 exposants). Champs tirés des fiches de recherche, des préparations et des CV ; classes C à confirmer au stand.",
  "entreprises": [
   {
@@ -103,7 +103,11 @@
      "url": "https://www.eranove.com/wp-content/uploads/2019/02/Rapport-Activite-2017_SODECI.pdf"
     }
    ],
-   "cv": "CV_DAOUDA_CIPREL_ATINKOU.pdf (dossier 09_LIVRAISON_IMPRESSION) ; CV_DAOUDA_SODECI.pdf"
+   "cv": "CV_DAOUDA_CIPREL_ATINKOU.pdf (dossier 09_LIVRAISON_IMPRESSION) ; CV_DAOUDA_SODECI.pdf",
+   "cv_ordres": [
+    1,
+    2
+   ]
   },
   {
    "id": "SX26-026",
@@ -202,7 +206,10 @@
      "url": "https://s203.q4cdn.com/846800919/files/doc_news/2026/03/Allied-Gold-Results-News-Release-2025-Q4_FINAL.pdf"
     }
    ],
-   "cv": "CV_DAOUDA_ENDEAVOUR.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_ENDEAVOUR.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    3
+   ]
   },
   {
    "id": "SX26-050",
@@ -293,7 +300,10 @@
      "url": "https://www.sir.ci/ressources-humaines/"
     }
    ],
-   "cv": "CV_DAOUDA_SIR.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_SIR.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    4
+   ]
   },
   {
    "id": "SX26-034",
@@ -390,7 +400,10 @@
      "url": "https://s203.q4cdn.com/846800919/files/doc_news/2026/03/Allied-Gold-Results-News-Release-2025-Q4_FINAL.pdf"
     }
    ],
-   "cv": "CV_DAOUDA_SODEMI.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_SODEMI.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    5
+   ]
   },
   {
    "id": "SX26-024",
@@ -471,7 +484,10 @@
      "url": "https://www.aip.ci/cote-divoire-aip-20-jeunes-de-la-sous-prefecture-de-begbessou-formes-a-la-conduite-dengins-btp-recoivent-leurs-certificats/"
     }
    ],
-   "cv": "CV_DAOUDA_PERSEUS.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_PERSEUS.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    6
+   ]
   },
   {
    "id": "SX26-053",
@@ -551,7 +567,10 @@
      "url": "https://www.goafricaonline.com/ci/emploi/job-16446-technicien-en-batiment"
     }
    ],
-   "cv": "CV_DAOUDA_SMB.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_SMB.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    7
+   ]
   },
   {
    "id": "SX26-005",
@@ -619,7 +638,10 @@
      "url": "https://www.miningweekly.com/article/kon-gold-project-cte-divoire-update-2026-10-02"
     }
    ],
-   "cv": "CV_DAOUDA_MONTAGE.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_MONTAGE.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    8
+   ]
   },
   {
    "id": "SX26-048",
@@ -712,7 +734,10 @@
      "url": "https://africaoilgasreport.com/2026/06/vacancies/petroci-has-vacancy-for-10-technical-personnel-to-work-on-newly-acquired-asset/"
     }
    ],
-   "cv": "CV_DAOUDA_PETROCI.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_PETROCI.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    9
+   ]
   },
   {
    "id": "SX26-031",
@@ -797,7 +822,10 @@
      "url": "https://bus-ex.com/sites/default/files/2023-10/Allied%20Gold%20-%20BONIKRO%20Gold%20Mine%20-BE%20Africa%20PDF.pdf"
     }
    ],
-   "cv": "CV_DAOUDA_ALLIED.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_ALLIED.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    10
+   ]
   },
   {
    "id": "SX26-126",
@@ -860,7 +888,10 @@
      "url": "https://simoon-cv.com/emplois/offre/recrutement-charge-des-actions-sociales-h-f-7e70bf05-b8fb-41aa-9278-598754a412f7"
     }
    ],
-   "cv": "CV_DAOUDA_SML.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_SML.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    11
+   ]
   },
   {
    "id": "SX26-046",
@@ -933,7 +964,10 @@
      "url": "https://www.aip.ci/aip-la-gestoci-affiche-de-nouvelles-ambitions-pour-faire-de-la-cote-divoire-un-hub-petrolier-regional/"
     }
    ],
-   "cv": "CV_DAOUDA_GESTOCI.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_GESTOCI.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    12
+   ]
   },
   {
    "id": "SX26-047",
@@ -993,7 +1027,10 @@
      "url": "https://inphb.edu.ci/wp-content/uploads/2026/05/MASTERES-ENI-Plaquette-2026-1.pdf"
     }
    ],
-   "cv": "CV_DAOUDA_ENI.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_ENI.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    13
+   ]
   },
   {
    "id": "SX26-052",
@@ -1049,7 +1086,10 @@
      "url": "https://www.koaci.com/article/2022/07/01/cote-divoire/economie/cote-divoire-prix-ivoirien-de-la-qualite-la-societe-foxtrot-international-laureate-pour-la-seconde-fois_161251.html"
     }
    ],
-   "cv": "CV_DAOUDA_FOXTROT.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_FOXTROT.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    14
+   ]
   },
   {
    "id": "SX26-041",
@@ -1105,7 +1145,10 @@
      "url": "https://www.africaoutlookmag.com/oil-gas/simam-cote-divoire-energy-for-all"
     }
    ],
-   "cv": "CV_DAOUDA_SIMAM.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_SIMAM.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    15
+   ]
   },
   {
    "id": "SX26-158",
@@ -1183,7 +1226,10 @@
      "url": "https://www.oryxenergies.com/en/news?idnews=165"
     }
    ],
-   "cv": "CV_DAOUDA_ORYX.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_ORYX.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    16
+   ]
   },
   {
    "id": "SX26-076",
@@ -1249,7 +1295,10 @@
      "url": "https://www.financialafrik.com/2026/11/06/biovea-la-cote-divoire-inaugure-la-plus-grande-centrale-a-biomasse-dafrique-de-louest/"
     }
    ],
-   "cv": "CV_DAOUDA_BIOVEA.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_BIOVEA.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    17
+   ]
   },
   {
    "id": "SX26-184",
@@ -1314,7 +1363,10 @@
      "url": "https://www.azitoenergie.com/"
     }
    ],
-   "cv": "CV_DAOUDA_AZITO.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_AZITO.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    18
+   ]
   },
   {
    "id": "SX26-190",
@@ -1391,7 +1443,10 @@
      "url": "https://news.abidjan.net/articles/708154/un-laboratoire-danalyse-de-minerais-ouvert-a-yamoussoukro"
     }
    ],
-   "cv": "CV_DAOUDA_SGS.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_SGS.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    19
+   ]
   },
   {
    "id": "SX26-177",
@@ -1476,7 +1531,10 @@
      "url": "https://ecomatin.net/gaz-industriel-apres-le-rachat-dair-liquide-erium-veut-quadrupler-ses-investissements-en-afrique"
     }
    ],
-   "cv": "CV_DAOUDA_ERIUM.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_ERIUM.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    20
+   ]
   },
   {
    "id": "SX26-231",
@@ -1529,7 +1587,10 @@
      "url": "https://www.koaci.com/index.php/article/2023/07/14/cote-divoire/societe/cote-divoire-zone-industrielle-de-yopougon-les-employes-de-la-sotaci-observent-un-arret-de-travail-pour-reclamer-de-meilleures-conditions-de-travail_170844.html"
     }
    ],
-   "cv": "CV_DAOUDA_SOTACI.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_SOTACI.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    21
+   ]
   },
   {
    "id": "SX26-023",
@@ -1578,7 +1639,10 @@
      "url": "https://www.easybourse.com/services/news/1514999/contrat-majeur-pour-epc-groupe-en-cote-ivoire.html"
     }
    ],
-   "cv": "CV_DAOUDA_EPC.pdf (dossier 09_LIVRAISON_IMPRESSION)"
+   "cv": "CV_DAOUDA_EPC.pdf (dossier 09_LIVRAISON_IMPRESSION)",
+   "cv_ordres": [
+    22
+   ]
   }
  ]
 }

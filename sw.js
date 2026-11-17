@@ -1,8 +1,8 @@
 /* SIREXE · service worker.
    Rôle : garder l'application dans le téléphone pour qu'elle s'ouvre SANS internet.
    Il ne touche jamais aux contacts (stockés dans IndexedDB) et n'intercepte jamais api.github.com.
-   Mise à jour : changer VERSION ; l'application propose alors « Actualiser ». */
-var VERSION = "sirexe-v1-4";
+   Mise à jour : changer VERSION ; la nouvelle version s'installe seule (skipWaiting) et l'application se recharge, sauf pendant une saisie. */
+var VERSION = "sirexe-v1-5";
 var FICHIERS = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "data/exposants.json", "data/selection.json",
   "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png",
@@ -14,7 +14,7 @@ self.addEventListener("install", function (e) {
     return Promise.all(FICHIERS.map(function (u) {
       return c.add(new Request(u, { cache: "reload" })).catch(function () {});
     }));
-  }));   // pas de skipWaiting : la nouvelle version attend la confirmation de l'utilisateur
+  }).then(function () { return self.skipWaiting(); }));   // installation immédiate : Daouda voit chaque publication sans rien faire
 });
 
 self.addEventListener("message", function (e) { if (e.data === "activer") self.skipWaiting(); });

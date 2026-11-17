@@ -5,7 +5,7 @@
    - Tout texte affiché passe par textContent (aucun innerHTML avec des données). */
 (function () {
   "use strict";
-  var APP_VERSION = "1.0";   // à changer avec VERSION dans sw.js à chaque publication
+  var APP_VERSION = "1.5";   // à changer avec VERSION dans sw.js à chaque publication
 
   /* ---------- utilitaires ---------- */
   var $ = function (s, r) { return (r || document).querySelector(s); };
@@ -29,6 +29,17 @@
     })(kids);
     return e;
   }
+  var SVGNS = "http://www.w3.org/2000/svg";
+  function ic(nom, cl) {   // icône du jeu intégré à index.html ; nom = constante du code, jamais une donnée
+    var s = document.createElement("span"), svg = document.createElementNS(SVGNS, "svg"), u = document.createElementNS(SVGNS, "use");
+    s.className = "ic" + (cl ? " " + cl : ""); s.setAttribute("aria-hidden", "true"); svg.setAttribute("viewBox", "0 0 24 24"); u.setAttribute("href", "#i-" + nom); svg.append(u); s.append(svg); return s;
+  }
+  function vib() { try { if (navigator.vibrate) navigator.vibrate(8); } catch (e) {} }
+  function initiales(t) { var m = String(t || "?").replace(/[^A-Za-zÀ-ÿ0-9 ]/g, " ").trim().split(/\s+/); return ((m[0] || "?").charAt(0) + (m[1] ? m[1].charAt(0) : (m[0] || "").charAt(1))).toUpperCase(); }
+  function classeSecteur(e) { return e && ["mines", "petrole", "energies"].indexOf(e.secteur) >= 0 ? "s-" + e.secteur : ""; }
+  function rangInfo(p) { var r = String(p && p.rang || ""), a = r.match(/^\s*(\d+)/), b = r.match(/impression\s*(\d+)/); return { prio: a ? a[1] : "", cv: b ? b[1] : "" }; }
+  function cvTexte(p) { var o = p && p.cv_ordres && p.cv_ordres.length ? p.cv_ordres : [rangInfo(p).cv]; return "CV n°" + o.join(" et n°"); }
+  function plusJours(n) { var d = new Date(); d.setDate(d.getDate() + n); return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }
   function norm(s) { return String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(); }
   function maintenant() { return new Date().toISOString(); }
   function fmt(iso) { try { return new Date(iso).toLocaleString("fr-FR", { dateStyle: "short", timeStyle: "short" }); } catch (e) { return iso || ""; } }
@@ -97,7 +108,7 @@
 
   /* ---------- état ---------- */
   var S = { exposants: [], selection: {}, selectionNote: "", contacts: [], cfg: null, journal: [], filtre: { q: "", secteur: "tous", hall: "", page: 1 }, filtreC: { q: "", mode: "tous" }, enSync: false };
-  var SECTEURS = [["tous", "Tous"], ["prio", "Prioritaires"], ["mines", "Mines"], ["petrole", "Pétrole"], ["energies", "Énergie"], ["partenaires", "Partenaires"], ["autres", "Autres"]];
+  var SECTEURS = [["prio", "Ma sélection"], ["tous", "Tous"],["mines", "Mines"], ["petrole", "Pétrole"], ["energies", "Énergie"], ["partenaires", "Partenaires"], ["autres", "Autres"]];
   var STATUTS = ["Nouveau", "À relancer", "En attente de réponse", "Rendez-vous prévu", "Candidature envoyée", "Clos"];
   var INTERETS = ["Non précisé", "Faible", "Moyen", "Fort"];
   var PAGE = 60;
@@ -113,18 +124,20 @@
     vue.replaceChildren.apply(vue, Array.prototype.slice.call(d.childNodes));
   }
   function toast(msg, erreur) {
-    var t = h("div", { class: "bandeau", role: "status", style: "position:fixed;left:0;right:0;bottom:70px;z-index:9;" + (erreur ? "background:#b3261e" : "background:#1f7a45") }, msg);
-    document.body.append(t); setTimeout(function () { t.remove(); }, erreur ? 6000 : 2500);
+    var t = h("div", { class: "toast" + (erreur ? " err" : ""), role: "status", "aria-live": "polite" }, ic(erreur ? "question" : "ok"), h("span", null, msg));
+    document.body.append(t); vib();
+    setTimeout(function () { t.style.transition = "opacity .25s"; t.style.opacity = "0"; setTimeout(function () { t.remove(); }, 260); }, erreur ? 6000 : 2600);
   }
   function bloquant(msg) { rendre(h("div", { class: "note" }, h("b", null, "Stockage indisponible. "), msg)); }
   function majPastille() {
-    var p = $("#etat-sync"), att = S.contacts.filter(function (c) { return !c.sync || c.sync.statut !== "synced"; }).length, txt;
-    if (S.enSync) txt = "Envoi en cours…";
-    else if (!navigator.onLine) txt = "Hors connexion" + (att ? " · " + att + " en attente" : "");
-    else if (!S.cfg || !S.cfg.token) txt = att ? att + " en attente · jeton manquant" : "Jeton GitHub à saisir";
-    else if (att) txt = att + " en attente de synchronisation";
+    var p = $("#etat-sync"), att = S.contacts.filter(function (c) { return !c.sync || c.sync.statut !== "synced"; }).length, txt, etat = "ok";
+    var err = S.contacts.some(function (c) { return c.sync && c.sync.statut === "error"; });
+    if (S.enSync) { txt = "Envoi en cours…"; etat = "run"; }
+    else if (!navigator.onLine) { txt = "Hors connexion" + (att ? " · " + att + " en attente" : ""); etat = "off"; }
+    else if (!S.cfg || !S.cfg.token) { txt = att ? att + " en attente · jeton manquant" : "Connecter GitHub"; etat = "att"; }
+    else if (att) { txt = att + " en attente"; etat = err ? "err" : "att"; }
     else txt = S.contacts.length ? "Tout est synchronisé" : "Prêt";
-    p.textContent = txt;
+    p.textContent = txt; p.dataset.etat = etat;
   }
 
   /* ---------- synchronisation GitHub ---------- */
@@ -241,38 +254,49 @@
   }
   function vueInvitations() {
     var manquantes = INVITATIONS.filter(function (iv) { return !invLocale(iv[0]); }).length;
-    rendre(h("h2", null, "Mes badges d'accès"),
-      manquantes ? h("p", { class: "note" }, "Les invitations ne sont pas encore dans le téléphone. Une connexion et le jeton (Réglages) suffisent : elles restent ensuite disponibles sans internet.") : h("p", { class: "aide" }, "Au portail : toucher le badge, il s'affiche en plein écran et l'écran reste allumé. Toucher de nouveau pour revenir."),
-      h("button", { class: manquantes ? "gros" : "second", onclick: function () { invTelecharger(); } }, manquantes ? "Télécharger mes invitations" : "Mettre à jour les invitations"),
+    rendre(h("p", { class: "surtitre" }, "Accès au salon"), h("h2", null, "Mes badges d'accès"),
+      manquantes ? h("div", { class: "note" }, "Les invitations ne sont pas encore dans le téléphone. Avec internet et le jeton (Réglages), un seul toucher suffit : elles restent ensuite disponibles hors connexion.")
+        : h("div", { class: "conseil" }, ic("soleil"), h("span", null, "Au portail : monter la luminosité, puis toucher le badge. Il s'affiche en plein écran et l'écran reste allumé. Toucher de nouveau pour revenir.")),
+      manquantes ? h("button", { class: "gros orange", onclick: function () { invTelecharger(); } }, ic("telecharger"), "Télécharger mes invitations") : null,
       INVITATIONS.map(function (iv) {
         var src = invLocale(iv[0]); if (!src) return null;
-        return h("figure", { class: "invitation" },
-          h("img", { src: src, alt: iv[1], onclick: function (ev) { badgePleinEcran(ev.target); }, style: "width:100%;height:auto;display:block;border-radius:8px;background:#fff;border:1px solid #d5dbe1;cursor:zoom-in" }),
-          h("figcaption", { class: "aide" }, iv[1]));
-      }));
+        return h("figure", { class: "badge-acces invitation" },
+          h("img", { src: src, alt: iv[1], onclick: function (ev) { vib(); badgePleinEcran(ev.target); } }),
+          h("figcaption", null, h("span", null, iv[1]), ic("plein")));
+      }),
+      manquantes ? null : h("button", { class: "second gros", onclick: function () { invTelecharger(); } }, ic("telecharger"), "Mettre à jour les invitations"));
   }
 
   /* ---------- vues ---------- */
   var routes = { entreprises: vueListe, e: vueFiche, ajout: vueFormulaire, contacts: vueContacts, contact: vueContact, bord: vueBord, plans: vuePlans, invitations: vueInvitations, reglages: vueReglages };
   function rafraichir() { var m = (location.hash || "#/").slice(2).split("/"), nom = m[0] || "entreprises"; if (nom === "ajout" || nom === "contact") return; vueCourante(); }
+  var dernierHash = location.hash || "#/", positions = {};
   function vueCourante() {
     var m = (location.hash || "#/").slice(2).split("/"), nom = m[0] || "entreprises", f = routes[nom] || vueListe, nav = { entreprises: "entreprises", e: "entreprises", ajout: "entreprises", contacts: "contacts", contact: "contacts", bord: "bord", plans: "plans", invitations: "invitations", reglages: "reglages" }[nom] || "entreprises";
-    document.querySelectorAll(".bas a").forEach(function (a) { if (a.dataset.nav === nav) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
-    f(decodeURIComponent(m[1] || ""));
-    majPastille();
+    var ici = location.hash || "#/", nouveau = ici !== dernierHash;
+    if (nouveau) { positions[dernierHash] = window.scrollY; dernierHash = ici; }
+    function dessiner() {
+      document.querySelectorAll(".bas a").forEach(function (a) { if (a.dataset.nav === nav) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+      var fab = $(".fab"); if (fab) fab.remove();
+      f(decodeURIComponent(m[1] || ""));
+      majPastille();
+      if (nouveau) window.scrollTo(0, (nom === "entreprises" || nom === "contacts") ? (positions[ici] || 0) : 0);   // retour : on retrouve sa place dans la liste
+    }
+    dessiner();   // rendu immédiat (pas d'API de transition différée : aucun écran intermédiaire, aucune transition interrompue)
+    if (nouveau && S.pret) { vue.classList.remove("entre"); void vue.offsetWidth; vue.classList.add("entre"); }   // animation d'entrée en CSS
   }
   function aller(h2) { if (location.hash === h2) vueCourante(); else location.hash = h2; }
 
   function badgeSync(c) {
     var st = c.sync && c.sync.statut;
-    return st === "synced" ? h("span", { class: "badge b-ok" }, "Synchronisé") : st === "error" ? h("span", { class: "badge b-err", title: c.sync.message }, "Erreur de synchro") : h("span", { class: "badge b-att" }, "En attente de synchronisation");
+    return st === "synced" ? h("span", { class: "badge b-ok" }, ic("nuage"), "Synchronisé") : st === "error" ? h("span", { class: "badge b-err", title: c.sync.message }, "Erreur de synchro") : h("span", { class: "badge b-att" }, "En attente de synchronisation");
   }
   function nbContacts(id) { return S.contacts.filter(function (c) { return c.entreprise_id === id; }).length; }
 
   /* Liste des entreprises */
   function vueListe() {
-    var f = S.filtre, liste = S.exposants.filter(function (e) {
-      if (f.q && norm(e.nom).indexOf(norm(f.q)) < 0) return false;
+    var f = S.filtre, nbSel = Object.keys(S.selection).length, liste = S.exposants.filter(function (e) {
+      if (f.q) return norm(e.nom).indexOf(norm(f.q)) >= 0 && (!f.hall || e.hall === f.hall);   // une recherche porte sur tout l'annuaire
       if (f.hall && e.hall !== f.hall) return false;
       if (f.secteur === "prio") return !!S.selection[e.id];
       if (f.secteur === "autres") return ["institutions", "esplanade", "startups"].indexOf(e.secteur) >= 0;
@@ -281,65 +305,99 @@
     });
     liste.sort(function (a, b) {
       var pa = S.selection[a.id], pb = S.selection[b.id];
-      if (pa && pb) return (pa.rang || 999) - (pb.rang || 999);
+      if (pa && pb) { var ra = rangInfo(pa), rb = rangInfo(pb); return ((+ra.prio || 99) - (+rb.prio || 99)) || ((+ra.cv || 99) - (+rb.cv || 99)); }   // priorité, puis n° du CV papier
       if (pa) return -1; if (pb) return 1;
       return a.nom.localeCompare(b.nom, "fr");
     });
-    var q = h("input", { type: "search", id: "q", placeholder: "Rechercher une entreprise", "aria-label": "Rechercher une entreprise", value: f.q, autocomplete: "off" });
+    var q = h("input", { type: "search", id: "q", placeholder: "Rechercher", "aria-label": "Rechercher une entreprise", value: f.q, autocomplete: "off" });
     q.addEventListener("input", function () { f.q = q.value; f.page = 1; var pos = q.selectionStart; vueListe(); var n = $("#q"); n.focus(); try { n.setSelectionRange(pos, pos); } catch (e) {} });
-    var puces = h("div", { class: "puces", role: "group", "aria-label": "Filtrer par secteur" }, SECTEURS.map(function (s) {
-      return h("button", { class: "puce", "aria-pressed": f.secteur === s[0] ? "true" : "false", onclick: function () { f.secteur = s[0]; f.page = 1; vueListe(); } }, s[1]);
+    var compte = { prio: nbSel, tous: S.exposants.length };
+    var puces = h("div", { class: "puces", role: "group", "aria-label": "Filtrer par secteur" }, SECTEURS.filter(function (s) { return s[0] !== "prio" || nbSel; }).map(function (s) {
+      return h("button", { class: "puce", "aria-pressed": f.secteur === s[0] && !f.q ? "true" : "false", onclick: function () { f.secteur = s[0]; f.page = 1; f.q = ""; vueListe(); } }, s[1], compte[s[0]] != null ? h("i", null, compte[s[0]]) : null);
     }));
-    var hall = h("select", { "aria-label": "Hall", onchange: function (ev) { f.hall = ev.target.value; f.page = 1; vueListe(); } }, [["", "Tous les halls"], ["Hall 1", "Hall 1"], ["Hall 2", "Hall 2"]].map(function (o) { return h("option", { value: o[0], selected: f.hall === o[0] }, o[1]); }));
-    var cartes = liste.slice(0, f.page * PAGE).map(function (e) {
-      var p = S.selection[e.id], n = nbContacts(e.id);
-      return h("a", { class: "carte", href: "#/e/" + encodeURIComponent(e.id) },
-        h("b", null, e.nom),
-        h("span", { class: "meta" }, e.pavillon + " · " + e.hall + (e.stand ? " · stand " + e.stand : "")),
-        h("div", null, p ? h("span", { class: "badge b-prio" }, "Priorité " + (p.rang || "")) : null, n ? h("span", { class: "badge b-ok" }, n + " contact" + (n > 1 ? "s" : "")) : null));
+    var hall = h("select", { "aria-label": "Hall", onchange: function (ev) { f.hall = ev.target.value; f.page = 1; vueListe(); } }, [["", "Tous halls"], ["Hall 1", "Hall 1"], ["Hall 2", "Hall 2"]].map(function (o) { return h("option", { value: o[0], selected: f.hall === o[0] }, o[1]); }));
+    var cartes = liste.slice(0, f.page * PAGE).map(function (e, i) {
+      var p = S.selection[e.id], n = nbContacts(e.id), r = rangInfo(p);
+      return h("a", { class: "carte", href: "#/e/" + encodeURIComponent(e.id), style: "--i:" + i },
+        h("span", { class: "avatar " + (p ? classeSecteur(e) : "") }, initiales(e.nom)),
+        h("span", { class: "corps" }, h("b", null, e.nom), h("span", { class: "meta" }, e.pavillon + " · " + e.hall + (e.stand ? " · stand " + e.stand : ""))),
+        ic("fleche", "fleche"),
+        (p || n) ? h("span", { class: "etiquettes" },
+          p ? h("span", { class: "badge b-prio" }, ic("etoile"), "Priorité " + r.prio) : null,
+          p && r.cv ? h("span", { class: "badge" }, ic("cv"), cvTexte(p)) : null,
+          n ? h("span", { class: "badge b-ok" }, ic("ok"), "Rencontrée · " + n + " contact" + (n > 1 ? "s" : "")) : null) : null);
     });
-    rendre(
-      h("h2", null, "Exposants (" + liste.length + ")"), q, puces, h("div", { style: "margin-bottom:8px" }, hall),
-      S.selectionNote && !Object.keys(S.selection).length ? h("p", { class: "note" }, "Fiches de préparation : pas encore disponibles. Les exposants ci-dessous viennent de l'annuaire officiel (présence en Côte d'Ivoire non vérifiée).") : null,
-      cartes.length ? cartes : h("p", { class: "vide" }, "Aucun exposant ne correspond. Essayer un autre mot ou « Tous »."),
+    var hero = null;
+    if (nbSel && f.secteur === "prio" && !f.q) {
+      var vus = Object.keys(S.selection).filter(function (id) { return nbContacts(id) > 0; }).length, relances = S.contacts.filter(estRelance).length;
+      hero = h("section", { class: "hero" }, h("p", { class: "surtitre" }, "Ma sélection · salon SIREXE 2026"),
+        h("b", { class: "grand" }, vus + " / " + nbSel + " entreprises rencontrées"),
+        h("p", null, "Classées par priorité. Toucher une entreprise : débrief, pitch, questions et ajout d'un contact."),
+        h("div", { class: "jauge", role: "progressbar", "aria-label": "Entreprises rencontrées", "aria-valuemin": "0", "aria-valuemax": String(nbSel), "aria-valuenow": String(vus) }, h("span", { style: "width:" + Math.round(100 * vus / nbSel) + "%" })),
+        h("div", { class: "stats" }, h("a", { href: "#/contacts" }, ic("contacts"), S.contacts.length + " contact" + (S.contacts.length > 1 ? "s" : "")), h("a", { href: "#/bord" }, ic("relance"), relances + " à relancer"), h("a", { href: "#/invitations" }, ic("qr"), "Mon badge")));
+    }
+    rendre(hero, hero ? null : h("h2", null, "Exposants (" + liste.length + ")"),
+      h("div", { class: "outils" }, q, hall), puces,
+      S.selectionNote && !nbSel ? h("p", { class: "note" }, "Fiches de préparation : pas encore disponibles. Les exposants ci-dessous viennent de l'annuaire officiel (présence en Côte d'Ivoire non vérifiée).") : null,
+      cartes.length ? cartes : h("div", { class: "vide" }, ic("entreprise"), "Aucun exposant ne correspond. Essayer un autre mot ou « Tous »."),
       liste.length > f.page * PAGE ? h("button", { class: "second gros", onclick: function () { f.page++; vueListe(); } }, "Afficher plus (" + (liste.length - f.page * PAGE) + ")") : null,
       h("p", { class: "aide" }, "Source : annuaire officiel sirexe.ci, extrait le " + fmtJour((S.extrait || "").slice(0, 10)) + ". Les numéros de stand sont rarement publiés : voir l'onglet Plans."));
   }
 
   /* Fiche d'une entreprise */
-  function bloc(titre, contenu) {
+  function bloc(titre, contenu, o) {   // o.ouvert : lisible sans toucher ; o.type : "pitch", "num" (liste numérotée), "qr" (question + réponse), "vocab" (terme : définition)
+    o = o || {};
     if (!contenu || (Array.isArray(contenu) && !contenu.length)) return null;
-    var corps = Array.isArray(contenu) ? h("ul", { class: "liste" }, contenu.map(function (x) { return h("li", null, String(x)); })) : h("p", null, String(contenu));
-    return h("details", null, h("summary", null, titre), h("div", null, corps));
+    var corps;
+    if (Array.isArray(contenu)) {
+      corps = h(o.type === "num" || o.type === "qr" ? "ol" : "ul", { class: "liste" }, contenu.map(function (x) {
+        x = String(x);
+        var k = o.type === "qr" ? x.indexOf(" Savoir : ") : o.type === "vocab" ? x.indexOf(" : ") : -1;
+        if (k > 0 && o.type === "qr") return h("li", null, h("b", null, x.slice(0, k)), h("span", { class: "rep" }, "À savoir : " + x.slice(k + 10)));
+        if (k > 0) return h("li", null, h("span", { class: "terme" }, x.slice(0, k)), " : " + x.slice(k + 3));
+        return h("li", null, x);
+      }));
+    } else corps = String(contenu).split(" | ").map(function (t) { return h("p", null, t); });
+    if (o.ouvert) return h("div", { class: "bloc" + (o.type === "pitch" ? " pitch" : "") }, h("p", { class: "surtitre" }, titre), corps);
+    return h("details", null, h("summary", null, titre), h("div", { class: o.type === "pitch" ? "pitch" : null }, corps));
   }
+  function sauter(id) { return function (ev) { ev.preventDefault(); vib(); var c = document.getElementById(id); if (c) c.scrollIntoView({ behavior: "smooth", block: "start" }); }; }
   function vueFiche(id) {
     var e = exposant(id); if (!e) { rendre(h("p", { class: "vide" }, "Entreprise introuvable."), h("a", { class: "btn", href: "#/" }, "Retour à la liste")); return; }
-    var p = S.selection[id], mes = S.contacts.filter(function (c) { return c.entreprise_id === id; });
+    var p = S.selection[id], mes = S.contacts.filter(function (c) { return c.entreprise_id === id; }), r = rangInfo(p), ajout = "#/ajout/" + encodeURIComponent(id);
     var sources = p && Array.isArray(p.sources) ? p.sources.filter(function (s) { return urlSure(s.url); }).map(function (s) { return h("li", null, h("a", { href: s.url, target: "_blank", rel: "noopener noreferrer" }, s.titre || s.url)); }) : [];
+    var sections = p ? [
+      ["essentiel", "L'essentiel", "cible", [bloc("En bref", p.resume, { ouvert: true }), bloc("Pourquoi mon profil l'intéresse", p.pourquoi, { ouvert: true }), bloc("Qui aborder et comment", p.strategie_contact, { ouvert: true }), bloc("Compétences à mettre en avant", p.competences, { ouvert: true })]],
+      ["pitch", "Pitch", "parole", [bloc("Pitch 30 secondes", p.pitch30, { ouvert: true, type: "pitch" }), bloc("Pitch 1 minute", p.pitch60, { type: "pitch" })]],
+      ["questions", "Questions", "question", [bloc("Questions à poser", p.questions, { ouvert: true, type: "num" }), bloc("Questions techniques, avec les réponses", p.questions_techniques, { type: "qr" })]],
+      ["entreprise", "L'entreprise", "livre", [bloc("Activités", p.activites), bloc("Procédés et opérations", p.procedes), bloc("Installations en Côte d'Ivoire", p.installations_ci), bloc("Vocabulaire technique", p.vocabulaire, { type: "vocab" })]],
+      ["stage", "Stage", "stage", [bloc("Stage de 2e année (2 à 3 mois, dès juin 2027)", p.stage2), bloc("Stage de 3e année (6 mois)", p.stage3), sources.length ? h("details", null, h("summary", null, "Sources (" + sources.length + ")"), h("div", null, h("ul", { class: "liste" }, sources))) : null]]
+    ] : [];
     rendre(
-      h("a", { href: "#/" }, "← Entreprises"),
-      h("h2", null, e.nom),
-      h("p", { class: "meta" }, e.pavillon + " · " + e.hall + (e.stand ? " · stand " + e.stand : " · stand non publié")),
-      p ? h("div", null, h("span", { class: "badge b-prio" }, "Priorité " + (p.rang || "") + (p.score ? " · " + p.score + "/100" : "")), p.presence_ci ? h("span", { class: "badge b-ok" }, "Présence CI : " + p.presence_ci) : null)
-        : h("p", { class: "note" }, "Pas de fiche de préparation pour cette entreprise : présence en Côte d'Ivoire non vérifiée dans ce projet."),
-      h("a", { class: "btn gros", href: "#/ajout/" + encodeURIComponent(id), style: "display:block" }, "Ajouter un contact"),
-      p ? [
-        bloc("En bref", p.resume), bloc("Pourquoi mon profil l'intéresse", p.pourquoi), bloc("Activités", p.activites), bloc("Procédés et opérations", p.procedes),
-        bloc("Installations en Côte d'Ivoire", p.installations_ci), bloc("Stage de 2e année (2 à 3 mois, dès juin 2027)", p.stage2), bloc("Stage de 3e année (6 mois)", p.stage3),
-        bloc("Compétences à mettre en avant", p.competences), bloc("Pitch 30 secondes", p.pitch30), bloc("Pitch 1 minute", p.pitch60),
-        bloc("Questions à poser", p.questions), bloc("Questions techniques", p.questions_techniques), bloc("Vocabulaire technique", p.vocabulaire), bloc("Stratégie de contact", p.strategie_contact),
-        sources.length ? h("details", null, h("summary", null, "Sources"), h("div", null, h("ul", { class: "liste" }, sources))) : null,
-        p.cv ? h("p", null, h("a", { class: "btn second", href: p.cv, target: "_blank", rel: "noopener" }, "Ouvrir le CV")) : null
-      ] : null,
-      h("h3", null, "Contacts enregistrés (" + mes.length + ")"),
-      mes.length ? mes.map(carteContact) : h("p", { class: "aide" }, "Aucun contact pour le moment."));
+      h("a", { class: "retour", href: "#/" }, "← Entreprises"),
+      h("section", { class: "fiche-hero " + classeSecteur(e) },
+        h("div", { class: "tete" }, h("span", { class: "avatar" }, initiales(e.nom)),
+          h("div", null, h("h2", null, e.nom), h("span", { class: "meta" }, secteurFiche(e) + " · " + e.hall + (e.stand ? " · stand " + e.stand : " · stand non publié")))),
+        p ? h("div", { class: "etiquettes" }, h("span", { class: "badge" }, ic("etoile"), "Priorité " + r.prio), p.score ? h("span", { class: "badge" }, "Adéquation " + p.score + "/100") : null,
+          p.presence_ci ? h("span", { class: "badge" }, ic("ok"), "Présence en Côte d'Ivoire vérifiée") : null, mes.length ? h("span", { class: "badge" }, ic("contacts"), mes.length + " contact" + (mes.length > 1 ? "s" : "")) : null) : null),
+      h("div", { class: "actions" }, h("a", { class: "btn orange", href: ajout }, ic("plus"), "Ajouter un contact"),
+        p && p.cv ? h("div", { class: "cv-num", title: p.cv }, h("small", null, "CV papier à remettre"), h("b", null, cvTexte(p).replace("CV ", ""))) : h("a", { class: "btn second", href: "#/plans" }, ic("plan"), "Plans")),
+      p ? null : h("p", { class: "note" }, "Pas de fiche de préparation pour cette entreprise : présence en Côte d'Ivoire non vérifiée dans ce projet."),
+      p ? h("nav", { class: "sommaire", "aria-label": "Rubriques de la fiche" }, sections.map(function (s) { return h("a", { href: "#s-" + s[0], onclick: sauter("s-" + s[0]) }, s[1]); }), h("a", { href: "#s-contacts", onclick: sauter("s-contacts") }, "Contacts")) : null,
+      sections.map(function (s) { var c = s[3].filter(Boolean); return c.length ? h("section", { class: "section", id: "s-" + s[0] }, h("h3", null, ic(s[2]), s[1]), c) : null; }),
+      h("section", { class: "section", id: "s-contacts" }, h("h3", null, ic("contacts"), "Contacts enregistrés (" + mes.length + ")"),
+        mes.length ? mes.map(carteContact) : h("p", { class: "aide" }, "Aucun contact pour le moment. Le bouton orange en bas à droite en ajoute un en un toucher.")));
+    document.body.append(h("a", { class: "fab", href: ajout, "aria-label": "Ajouter un contact" }, ic("plus"), "Contact"));
   }
-  function carteContact(c) {
+  function carteContact(c, i) {
     var e = exposant(c.entreprise_id), nom = [c.prenoms, c.nom].filter(Boolean).join(" ") || "(sans nom)";
-    return h("a", { class: "carte", href: "#/contact/" + encodeURIComponent(c.id) },
-      h("b", null, nom), h("span", { class: "meta" }, [c.fonction, e ? e.nom : c.entreprise_nom].filter(Boolean).join(" · ")),
-      h("div", null, h("span", { class: "badge" }, c.statut_suivi || "Nouveau"), c.cv_remis ? h("span", { class: "badge b-ok" }, "CV remis") : null, estRelance(c) ? h("span", { class: "badge b-att" }, "À relancer" + (c.date_relance ? " " + fmtJour(c.date_relance) : "")) : null, badgeSync(c)),
-      h("span", { class: "meta" }, fmt(c.rencontre_le)));
+    return h("a", { class: "carte", href: "#/contact/" + encodeURIComponent(c.id), style: "--i:" + (i || 0) },
+      h("span", { class: "avatar s-personne" }, initiales(nom)),
+      h("span", { class: "corps" }, h("b", null, nom), h("span", { class: "meta" }, [c.fonction, e ? e.nom : c.entreprise_nom].filter(Boolean).join(" · "))),
+      ic("fleche", "fleche"),
+      h("span", { class: "etiquettes" }, h("span", { class: "badge" }, c.statut_suivi || "Nouveau"), c.interet === "Fort" ? h("span", { class: "badge b-prio" }, "Intérêt fort") : null,
+        c.cv_remis ? h("span", { class: "badge b-ok" }, ic("cv"), "CV remis") : null, estRelance(c) ? h("span", { class: "badge b-att" }, ic("relance"), "À relancer" + (c.date_relance ? " " + fmtJour(c.date_relance) : "")) : null, badgeSync(c),
+        h("span", { class: "meta" }, fmt(c.rencontre_le))));
   }
 
   /* Formulaire de contact (création et modification) */
@@ -352,20 +410,31 @@
   function liste(id, lib, options, val) {
     return [h("label", { for: id }, lib), h("select", { id: id, name: id }, options.map(function (o) { return h("option", { value: o, selected: o === val }, o); }))];
   }
+  function segment(id, lib, options, val, cl) {   // un seul toucher au lieu d'une liste déroulante
+    var cache = h("input", { type: "hidden", id: id, name: id, value: val || options[0] }), boutons;
+    boutons = options.map(function (o) {
+      return h("button", { type: "button", id: id + "-" + norm(o).replace(/[^a-z0-9]+/g, "-"), "data-v": o, "aria-pressed": o === (val || options[0]) ? "true" : "false",
+        onclick: function (ev) { cache.value = o; boutons.forEach(function (b) { b.setAttribute("aria-pressed", b === ev.currentTarget ? "true" : "false"); }); } }, o);
+    });
+    return [h("label", null, lib), cache, h("div", { class: "segment " + (cl || ""), role: "group", "aria-label": lib }, boutons)];
+  }
   function vueFormulaire(idE, existant) {
     var c = existant || null, e = exposant(c ? c.entreprise_id : idE);
     if (!e && !c) { rendre(h("p", { class: "vide" }, "Entreprise introuvable."), h("a", { class: "btn", href: "#/" }, "Retour")); return; }
     var v = c || { entreprise_id: e.id, entreprise_nom: e.nom, secteur: secteurFiche(e), hall: e.hall, stand: e.stand || "", rencontre_le: new Date().toISOString(), statut_suivi: "Nouveau", interet: "Non précisé", types_stage: ["Stage de 2e année"] };
     var types = ["Stage de 2e année", "Stage de 3e année"];
     var form = h("form", { novalidate: true, id: "form-contact", autocomplete: "off" },
-      h("p", { class: "aide" }, "Seules les coordonnées professionnelles communiquées volontairement sont à noter. Tout est facultatif sauf un nom, un sujet ou une note."),
+      h("p", { class: "aide" }, "Tout est facultatif, sauf un nom, un sujet ou une note. Seules les coordonnées professionnelles données volontairement."),
       champ("nom", "Nom", "text", v.nom, { auto: "off" }), champ("prenoms", "Prénoms", "text", v.prenoms),
       champ("fonction", "Fonction", "text", v.fonction),
-      liste("interet", "Intérêt manifesté pour ma candidature", INTERETS, v.interet),
-      h("div", { class: "cases" }, h("label", null, h("input", { type: "checkbox", id: "cv_remis", checked: !!v.cv_remis }), "CV remis")),
-      champ("sujet", "Sujet de la conversation / notes", "textarea", v.sujet),
-      champ("date_relance", "Date de relance", "date", v.date_relance),
-      liste("statut_suivi", "Statut du suivi", STATUTS, v.statut_suivi),
+      segment("interet", "Intérêt pour ma candidature", INTERETS, v.interet, "chaud"),
+      h("label", { class: "interrupteur", for: "cv_remis" }, h("span", null, "CV remis à cette personne"), h("input", { type: "checkbox", id: "cv_remis", role: "switch", checked: !!v.cv_remis })),
+      champ("sujet", "Notes de l'échange", "textarea", v.sujet),
+      champ("date_relance", "Relance", "date", v.date_relance),
+      h("div", { class: "rapides" }, [["Demain", 1], ["Dans 3 jours", 3], ["Dans 1 semaine", 7], ["Aucune", 0]].map(function (x) {
+        return h("button", { type: "button", onclick: function () { form.elements.date_relance.value = x[1] ? plusJours(x[1]) : ""; vib(); } }, x[0]);
+      })),
+      segment("statut_suivi", "Statut du suivi", STATUTS, v.statut_suivi),
       h("details", null, h("summary", null, "Plus de détails (entreprise, coordonnées, échange)"), h("div", null,
         champ("entreprise_nom", "Entreprise", "text", v.entreprise_nom), liste("secteur", "Secteur", ["Mines", "Pétrole et gaz", "Énergie", "Autre"], v.secteur),
         champ("hall", "Hall", "text", v.hall), champ("stand", "Numéro de stand", "text", v.stand),
@@ -377,7 +446,7 @@
         champ("documents_demandes", "Documents demandés", "textarea", v.documents_demandes, { rows: 2 }), champ("conseils", "Conseils reçus", "textarea", v.conseils), champ("infos", "Informations importantes", "textarea", v.infos),
         champ("prochaine_action", "Prochaine action", "text", v.prochaine_action))),
       h("p", { class: "erreur", id: "err-form", hidden: true }),
-      h("button", { type: "submit", class: "gros" }, c ? "ENREGISTRER LES MODIFICATIONS" : "ENREGISTRER LE CONTACT"));
+      h("div", { class: "barre-action" }, h("button", { type: "submit", class: "gros orange" }, ic("ok"), c ? "Enregistrer les modifications" : "Enregistrer le contact")));
     function val(id) { var n = form.elements[id]; return n ? String(n.value || "").trim() : ""; }
     function erreur(id, msg) { var n = $("#err-" + id, form); if (n) { n.textContent = msg; n.hidden = !msg; } }
     form.addEventListener("submit", function (ev) {
@@ -395,7 +464,7 @@
       rec.types_stage = Array.prototype.slice.call(form.querySelectorAll("input[name=types_stage]:checked")).map(function (x) { return x.value; });
       enregistrer(rec).then(function () { toast("Contact enregistré sur le téléphone."); aller("#/e/" + encodeURIComponent(rec.entreprise_id)); }, function () { erreur("form", "Échec de l'enregistrement local. Ne pas fermer la page, exporter depuis Réglages puis réessayer."); });
     });
-    rendre(h("a", { href: c ? "#/contacts" : "#/e/" + encodeURIComponent(v.entreprise_id) }, "← Retour"), h("h2", null, c ? "Modifier le contact" : "Nouveau contact · " + v.entreprise_nom), form);
+    rendre(h("a", { class: "retour", href: c ? "#/contacts" : "#/e/" + encodeURIComponent(v.entreprise_id) }, "← Retour"), h("p", { class: "surtitre" }, c ? "Carnet du salon" : "Nouveau contact"), h("h2", null, c ? "Modifier le contact" : "Nouveau contact · " + v.entreprise_nom), form);
     var n = $("#nom"); if (n && !c) n.focus();
   }
   function vueContact(id) { var c = S.contacts.filter(function (x) { return x.id === id; })[0]; if (!c) { rendre(h("p", { class: "vide" }, "Contact introuvable."), h("a", { class: "btn", href: "#/contacts" }, "Retour")); return; } vueFormulaire(null, c); }
@@ -411,10 +480,10 @@
     });
     var q = h("input", { type: "search", id: "qc", placeholder: "Rechercher un contact", "aria-label": "Rechercher un contact", value: f.q });
     q.addEventListener("input", function () { f.q = q.value; var pos = q.selectionStart; vueContacts(); var n = $("#qc"); n.focus(); try { n.setSelectionRange(pos, pos); } catch (e) {} });
-    rendre(h("h2", null, "Contacts (" + l.length + ")"), q,
+    rendre(h("p", { class: "surtitre" }, "Carnet du salon"), h("h2", null, "Contacts (" + l.length + ")"), q,
       h("div", { class: "puces" }, [["tous", "Tous"], ["relance", "À relancer"], ["attente", "Non synchronisés"], ["cv", "CV remis"]].map(function (m) { return h("button", { class: "puce", "aria-pressed": f.mode === m[0] ? "true" : "false", onclick: function () { f.mode = m[0]; vueContacts(); } }, m[1]); })),
-      l.length ? l.map(carteContact) : h("p", { class: "vide" }, S.contacts.length ? "Aucun contact ne correspond." : "Aucun contact enregistré. Ouvrir une entreprise puis « Ajouter un contact »."),
-      S.contacts.length ? h("button", { class: "second gros", onclick: exporterCsv }, "Exporter en tableau (CSV)") : null);
+      l.length ? l.map(carteContact) : h("div", { class: "vide" }, ic("contacts"), S.contacts.length ? "Aucun contact ne correspond." : "Aucun contact pour l'instant. Ouvrir une entreprise, puis toucher le bouton orange « Contact »."),
+      S.contacts.length ? h("button", { class: "second gros", onclick: exporterCsv }, ic("telecharger"), "Exporter en tableau (CSV)") : null);
   }
 
   /* Tableau de bord */
@@ -422,12 +491,15 @@
     var C = S.contacts, ents = {}, inter = {}; C.forEach(function (c) { ents[c.entreprise_id] = 1; if (c.interet === "Fort" || c.interet === "Moyen") inter[c.entreprise_id] = 1; });
     var relances = C.filter(estRelance), attente = C.filter(function (c) { return c.statut_suivi === "En attente de réponse"; }), rdv = C.filter(function (c) { return c.statut_suivi === "Rendez-vous prévu"; });
     var actions = C.filter(function (c) { return c.prochaine_action && c.statut_suivi !== "Clos"; });
-    function n(v, lib) { return h("div", { class: "chiffre" }, h("b", null, v), lib); }
-    rendre(h("h2", null, "Bilan"),
-      h("div", { class: "grille" }, n(Object.keys(ents).length, "entreprises rencontrées"), n(C.length, "contacts enregistrés"), n(relances.length, "à relancer"), n(rdv.length, "rendez-vous ou suivis prévus"),
-        n(C.filter(function (c) { return c.cv_remis; }).length, "CV remis"), n(Object.keys(inter).length, "entreprises intéressées"), n(attente.length, "en attente de réponse"), n(C.filter(function (c) { return !c.sync || c.sync.statut !== "synced"; }).length, "à synchroniser")),
-      h("h3", null, "À relancer"), relances.length ? relances.map(carteContact) : h("p", { class: "aide" }, "Rien à relancer."),
-      h("h3", null, "Actions à réaliser"), actions.length ? actions.map(function (c) { return h("a", { class: "carte", href: "#/contact/" + encodeURIComponent(c.id) }, h("b", null, c.prochaine_action), h("span", { class: "meta" }, [c.entreprise_nom, [c.prenoms, c.nom].filter(Boolean).join(" ")].filter(Boolean).join(" · "))); }) : h("p", { class: "aide" }, "Aucune action notée."));
+    var ids = Object.keys(S.selection), vusSel = ids.filter(function (id) { return ents[id]; }).length;
+    function n(v, lib, icone, i) { return h("div", { class: "chiffre", style: "--i:" + i }, ic(icone), h("b", null, v), lib); }
+    rendre(h("p", { class: "surtitre" }, "Salon SIREXE 2026"), h("h2", null, "Bilan"),
+      h("div", { class: "grille" },
+        ids.length ? h("div", { class: "chiffre large" }, ic("cible"), h("b", null, vusSel + " / " + ids.length), "entreprises de ma sélection déjà rencontrées", h("div", { class: "jauge" }, h("span", { style: "width:" + Math.round(100 * vusSel / ids.length) + "%" }))) : null,
+        n(Object.keys(ents).length, "entreprises rencontrées", "entreprise", 1), n(C.length, "contacts enregistrés", "contacts", 2), n(relances.length, "à relancer", "relance", 3), n(rdv.length, "rendez-vous ou suivis prévus", "stage", 4),
+        n(C.filter(function (c) { return c.cv_remis; }).length, "CV remis", "cv", 5), n(Object.keys(inter).length, "entreprises intéressées", "etoile", 6), n(attente.length, "en attente de réponse", "parole", 7), n(C.filter(function (c) { return !c.sync || c.sync.statut !== "synced"; }).length, "à synchroniser", "nuage", 8)),
+      h("h3", null, ic("relance"), "À relancer"), relances.length ? relances.map(carteContact) : h("p", { class: "aide" }, "Rien à relancer."),
+      h("h3", null, ic("cible"), "Actions à réaliser"), actions.length ? actions.map(function (c, i) { return h("a", { class: "carte", href: "#/contact/" + encodeURIComponent(c.id), style: "--i:" + i }, h("span", { class: "avatar s-personne" }, ic("cible")), h("span", { class: "corps" }, h("b", null, c.prochaine_action), h("span", { class: "meta" }, [c.entreprise_nom, [c.prenoms, c.nom].filter(Boolean).join(" ")].filter(Boolean).join(" · "))), ic("fleche", "fleche")); }) : h("p", { class: "aide" }, "Aucune action notée."));
   }
 
   /* Plans officiels */
@@ -481,18 +553,20 @@
       }).catch(function (e) { msg(e.message || "Échec du test."); });
     });
     var att = S.contacts.filter(function (x) { return !x.sync || x.sync.statut !== "synced"; }).length;
-    rendre(h("h2", null, "Réglages"), form,
-      h("h3", null, "Synchroniser"), h("p", { class: "aide" }, att + " contact(s) en attente. L'envoi repart tout seul au retour de la connexion."),
-      h("button", { class: "gros", onclick: function () { synchroniser(true); } }, "Synchroniser maintenant"),
-      h("h3", null, "Sauvegarde sur le téléphone"),
-      h("div", { class: "ligne" }, h("button", { class: "second", onclick: function () { exporter("sirexe-sauvegarde-" + aujourdhui() + ".json", JSON.stringify(S.contacts, null, 2), "application/json"); } }, "Exporter tout (JSON)"), h("button", { class: "second", onclick: exporterCsv }, "Exporter (CSV)")),
-      h("details", null, h("summary", null, "Créer le jeton GitHub (une fois)"), h("div", null, h("ol", { class: "liste" },
-        h("li", null, "Sur github.com : Settings, Developer settings, Personal access tokens, Fine-grained tokens, Generate new token."),
-        h("li", null, "Repository access : « Only select repositories », choisir UNIQUEMENT le dépôt privé des contacts."),
-        h("li", null, "Permissions, Repository : « Contents » en Read and write. Rien d'autre."),
-        h("li", null, "Expiration courte (par exemple 14 jours). Copier le jeton, le coller ici, enregistrer, tester.")))),
+    rendre(h("p", { class: "surtitre" }, "Application"), h("h2", null, "Réglages"),
+      h("details", { open: !c.token }, h("summary", null, "Créer le jeton GitHub (une seule fois, 3 minutes)"), h("div", null, h("ol", { class: "liste" },
+        h("li", null, "Ouvrir ", h("a", { href: "https://github.com/settings/personal-access-tokens/new", target: "_blank", rel: "noopener noreferrer" }, "github.com/settings/personal-access-tokens/new"), " (connecté à son compte GitHub)."),
+        h("li", null, "Token name : sirexe-telephone. Expiration : 30 days."),
+        h("li", null, "Repository access : « Only select repositories », puis cocher uniquement « sirexe-2026-donnees »."),
+        h("li", null, "Permissions, Repository permissions, Contents : « Read and write ». Rien d'autre."),
+        h("li", null, "Generate token, copier le jeton (github_pat_…, affiché une seule fois), le coller ci-dessous, Enregistrer, puis Tester la connexion.")))),
+      h("div", { class: "groupe" }, form),
+      h("div", { class: "groupe" }, h("h3", null, ic("nuage"), "Synchroniser"), h("p", { class: "aide" }, att + " contact(s) en attente. L'envoi repart tout seul au retour de la connexion."),
+        h("button", { class: "gros", onclick: function () { synchroniser(true); } }, "Synchroniser maintenant")),
+      h("div", { class: "groupe" }, h("h3", null, ic("telecharger"), "Sauvegarde sur le téléphone"),
+        h("div", { class: "ligne" }, h("button", { class: "second", onclick: function () { exporter("sirexe-sauvegarde-" + aujourdhui() + ".json", JSON.stringify(S.contacts, null, 2), "application/json"); } }, "Exporter tout (JSON)"), h("button", { class: "second", onclick: exporterCsv }, "Exporter (CSV)"))),
       h("details", null, h("summary", null, "Journal de synchronisation (sans données personnelles)"), h("div", null, S.journal.length ? h("ul", { class: "liste" }, S.journal.slice(0, 15).map(function (j) { return h("li", null, fmt(j.le) + " · " + j.id + " · " + j.resultat); })) : h("p", { class: "aide" }, "Aucun envoi."))),
-      h("p", { class: "aide" }, "Version " + APP_VERSION + " · " + S.exposants.length + " exposants · annuaire du " + fmtJour((S.extrait || "").slice(0, 10))));
+      h("p", { class: "aide" }, "Version " + APP_VERSION + " · mise à jour automatique · " + S.exposants.length + " exposants · annuaire du " + fmtJour((S.extrait || "").slice(0, 10))));
   }
 
   /* ---------- démarrage ---------- */
@@ -502,13 +576,16 @@
     return db().then(function () { return Promise.all([plans, chargerContacts(), lireMeta("github"), lireMeta("journal")]); }, function (e) { throw { stockage: true, e: e }; }).then(function (r) {
       S.exposants = r[0][0].exposants; S.extrait = r[0][0].extrait_le; S.selectionNote = r[0][1].note || "";
       (r[0][1].entreprises || []).forEach(function (p) { S.selection[p.id] = p; });
+      if (Object.keys(S.selection).length) S.filtre.secteur = "prio";   // l'accueil montre d'abord ma sélection
+      document.addEventListener("click", function (ev) { if (ev.target.closest && ev.target.closest(".bas a, .puce, .fab, .segment button, .gros, .actions .btn")) vib(); }, true);
+      try { if (sessionStorage.getItem("sirexe-maj")) { sessionStorage.removeItem("sirexe-maj"); setTimeout(function () { toast("Application mise à jour : version " + APP_VERSION); }, 700); } } catch (e) {}
       S.cfg = r[2]; S.journal = r[3] || [];
       window.addEventListener("hashchange", vueCourante);
       window.addEventListener("online", function () { majPastille(); synchroniser(false); });
       window.addEventListener("offline", majPastille);
       document.addEventListener("visibilitychange", function () { if (!document.hidden) synchroniser(false); });
       setInterval(function () { synchroniser(false); }, 60000);
-      vueCourante(); synchroniser(false);
+      vueCourante(); S.pret = true; synchroniser(false);
     }).catch(function (e) {
       if (window.console) console.error("Démarrage SIREXE :", e && e.e || e);
       if (e && e.stockage) bloquant("Ce navigateur refuse d'enregistrer des données (navigation privée ou stockage bloqué). Ouvrir l'application dans Chrome en navigation normale : sans cela, les contacts seraient perdus.");
@@ -516,13 +593,22 @@
     });
   }
   if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost" || location.hostname === "127.0.0.1")) {
-    var avaitVersion = !!navigator.serviceWorker.controller, demandee = false;   // première visite : ni bandeau ni rechargement
-    navigator.serviceWorker.register("sw.js").then(function (reg) {
-      function propose(w) { if (!avaitVersion) return; $("#maj").hidden = false; $("#btn-maj").onclick = function () { demandee = true; w.postMessage("activer"); }; }
-      if (reg.waiting) propose(reg.waiting);
-      reg.addEventListener("updatefound", function () { var n = reg.installing; n.addEventListener("statechange", function () { if (n.state === "installed") propose(n); }); });
+    /* Mise à jour automatique (souhait de Daouda) : chaque publication s'installe seule à l'ouverture avec internet.
+       Garde-fou : jamais de rechargement pendant une saisie de contact ; la mise à jour attend la fin du formulaire. */
+    var avaitVersion = !!navigator.serviceWorker.controller, enAttente = false;   // première visite : ni bandeau ni rechargement
+    function saisieEnCours() { return /^#\/(ajout|contact)\//.test(location.hash || ""); }
+    function recharger() { if (window.__rechargement) return; window.__rechargement = true; try { sessionStorage.setItem("sirexe-maj", "1"); } catch (e) {} location.reload(); }
+    navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).then(function (reg) {
+      function verifier() { if (navigator.onLine) reg.update().catch(function () {}); }
+      document.addEventListener("visibilitychange", function () { if (!document.hidden) verifier(); });
+      setInterval(verifier, 5 * 60000);
     }).catch(function () {});
-    navigator.serviceWorker.addEventListener("controllerchange", function () { if (demandee && !window.__rechargement) { window.__rechargement = true; location.reload(); } });   // jamais de rechargement sans le clic « Actualiser »
+    navigator.serviceWorker.addEventListener("controllerchange", function () {
+      if (!avaitVersion) return;
+      if (saisieEnCours()) { enAttente = true; $("#maj").hidden = false; $("#btn-maj").onclick = recharger; return; }
+      recharger();
+    });
+    window.addEventListener("hashchange", function () { if (enAttente && !saisieEnCours()) recharger(); });
   }
   demarrer();
 })();
